@@ -4,12 +4,13 @@
 memories (A100, A2, A300, A4, A5) + frozen fail-closed emission gates + a full trace**, emitting
 **predictions-or-named-abstention** under the official two-output contract (two predictions per test
 input; a sole emission is duplicated into both slots; a slot with no real prediction carries the
-venue's `[[0, 0], [0, 0]]` placeholder). It demonstrates the approach; it does not compete on score.
+venue's `[[0, 0], [0, 0]]` placeholder). It demonstrates the approach rather than competing on
+score: every number it produces is demonstration output, not certified evidence, and the
+competition score is not an objective of this work.
 
-**DEMONSTRATION OUTPUT, NOT CERTIFIED EVIDENCE. The competition score is not an objective and is
-never computed or reported as one.** The memories *are* the model's knowledge — no training, no
-tuning, no selector development; the pipeline is byte-for-byte the frozen inference/gate chain with
-light driver glue only (I/O, task loading, two-output formatting, trace dump).
+The memories *are* the model's knowledge — no training, no tuning, no selector development; the
+pipeline is byte-for-byte the frozen inference/gate chain with light driver glue only (I/O, task
+loading, two-output formatting, trace dump).
 
 **Target-blind by construction:** only `train` pairs and `test[].input` are read; `test[].output` is
 never read.
