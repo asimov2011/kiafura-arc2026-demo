@@ -1,10 +1,10 @@
 {
   "id": "carmelofiorilla/kiafura-arc2026-demo-entry",
-  "title": "Kiafura ARC-AGI-2 demonstration entry",
+  "title": "Kiafura ARC2026 Demo Entry",
   "code_file": "kiafura-arc2026-demo.ipynb",
   "language": "python",
   "kernel_type": "notebook",
-  "is_private": "false",
+  "is_private": "true",
   "enable_gpu": "false",
   "enable_tpu": "false",
   "enable_internet": "false",
