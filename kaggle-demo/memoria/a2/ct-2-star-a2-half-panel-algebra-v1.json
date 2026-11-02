@@ -1,0 +1,22 @@
+{
+ "contract": {
+  "binding_source": "demonstrations",
+  "complete_programs": false,
+  "task_ids": false,
+  "verified_only": true
+ },
+ "format": "kiafura-ct2-star-a2-half-panel-algebra-v1",
+ "graphs": [
+  "half_intersect",
+  "half_overlay",
+  "key_mask_upscale",
+  "separator_overlay",
+  "shift_intersect"
+ ],
+ "memory_sha256": "16aa013dc996d39f389604525cc6d41ecb5486a37e8cb2437c68e5a9ac83a7c4",
+ "operators": [
+  "row_split",
+  "overlay",
+  "intersection"
+ ]
+}

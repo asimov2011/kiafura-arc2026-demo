@@ -1,0 +1,1011 @@
+{
+  "anti_copy": {
+    "bytecode": 0,
+    "complete_programs": 0,
+    "literal_grids": 0,
+    "source_imports": 0,
+    "task_ids": 0
+  },
+  "budget": {
+    "binding_candidates": 250000000,
+    "cell_visits": 250000000,
+    "proposed_writes": 250000000,
+    "relation_tests": 250000000
+  },
+  "factors": {
+    "F1": "role_points",
+    "F10": "exact_consensus",
+    "F2": "components",
+    "F3": "measure",
+    "F4": "relate_select",
+    "F5": "coordinate_field",
+    "F6": "partition",
+    "F7": "derive_binding",
+    "F8": "aligned_reduce",
+    "F9": "render"
+  },
+  "format": "kiafura-ct6-causal-ssa-memory-v2",
+  "graphs": [
+    {
+      "categories": {
+        "control": {
+          "policy": "all-demo exact; one observational query region or abstain",
+          "topology": "T1"
+        },
+        "executable_graph": [
+          {
+            "factor_id": "F1",
+            "inputs": [
+              "grid"
+            ],
+            "mode": "points_equal_binding",
+            "node_id": "n1",
+            "output_type": "PointSet",
+            "static": {
+              "slot": "marker"
+            }
+          },
+          {
+            "factor_id": "F3",
+            "inputs": [
+              "n1"
+            ],
+            "mode": "bbox",
+            "node_id": "n2",
+            "output_type": "BBox",
+            "static": {}
+          },
+          {
+            "factor_id": "F1",
+            "inputs": [
+              "grid"
+            ],
+            "mode": "points_equal_binding",
+            "node_id": "n3",
+            "output_type": "PointSet",
+            "static": {
+              "slot": "target"
+            }
+          },
+          {
+            "factor_id": "F5",
+            "inputs": [
+              "n3",
+              "n2"
+            ],
+            "mode": "restrict_to_bbox",
+            "node_id": "n4",
+            "output_type": "PointSet",
+            "static": {}
+          },
+          {
+            "factor_id": "F9",
+            "inputs": [
+              "grid",
+              "n4"
+            ],
+            "mode": "copy_paint_binding",
+            "node_id": "n5",
+            "output_type": "Grid",
+            "static": {
+              "slot": "replacement"
+            }
+          }
+        ],
+        "parameters_bindings": {
+          "marker": "Color",
+          "replacement": "Color",
+          "target": "Color"
+        },
+        "representation": {
+          "factors": [
+            "F1",
+            "F10",
+            "F3",
+            "F5",
+            "F7",
+            "F9"
+          ],
+          "input": "demonstrations+query_grids",
+          "output": "verified_grid_region_or_abstention"
+        },
+        "residual": [
+          "execution",
+          "shape",
+          "dimension",
+          "palette",
+          "cell",
+          "failed_demos"
+        ],
+        "resources": {
+          "accounting": "reserve Pareto WorkVector before candidate execution",
+          "limit": {
+            "binding_candidates": 250000000,
+            "cell_visits": 250000000,
+            "proposed_writes": 250000000,
+            "relation_tests": 250000000
+          }
+        },
+        "verification_arrest": "F10 exact_consensus"
+      },
+      "operator_id": "O1",
+      "output_node": "n5",
+      "support": 2,
+      "topology_id": "T1"
+    },
+    {
+      "categories": {
+        "control": {
+          "policy": "all-demo exact; one observational query region or abstain",
+          "topology": "T2"
+        },
+        "executable_graph": [
+          {
+            "factor_id": "F1",
+            "inputs": [
+              "grid"
+            ],
+            "mode": "points_by_nonbackground_color",
+            "node_id": "n1",
+            "output_type": "RolePointMap",
+            "static": {}
+          },
+          {
+            "factor_id": "F2",
+            "inputs": [
+              "n1"
+            ],
+            "mode": "components_by_role",
+            "node_id": "n2",
+            "output_type": "RoleComponentMap",
+            "static": {
+              "connectivity": 4
+            }
+          },
+          {
+            "factor_id": "F4",
+            "inputs": [
+              "n2"
+            ],
+            "mode": "minimum_diagonal_pairs",
+            "node_id": "n3",
+            "output_type": "RolePairMap",
+            "static": {}
+          },
+          {
+            "factor_id": "F5",
+            "inputs": [
+              "n3"
+            ],
+            "mode": "diagonal_segments",
+            "node_id": "n4",
+            "output_type": "RolePointMap",
+            "static": {}
+          },
+          {
+            "factor_id": "F9",
+            "inputs": [
+              "grid",
+              "n4"
+            ],
+            "mode": "copy_paint_roles",
+            "node_id": "n5",
+            "output_type": "Grid",
+            "static": {}
+          }
+        ],
+        "parameters_bindings": {
+          "background": "Color"
+        },
+        "representation": {
+          "factors": [
+            "F1",
+            "F10",
+            "F2",
+            "F4",
+            "F5",
+            "F7",
+            "F9"
+          ],
+          "input": "demonstrations+query_grids",
+          "output": "verified_grid_region_or_abstention"
+        },
+        "residual": [
+          "execution",
+          "shape",
+          "dimension",
+          "palette",
+          "cell",
+          "failed_demos"
+        ],
+        "resources": {
+          "accounting": "reserve Pareto WorkVector before candidate execution",
+          "limit": {
+            "binding_candidates": 250000000,
+            "cell_visits": 250000000,
+            "proposed_writes": 250000000,
+            "relation_tests": 250000000
+          }
+        },
+        "verification_arrest": "F10 exact_consensus"
+      },
+      "operator_id": "O2",
+      "output_node": "n5",
+      "support": 2,
+      "topology_id": "T2"
+    },
+    {
+      "categories": {
+        "control": {
+          "policy": "all-demo exact; one observational query region or abstain",
+          "topology": "T3"
+        },
+        "executable_graph": [
+          {
+            "factor_id": "F1",
+            "inputs": [
+              "grid"
+            ],
+            "mode": "points_equal_binding",
+            "node_id": "n1",
+            "output_type": "PointSet",
+            "static": {
+              "slot": "source"
+            }
+          },
+          {
+            "factor_id": "F2",
+            "inputs": [
+              "n1"
+            ],
+            "mode": "components",
+            "node_id": "n2",
+            "output_type": "ComponentSet",
+            "static": {
+              "connectivity": 4
+            }
+          },
+          {
+            "factor_id": "F3",
+            "inputs": [
+              "n2"
+            ],
+            "mode": "component_count_bbox",
+            "node_id": "n3",
+            "output_type": "MeasuredComponents",
+            "static": {}
+          },
+          {
+            "factor_id": "F4",
+            "inputs": [
+              "n3"
+            ],
+            "mode": "filter_component_size",
+            "node_id": "n4",
+            "output_type": "BBoxSet",
+            "static": {
+              "slot": "size"
+            }
+          },
+          {
+            "factor_id": "F5",
+            "inputs": [
+              "grid",
+              "n4"
+            ],
+            "mode": "bbox_halo_one",
+            "node_id": "n5",
+            "output_type": "PointSet",
+            "static": {}
+          },
+          {
+            "factor_id": "F9",
+            "inputs": [
+              "grid",
+              "n5"
+            ],
+            "mode": "copy_paint_background_binding",
+            "node_id": "n6",
+            "output_type": "Grid",
+            "static": {
+              "background_slot": "background",
+              "value_slot": "frame"
+            }
+          }
+        ],
+        "parameters_bindings": {
+          "background": "Color",
+          "frame": "Color",
+          "size": "PositiveInt",
+          "source": "Color"
+        },
+        "representation": {
+          "factors": [
+            "F1",
+            "F10",
+            "F2",
+            "F3",
+            "F4",
+            "F5",
+            "F7",
+            "F9"
+          ],
+          "input": "demonstrations+query_grids",
+          "output": "verified_grid_region_or_abstention"
+        },
+        "residual": [
+          "execution",
+          "shape",
+          "dimension",
+          "palette",
+          "cell",
+          "failed_demos"
+        ],
+        "resources": {
+          "accounting": "reserve Pareto WorkVector before candidate execution",
+          "limit": {
+            "binding_candidates": 250000000,
+            "cell_visits": 250000000,
+            "proposed_writes": 250000000,
+            "relation_tests": 250000000
+          }
+        },
+        "verification_arrest": "F10 exact_consensus"
+      },
+      "operator_id": "O3",
+      "output_node": "n6",
+      "support": 3,
+      "topology_id": "T3"
+    },
+    {
+      "categories": {
+        "control": {
+          "policy": "all-demo exact; one observational query region or abstain",
+          "topology": "T4"
+        },
+        "executable_graph": [
+          {
+            "factor_id": "F1",
+            "inputs": [
+              "grid"
+            ],
+            "mode": "points_equal_binding",
+            "node_id": "n1",
+            "output_type": "PointSet",
+            "static": {
+              "slot": "source"
+            }
+          },
+          {
+            "factor_id": "F2",
+            "inputs": [
+              "n1"
+            ],
+            "mode": "components",
+            "node_id": "n2",
+            "output_type": "ComponentSet",
+            "static": {
+              "connectivity": 4
+            }
+          },
+          {
+            "factor_id": "F3",
+            "inputs": [
+              "n2"
+            ],
+            "mode": "component_bboxes",
+            "node_id": "n3",
+            "output_type": "BBoxSet",
+            "static": {}
+          },
+          {
+            "factor_id": "F4",
+            "inputs": [
+              "n3"
+            ],
+            "mode": "visible_horizontal_box_pairs",
+            "node_id": "n4",
+            "output_type": "BBoxPairSet",
+            "static": {}
+          },
+          {
+            "factor_id": "F5",
+            "inputs": [
+              "n4"
+            ],
+            "mode": "horizontal_gap_rectangles",
+            "node_id": "n5",
+            "output_type": "PointSet",
+            "static": {}
+          },
+          {
+            "factor_id": "F9",
+            "inputs": [
+              "grid",
+              "n5"
+            ],
+            "mode": "copy_paint_binding",
+            "node_id": "n6",
+            "output_type": "Grid",
+            "static": {
+              "slot": "line"
+            }
+          }
+        ],
+        "parameters_bindings": {
+          "background": "Color",
+          "line": "Color",
+          "source": "Color"
+        },
+        "representation": {
+          "factors": [
+            "F1",
+            "F10",
+            "F2",
+            "F3",
+            "F4",
+            "F5",
+            "F7",
+            "F9"
+          ],
+          "input": "demonstrations+query_grids",
+          "output": "verified_grid_region_or_abstention"
+        },
+        "residual": [
+          "execution",
+          "shape",
+          "dimension",
+          "palette",
+          "cell",
+          "failed_demos"
+        ],
+        "resources": {
+          "accounting": "reserve Pareto WorkVector before candidate execution",
+          "limit": {
+            "binding_candidates": 250000000,
+            "cell_visits": 250000000,
+            "proposed_writes": 250000000,
+            "relation_tests": 250000000
+          }
+        },
+        "verification_arrest": "F10 exact_consensus"
+      },
+      "operator_id": "O4",
+      "output_node": "n6",
+      "support": 2,
+      "topology_id": "T4"
+    },
+    {
+      "categories": {
+        "control": {
+          "policy": "all-demo exact; one observational query region or abstain",
+          "topology": "T5"
+        },
+        "executable_graph": [
+          {
+            "factor_id": "F1",
+            "inputs": [
+              "grid"
+            ],
+            "mode": "mapped_marker_points",
+            "node_id": "n1",
+            "output_type": "ValuedPointSet",
+            "static": {}
+          },
+          {
+            "factor_id": "F5",
+            "inputs": [
+              "grid",
+              "n1"
+            ],
+            "mode": "chebyshev_neighbors_one",
+            "node_id": "n2",
+            "output_type": "ValuedPointSet",
+            "static": {}
+          },
+          {
+            "factor_id": "F9",
+            "inputs": [
+              "grid",
+              "n2",
+              "n1"
+            ],
+            "mode": "copy_paint_values_restore",
+            "node_id": "n3",
+            "output_type": "Grid",
+            "static": {}
+          }
+        ],
+        "parameters_bindings": {
+          "background": "Color",
+          "mapping": "ColorMap"
+        },
+        "representation": {
+          "factors": [
+            "F1",
+            "F10",
+            "F5",
+            "F7",
+            "F9"
+          ],
+          "input": "demonstrations+query_grids",
+          "output": "verified_grid_region_or_abstention"
+        },
+        "residual": [
+          "execution",
+          "shape",
+          "dimension",
+          "palette",
+          "cell",
+          "failed_demos"
+        ],
+        "resources": {
+          "accounting": "reserve Pareto WorkVector before candidate execution",
+          "limit": {
+            "binding_candidates": 250000000,
+            "cell_visits": 250000000,
+            "proposed_writes": 250000000,
+            "relation_tests": 250000000
+          }
+        },
+        "verification_arrest": "F10 exact_consensus"
+      },
+      "operator_id": "O5",
+      "output_node": "n3",
+      "support": 3,
+      "topology_id": "T5"
+    },
+    {
+      "categories": {
+        "control": {
+          "policy": "all-demo exact; one observational query region or abstain",
+          "topology": "T6"
+        },
+        "executable_graph": [
+          {
+            "factor_id": "F6",
+            "inputs": [
+              "grid"
+            ],
+            "mode": "full_uniform_partitions",
+            "node_id": "n1",
+            "output_type": "PanelRegions",
+            "static": {}
+          },
+          {
+            "factor_id": "F3",
+            "inputs": [
+              "n1"
+            ],
+            "mode": "equal_panel_shapes",
+            "node_id": "n2",
+            "output_type": "PanelRegions",
+            "static": {}
+          },
+          {
+            "factor_id": "F8",
+            "inputs": [
+              "n2"
+            ],
+            "mode": "first_nonbackground_reading_order",
+            "node_id": "n3",
+            "output_type": "GridRegion",
+            "static": {}
+          },
+          {
+            "factor_id": "F9",
+            "inputs": [
+              "n3"
+            ],
+            "mode": "unique_grid_region",
+            "node_id": "n4",
+            "output_type": "Grid",
+            "static": {}
+          }
+        ],
+        "parameters_bindings": {
+          "background": "Color",
+          "separator_role": "SeparatorRole"
+        },
+        "representation": {
+          "factors": [
+            "F10",
+            "F3",
+            "F6",
+            "F7",
+            "F8",
+            "F9"
+          ],
+          "input": "demonstrations+query_grids",
+          "output": "verified_grid_region_or_abstention"
+        },
+        "residual": [
+          "execution",
+          "shape",
+          "dimension",
+          "palette",
+          "cell",
+          "failed_demos"
+        ],
+        "resources": {
+          "accounting": "reserve Pareto WorkVector before candidate execution",
+          "limit": {
+            "binding_candidates": 250000000,
+            "cell_visits": 250000000,
+            "proposed_writes": 250000000,
+            "relation_tests": 250000000
+          }
+        },
+        "verification_arrest": "F10 exact_consensus"
+      },
+      "operator_id": "O6",
+      "output_node": "n4",
+      "support": 3,
+      "topology_id": "T6"
+    },
+    {
+      "categories": {
+        "control": {
+          "policy": "all-demo exact; one observational query region or abstain",
+          "topology": "T7"
+        },
+        "executable_graph": [
+          {
+            "factor_id": "F6",
+            "inputs": [
+              "grid"
+            ],
+            "mode": "central_uniform_divider",
+            "node_id": "n1",
+            "output_type": "Divider",
+            "static": {}
+          },
+          {
+            "factor_id": "F8",
+            "inputs": [
+              "grid",
+              "n1"
+            ],
+            "mode": "aligned_background_conjunction",
+            "node_id": "n2",
+            "output_type": "Mask",
+            "static": {}
+          },
+          {
+            "factor_id": "F9",
+            "inputs": [
+              "grid",
+              "n1",
+              "n2"
+            ],
+            "mode": "blank_mark_mask",
+            "node_id": "n3",
+            "output_type": "Grid",
+            "static": {}
+          }
+        ],
+        "parameters_bindings": {
+          "background": "Color",
+          "mark": "Color"
+        },
+        "representation": {
+          "factors": [
+            "F10",
+            "F6",
+            "F7",
+            "F8",
+            "F9"
+          ],
+          "input": "demonstrations+query_grids",
+          "output": "verified_grid_region_or_abstention"
+        },
+        "residual": [
+          "execution",
+          "shape",
+          "dimension",
+          "palette",
+          "cell",
+          "failed_demos"
+        ],
+        "resources": {
+          "accounting": "reserve Pareto WorkVector before candidate execution",
+          "limit": {
+            "binding_candidates": 250000000,
+            "cell_visits": 250000000,
+            "proposed_writes": 250000000,
+            "relation_tests": 250000000
+          }
+        },
+        "verification_arrest": "F10 exact_consensus"
+      },
+      "operator_id": "O7",
+      "output_node": "n3",
+      "support": 2,
+      "topology_id": "T7"
+    },
+    {
+      "categories": {
+        "control": {
+          "policy": "all-demo exact; one observational query region or abstain",
+          "topology": "T8"
+        },
+        "executable_graph": [
+          {
+            "factor_id": "F1",
+            "inputs": [
+              "grid"
+            ],
+            "mode": "points_equal_binding",
+            "node_id": "n1",
+            "output_type": "PointSet",
+            "static": {
+              "slot": "first_color"
+            }
+          },
+          {
+            "factor_id": "F1",
+            "inputs": [
+              "grid"
+            ],
+            "mode": "points_equal_binding",
+            "node_id": "n2",
+            "output_type": "PointSet",
+            "static": {
+              "slot": "second_color"
+            }
+          },
+          {
+            "factor_id": "F4",
+            "inputs": [
+              "n1",
+              "n2"
+            ],
+            "mode": "two_singleton_endpoints",
+            "node_id": "n3",
+            "output_type": "PointPair",
+            "static": {}
+          },
+          {
+            "factor_id": "F5",
+            "inputs": [
+              "n3"
+            ],
+            "mode": "orthogonal_l_path",
+            "node_id": "n4",
+            "output_type": "PointSet",
+            "static": {}
+          },
+          {
+            "factor_id": "F9",
+            "inputs": [
+              "grid",
+              "n4"
+            ],
+            "mode": "copy_paint_background_binding",
+            "node_id": "n5",
+            "output_type": "Grid",
+            "static": {
+              "background_slot": "background",
+              "value_slot": "line_color"
+            }
+          }
+        ],
+        "parameters_bindings": {
+          "background": "Color",
+          "corner_mode": "CornerMode",
+          "first_color": "Color",
+          "line_color": "Color",
+          "second_color": "Color"
+        },
+        "representation": {
+          "factors": [
+            "F1",
+            "F10",
+            "F4",
+            "F5",
+            "F7",
+            "F9"
+          ],
+          "input": "demonstrations+query_grids",
+          "output": "verified_grid_region_or_abstention"
+        },
+        "residual": [
+          "execution",
+          "shape",
+          "dimension",
+          "palette",
+          "cell",
+          "failed_demos"
+        ],
+        "resources": {
+          "accounting": "reserve Pareto WorkVector before candidate execution",
+          "limit": {
+            "binding_candidates": 250000000,
+            "cell_visits": 250000000,
+            "proposed_writes": 250000000,
+            "relation_tests": 250000000
+          }
+        },
+        "verification_arrest": "F10 exact_consensus"
+      },
+      "operator_id": "O8",
+      "output_node": "n5",
+      "support": 2,
+      "topology_id": "T8"
+    },
+    {
+      "categories": {
+        "control": {
+          "policy": "all-demo exact; one observational query region or abstain",
+          "topology": "T9"
+        },
+        "executable_graph": [
+          {
+            "factor_id": "F3",
+            "inputs": [
+              "grid"
+            ],
+            "mode": "height_parity",
+            "node_id": "n1",
+            "output_type": "Parity",
+            "static": {}
+          },
+          {
+            "factor_id": "F4",
+            "inputs": [
+              "n1"
+            ],
+            "mode": "parity_conditioned_side",
+            "node_id": "n2",
+            "output_type": "Side",
+            "static": {}
+          },
+          {
+            "factor_id": "F5",
+            "inputs": [
+              "grid",
+              "n2"
+            ],
+            "mode": "top_corner_crop",
+            "node_id": "n3",
+            "output_type": "Grid",
+            "static": {}
+          },
+          {
+            "factor_id": "F9",
+            "inputs": [
+              "n3"
+            ],
+            "mode": "identity_grid",
+            "node_id": "n4",
+            "output_type": "Grid",
+            "static": {}
+          }
+        ],
+        "parameters_bindings": {
+          "crop_height": "PositiveInt",
+          "crop_width": "PositiveInt",
+          "odd_side": "Side"
+        },
+        "representation": {
+          "factors": [
+            "F10",
+            "F3",
+            "F4",
+            "F5",
+            "F7",
+            "F9"
+          ],
+          "input": "demonstrations+query_grids",
+          "output": "verified_grid_region_or_abstention"
+        },
+        "residual": [
+          "execution",
+          "shape",
+          "dimension",
+          "palette",
+          "cell",
+          "failed_demos"
+        ],
+        "resources": {
+          "accounting": "reserve Pareto WorkVector before candidate execution",
+          "limit": {
+            "binding_candidates": 250000000,
+            "cell_visits": 250000000,
+            "proposed_writes": 250000000,
+            "relation_tests": 250000000
+          }
+        },
+        "verification_arrest": "F10 exact_consensus"
+      },
+      "operator_id": "O9",
+      "output_node": "n4",
+      "support": 3,
+      "topology_id": "T9"
+    },
+    {
+      "categories": {
+        "control": {
+          "policy": "all-demo exact; one observational query region or abstain",
+          "topology": "T10"
+        },
+        "executable_graph": [
+          {
+            "factor_id": "F1",
+            "inputs": [
+              "grid"
+            ],
+            "mode": "nonbackground_valued_points",
+            "node_id": "n1",
+            "output_type": "ValuedPointSet",
+            "static": {}
+          },
+          {
+            "factor_id": "F5",
+            "inputs": [
+              "grid",
+              "n1"
+            ],
+            "mode": "translate_points_by_value",
+            "node_id": "n2",
+            "output_type": "ValuedPointSet",
+            "static": {}
+          },
+          {
+            "factor_id": "F9",
+            "inputs": [
+              "grid",
+              "n2"
+            ],
+            "mode": "blank_paint_values",
+            "node_id": "n3",
+            "output_type": "Grid",
+            "static": {}
+          }
+        ],
+        "parameters_bindings": {
+          "background": "Color",
+          "translations": "DisplacementMap"
+        },
+        "representation": {
+          "factors": [
+            "F1",
+            "F10",
+            "F5",
+            "F7",
+            "F9"
+          ],
+          "input": "demonstrations+query_grids",
+          "output": "verified_grid_region_or_abstention"
+        },
+        "residual": [
+          "execution",
+          "shape",
+          "dimension",
+          "palette",
+          "cell",
+          "failed_demos"
+        ],
+        "resources": {
+          "accounting": "reserve Pareto WorkVector before candidate execution",
+          "limit": {
+            "binding_candidates": 250000000,
+            "cell_visits": 250000000,
+            "proposed_writes": 250000000,
+            "relation_tests": 250000000
+          }
+        },
+        "verification_arrest": "F10 exact_consensus"
+      },
+      "operator_id": "O10",
+      "output_node": "n3",
+      "support": 3,
+      "topology_id": "T10"
+    }
+  ],
+  "memory_sha256": "ac9b39022337764e444d71839e9dc0080072118ce26fac415d2bff55415b24d2",
+  "provenance": {
+    "contract_sha256": "48e281c0f89eec3ed1d61f3a9bb9bd595b354ca9cdbd02929b8c6c3458a18cf2",
+    "source_partition": "A-only"
+  }
+}

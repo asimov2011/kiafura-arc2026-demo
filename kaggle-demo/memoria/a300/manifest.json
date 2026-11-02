@@ -1,0 +1,56 @@
+{
+ "family_modules": {
+  "a300_g1": "a1_g1_algebra",
+  "a300_g2": "a1_g2_algebra",
+  "a300_g4": "a1_g4_algebra",
+  "a300_g5": "a1_g5_algebra",
+  "a300_g6": "a1_g6_algebra",
+  "a300_g7": "a1_g7_algebra",
+  "a300_g8": "a1_g8_algebra",
+  "a300_residual": "a300_residual_algebra"
+ },
+ "format": "kiafura-independent-memory-freeze-v1",
+ "freeze_sha256": "239a13dbdb76598d3f330f122f691a7903b2d33ce5b32c1016a6665222563f4c",
+ "imports_previous_cohort_memory": false,
+ "memory_file_sha256": {
+  "ct-2-a300-causal-ssa-memory-v1.json": "f6d11fd9bdb1d45e822af1d5d4c812c8095d8fa4f92e37528b3a5373d5d5ee24",
+  "ct-2-a300-operational-memory-v1.json": "86e5c35a51eeb5316e9613d111eab0319244fafbbbeb7af0259d9dd64810c72d",
+  "ct-2-star-a300-a300-g1-algebra-v1.json": "09e08e142b170a183bbbdb7350fc1b098ef8cd564d9cd3e2facf481c54aea6fc",
+  "ct-2-star-a300-a300-g2-algebra-v1.json": "770b0a7b78852dc110cd82bce808e338d2d1f864e86fbab760a0c2d6f9691900",
+  "ct-2-star-a300-a300-g4-algebra-v1.json": "a181daf1346197c389ade535c80a98eaefbbe1dea105d59a8f0ae0beeb6d04ec",
+  "ct-2-star-a300-a300-g5-algebra-v1.json": "561f373e0a429cdb2836c9b4cba82eb1c8b073c5bba4bc9136c97d4d63650a66",
+  "ct-2-star-a300-a300-g6-algebra-v1.json": "0804c27f6d1d96bc7b8098d0965ef1359badd1954b64283d04ffb2e88c058faa",
+  "ct-2-star-a300-a300-g7-algebra-v1.json": "f83d340770e63fe05e56639c58423639b5707505904947ce11bfab96f2f52656",
+  "ct-2-star-a300-a300-g8-algebra-v1.json": "c70096c05f6192e0555bdb66e0fb90c7c9ccab6b0cc6b3e9dbc86e85eddd181a",
+  "ct-2-star-a300-a300-residual-algebra-v1.json": "4ab1de83e3055433f019e201a656fc89d6a67ebfffe502109bbf789171305f6c"
+ },
+ "memory_files": {
+  "a300_g1": "ct-2-star-a300-a300-g1-algebra-v1.json",
+  "a300_g2": "ct-2-star-a300-a300-g2-algebra-v1.json",
+  "a300_g4": "ct-2-star-a300-a300-g4-algebra-v1.json",
+  "a300_g5": "ct-2-star-a300-a300-g5-algebra-v1.json",
+  "a300_g6": "ct-2-star-a300-a300-g6-algebra-v1.json",
+  "a300_g7": "ct-2-star-a300-a300-g7-algebra-v1.json",
+  "a300_g8": "ct-2-star-a300-a300-g8-algebra-v1.json",
+  "a300_residual": "ct-2-star-a300-a300-residual-algebra-v1.json",
+  "ct2": "ct-2-a300-operational-memory-v1.json",
+  "ssa": "ct-2-a300-causal-ssa-memory-v1.json"
+ },
+ "naming_note": "A300 is used because A3 was already assigned to an older run.",
+ "run": "A300",
+ "runtime_sha256": {
+  "src/kiafura_official/reasoning/a1_g1_algebra.py": "fa9bc21f5cfd7d19e4b8c626d7cbc1c61b18f65ec3ec430bfc7aa0b423440501",
+  "src/kiafura_official/reasoning/a1_g2_algebra.py": "5b1cbb8e74d11da2bbc46022d9dd560c02ae0db52fe7d90c9955633c61544b78",
+  "src/kiafura_official/reasoning/a1_g4_algebra.py": "db7667f2724545ae74a61b9e0708eb1f687e59fc9010f2dbe6222d1cfea1cc84",
+  "src/kiafura_official/reasoning/a1_g5_algebra.py": "e70331c320d62a8be1511adfb15c602dbea2bdc2096a6641cb152c1e5941f1e7",
+  "src/kiafura_official/reasoning/a1_g6_algebra.py": "dd720133adf3b2696edff44233c3d7c8786a45ac36feef7b971702e640b714b7",
+  "src/kiafura_official/reasoning/a1_g7_algebra.py": "eb55cf2c3341e7392355a3f2f3d1715f022b5b7611755217e5a55c23edc4fc8c",
+  "src/kiafura_official/reasoning/a1_g8_algebra.py": "823bd9c8b7d0d7ff91022ecdd96ba91f64b3c54842c9048c129b7e57e36a8fe0",
+  "src/kiafura_official/reasoning/a300_residual_algebra.py": "f51e5a1eb9fa824d87536b7dff2e4facadfa011b13bf8c58b8baf806a5551836",
+  "src/kiafura_official/reasoning/ct2_operational.py": "cc6972db14682f6d87efef6f4f93c88808fc55cfd53039153c1510f82e8af7a1",
+  "src/kiafura_official/reasoning/ct6_causal_ssa.py": "4d69d58c354ea40f54d8a04b55a0e7b572b681bfc2b8f0000ea9a6bdd50e1088",
+  "src/kiafura_official/reasoning/operational_dsd.py": "dbdd31e2a3c73de1ca2863557bd336b6a1bca8cdb0488fcdd53945f57ede653a"
+ },
+ "source_split": "splits/ct-2-independent-a300-v1.json",
+ "source_split_sha256": "e9026faded8a58eda1cc887604ce3b30be6db20df3bd0132e019dd129d884690"
+}

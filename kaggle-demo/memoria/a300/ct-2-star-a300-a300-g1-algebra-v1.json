@@ -1,0 +1,21 @@
+{
+ "format": "kiafura-operational-family-v1",
+ "contract": {
+  "binding_source": "demonstrations",
+  "complete_programs": false,
+  "task_ids": false,
+  "verified_only": true
+ },
+ "graphs": [
+  "diagonal_pair_connect",
+  "dominant_centroid_dihedral",
+  "endpoint_pair_row_fill",
+  "height_rank_recolor",
+  "marker_shared_component_classify",
+  "marker_to_line_attract",
+  "mode_block_tile",
+  "period_extend_vertical_recolor",
+  "periodic_line_fill"
+ ],
+ "memory_sha256": "a3338425f90d51eeb3a6de53a5ecdbab3d82d6c21c1b24044ada1dec2b0888c7"
+}

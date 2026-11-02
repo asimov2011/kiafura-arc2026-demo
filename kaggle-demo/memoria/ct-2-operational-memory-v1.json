@@ -1,0 +1,404 @@
+{
+  "budget": {
+    "work_definition": "one visible grid cell processed by one candidate transformation",
+    "work_per_task": 2000000
+  },
+  "compiler": {
+    "rule": "promote only parameterised tool schemas exact on at least two disjoint A experiences",
+    "source_experience_count": 100
+  },
+  "format": "kiafura-ct2-operational-memory-v1",
+  "guardrails": {
+    "full_programs": 0,
+    "source_callable_names": 0,
+    "target_b_provenance": 0,
+    "task_ids": 0
+  },
+  "memory_sha256": "38d95cb0feb04866354a935df3a82267d523b3bfd25d44e6fd7cb72737686a52",
+  "singletons": [
+    {
+      "admitted": true,
+      "support": 1,
+      "tool_id": "cell_scale"
+    },
+    {
+      "admitted": true,
+      "support": 1,
+      "tool_id": "checkerboard_rows"
+    },
+    {
+      "admitted": true,
+      "support": 1,
+      "tool_id": "color_map"
+    },
+    {
+      "admitted": false,
+      "support": 1,
+      "tool_id": "component_select"
+    },
+    {
+      "admitted": true,
+      "support": 1,
+      "tool_id": "connect_pairs"
+    },
+    {
+      "admitted": true,
+      "support": 1,
+      "tool_id": "fill_corner_rectangles"
+    },
+    {
+      "admitted": true,
+      "support": 1,
+      "tool_id": "fill_holes"
+    },
+    {
+      "admitted": true,
+      "support": 1,
+      "tool_id": "frame_interior"
+    },
+    {
+      "admitted": true,
+      "support": 1,
+      "tool_id": "grid_tile"
+    },
+    {
+      "admitted": true,
+      "support": 1,
+      "tool_id": "header_intersections"
+    },
+    {
+      "admitted": true,
+      "support": 1,
+      "tool_id": "largest_solid_rectangle"
+    },
+    {
+      "admitted": true,
+      "support": 1,
+      "tool_id": "quadrant_unique"
+    },
+    {
+      "admitted": true,
+      "support": 1,
+      "tool_id": "self_kronecker"
+    }
+  ],
+  "tools": [
+    {
+      "a100_false_emissions": 0,
+      "cost": 2,
+      "epistemic_state": "source_valid_singleton_candidate",
+      "expected_effect": "replace cells by rectangular blocks",
+      "input_type": "grid",
+      "invariants": [
+        "cell adjacency modulo scale"
+      ],
+      "output_type": "grid",
+      "parameter_names": [
+        "row_factor",
+        "column_factor"
+      ],
+      "preconditions": [
+        "positive integer factors"
+      ],
+      "source_support": 1,
+      "support_provenance_sha256": "ecf610e61810d7baf86711c33b4ae739b216e9cb6df419b261b7931cc3796037",
+      "tool_id": "cell_scale"
+    },
+    {
+      "a100_false_emissions": 0,
+      "cost": 2,
+      "epistemic_state": "source_valid_singleton_candidate",
+      "expected_effect": "interleave two row colors by parity",
+      "input_type": "grid",
+      "invariants": [
+        "shape",
+        "row color roles"
+      ],
+      "output_type": "grid",
+      "parameter_names": [
+        "reverse_phase"
+      ],
+      "preconditions": [
+        "two source rows exist"
+      ],
+      "source_support": 1,
+      "support_provenance_sha256": "dab2a0e7c3e73f6fb006387df011cd09581191008c865f7cf8aee41e606a879b",
+      "tool_id": "checkerboard_rows"
+    },
+    {
+      "a100_false_emissions": 0,
+      "cost": 2,
+      "epistemic_state": "source_valid_singleton_candidate",
+      "expected_effect": "apply a pointwise color function",
+      "input_type": "grid",
+      "invariants": [
+        "shape",
+        "positions"
+      ],
+      "output_type": "grid",
+      "parameter_names": [
+        "mapping"
+      ],
+      "preconditions": [
+        "functional color correspondence on demonstrations"
+      ],
+      "source_support": 1,
+      "support_provenance_sha256": "7ec9e759f5aa5b681f89b36b7d787c809700d6b0d3d3a41d26568cdfb079dd75",
+      "tool_id": "color_map"
+    },
+    {
+      "a100_false_emissions": 0,
+      "cost": 5,
+      "epistemic_state": "source_valid_singleton_candidate",
+      "expected_effect": "connect aligned equal-color endpoint pairs",
+      "input_type": "grid",
+      "invariants": [
+        "endpoints",
+        "outer grid shape"
+      ],
+      "output_type": "grid",
+      "parameter_names": [
+        "line_color",
+        "diagonal"
+      ],
+      "preconditions": [
+        "two equal-color endpoints are aligned"
+      ],
+      "source_support": 1,
+      "support_provenance_sha256": "192be8d0a50cd2f05a0292b0340f934098b9651eb2a8a3b3c29656f31f21db0f",
+      "tool_id": "connect_pairs"
+    },
+    {
+      "a100_false_emissions": 0,
+      "cost": 2,
+      "epistemic_state": "cross_episode_candidate",
+      "expected_effect": "project selected material to its bounding box",
+      "input_type": "grid",
+      "invariants": [
+        "selected cells"
+      ],
+      "output_type": "grid",
+      "parameter_names": [
+        "selector"
+      ],
+      "preconditions": [
+        "selected foreground exists"
+      ],
+      "source_support": 2,
+      "support_provenance_sha256": "14039b7530fd90b543eba36e3481fa1bb916b7169f481515197a7cf747217be4",
+      "tool_id": "crop_bbox"
+    },
+    {
+      "a100_false_emissions": 0,
+      "cost": 5,
+      "epistemic_state": "source_valid_singleton_candidate",
+      "expected_effect": "fill the strict interiors of marker rectangles",
+      "input_type": "grid",
+      "invariants": [
+        "markers",
+        "outer shape"
+      ],
+      "output_type": "grid",
+      "parameter_names": [
+        "marker",
+        "fill"
+      ],
+      "preconditions": [
+        "four equal markers define rectangle corners"
+      ],
+      "source_support": 1,
+      "support_provenance_sha256": "0f2d5910c7836da39b01347ef5b24afc6cb7b91f228804e3237990e1ef306681",
+      "tool_id": "fill_corner_rectangles"
+    },
+    {
+      "a100_false_emissions": 0,
+      "cost": 4,
+      "epistemic_state": "source_valid_singleton_candidate",
+      "expected_effect": "color background regions not connected to the border",
+      "input_type": "grid",
+      "invariants": [
+        "non-background cells"
+      ],
+      "output_type": "grid",
+      "parameter_names": [
+        "color"
+      ],
+      "preconditions": [
+        "background topology is observable"
+      ],
+      "source_support": 1,
+      "support_provenance_sha256": "706f9a64ef6d93c1903fde6bf42794c1c21e69d397f87f52e7802a366e03ce98",
+      "tool_id": "fill_holes"
+    },
+    {
+      "a100_false_emissions": 0,
+      "cost": 4,
+      "epistemic_state": "source_valid_singleton_candidate",
+      "expected_effect": "extract the interior state of the largest frame",
+      "input_type": "grid",
+      "invariants": [
+        "interior cells"
+      ],
+      "output_type": "grid",
+      "parameter_names": [],
+      "preconditions": [
+        "complete monochrome rectangular frame exists"
+      ],
+      "source_support": 1,
+      "support_provenance_sha256": "7e2d388b82f3a387ffc9c876ea56054a4bfd68e07c7fa8247a9f215f15a8fccd",
+      "tool_id": "frame_interior"
+    },
+    {
+      "a100_false_emissions": 0,
+      "cost": 3,
+      "epistemic_state": "source_valid_singleton_candidate",
+      "expected_effect": "tile a grid with optional alternating reflections",
+      "input_type": "grid",
+      "invariants": [
+        "source cells"
+      ],
+      "output_type": "grid",
+      "parameter_names": [
+        "row_factor",
+        "column_factor",
+        "alternating_rows",
+        "alternating_columns"
+      ],
+      "preconditions": [
+        "positive integer factors"
+      ],
+      "source_support": 1,
+      "support_provenance_sha256": "5bc2dd396ebed012d6ebba9c7e439c7cca7c4dc6b5ab3e127e2d17a472c4fb89",
+      "tool_id": "grid_tile"
+    },
+    {
+      "a100_false_emissions": 0,
+      "cost": 4,
+      "epistemic_state": "source_valid_singleton_candidate",
+      "expected_effect": "render intersections of row and column headers",
+      "input_type": "grid",
+      "invariants": [
+        "headers",
+        "outer shape"
+      ],
+      "output_type": "grid",
+      "parameter_names": [
+        "marker",
+        "fill"
+      ],
+      "preconditions": [
+        "top and right headers contain markers"
+      ],
+      "source_support": 1,
+      "support_provenance_sha256": "bc96ab295942e3138e9236117079ba7fde2321db75b91c4edd19fefeaf3cfb08",
+      "tool_id": "header_intersections"
+    },
+    {
+      "a100_false_emissions": 0,
+      "cost": 5,
+      "epistemic_state": "source_valid_singleton_candidate",
+      "expected_effect": "retain the largest solid rectangle",
+      "input_type": "grid",
+      "invariants": [
+        "selected rectangle",
+        "outer shape"
+      ],
+      "output_type": "grid",
+      "parameter_names": [],
+      "preconditions": [
+        "solid monochrome rectangle exists"
+      ],
+      "source_support": 1,
+      "support_provenance_sha256": "0a2aee589c10ad0c6c7bf2010d44ae9beaf22b1febbeac43a5a24ab212741a34",
+      "tool_id": "largest_solid_rectangle"
+    },
+    {
+      "a100_false_emissions": 0,
+      "cost": 3,
+      "epistemic_state": "cross_episode_candidate",
+      "expected_effect": "compose reflected copies around a shared boundary",
+      "input_type": "grid",
+      "invariants": [
+        "source cells"
+      ],
+      "output_type": "grid",
+      "parameter_names": [
+        "mode"
+      ],
+      "preconditions": [
+        "rectangular grid"
+      ],
+      "source_support": 2,
+      "support_provenance_sha256": "5c0ccf117859fd412c3e890f63b01cf2fbaada832088009ffbfc72818fd04ccf",
+      "tool_id": "mirror_mosaic"
+    },
+    {
+      "a100_false_emissions": 0,
+      "cost": 5,
+      "epistemic_state": "cross_episode_candidate",
+      "expected_effect": "select the locally dominant signal and suppress distractors",
+      "input_type": "grid",
+      "invariants": [
+        "selected panel geometry"
+      ],
+      "output_type": "grid",
+      "parameter_names": [],
+      "preconditions": [
+        "regular panels separated by full lines"
+      ],
+      "source_support": 2,
+      "support_provenance_sha256": "8dfcfbab538f561e200f9c51b5cfe1fbf94670bfc57f2da38497fe9569c73928",
+      "tool_id": "partition_dominant"
+    },
+    {
+      "a100_false_emissions": 0,
+      "cost": 3,
+      "epistemic_state": "source_valid_singleton_candidate",
+      "expected_effect": "project the unique quadrant",
+      "input_type": "grid",
+      "invariants": [
+        "selected quadrant"
+      ],
+      "output_type": "grid",
+      "parameter_names": [],
+      "preconditions": [
+        "four equal quadrants and exactly one unique quadrant"
+      ],
+      "source_support": 1,
+      "support_provenance_sha256": "bdaa5757a45d99d8effe40bc48e6160aa8d79540f2993995b0ca03429d5b0618",
+      "tool_id": "quadrant_unique"
+    },
+    {
+      "a100_false_emissions": 0,
+      "cost": 5,
+      "epistemic_state": "source_valid_singleton_candidate",
+      "expected_effect": "render the occupancy Kronecker product",
+      "input_type": "grid",
+      "invariants": [
+        "palette roles"
+      ],
+      "output_type": "grid",
+      "parameter_names": [
+        "invert"
+      ],
+      "preconditions": [
+        "binary occupancy is observable"
+      ],
+      "source_support": 1,
+      "support_provenance_sha256": "0129e5e42d5110d36bd20c6ebb6a39b062ca34b83b902c32d6a9c7e2a4b41762",
+      "tool_id": "self_kronecker"
+    }
+  ],
+  "tools_rejected_on_a": [
+    {
+      "exact": 1,
+      "false_emissions": 1,
+      "tool_id": "component_select"
+    },
+    {
+      "exact": 0,
+      "false_emissions": 1,
+      "tool_id": "panel_boolean"
+    }
+  ]
+}

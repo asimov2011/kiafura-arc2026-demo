@@ -1,0 +1,47 @@
+{
+ "contract": {
+  "binding_source": "demonstrations",
+  "complete_programs": false,
+  "task_ids": false,
+  "verified_only": true
+ },
+ "format": "kiafura-ct2-star-a2-paint-recolor-algebra-v1",
+ "graphs": [
+  "alternating_row_fill",
+  "anchor_shape_flood",
+  "band_span_closure",
+  "blob_defect_rays",
+  "block_distinct_extend_down",
+  "column_bottom_half_mark",
+  "component_size_recolor",
+  "core_blade_reflection_stamp",
+  "dash_bar_middle",
+  "edge_beam_marker_step",
+  "empty_window_fill",
+  "fill_inbox_components",
+  "fill_outbox_all",
+  "funnel_drip_streams",
+  "glyph_marker_dihedral_stamp",
+  "hole_cluster_glyph_stamp",
+  "hole_size_recolor",
+  "marker_cluster_bbox_fill",
+  "maximal_rect_interior_fill",
+  "maximal_zero_rect_paint",
+  "modulo_recolor",
+  "mover_rise_up",
+  "open_line_seam_fill",
+  "panel_sparse_map_fill",
+  "rays_from_singletons",
+  "slot_row_col_closure",
+  "template_cap_stamp",
+  "triple_completion_pairs",
+  "uniform_rows_canvas"
+ ],
+ "memory_sha256": "98ea61db38ee56309499c54e31c2e17dbca482a2c7f9c0a224d7e2bdc81d1f21",
+ "operators": [
+  "rays",
+  "classify_size",
+  "modulo_field",
+  "fill_region"
+ ]
+}

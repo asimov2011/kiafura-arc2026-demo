@@ -1,0 +1,17 @@
+{
+ "contract": {
+  "binding_source": "demonstrations",
+  "complete_programs": false,
+  "task_ids": false,
+  "verified_only": true
+ },
+ "format": "kiafura-ct2-star-a2-connections-algebra-v1",
+ "graphs": [
+  "cross_center_ring"
+ ],
+ "memory_sha256": "792d1f82ea7ecc4d4cf7bdf55e7e0d89578854c894d0ead35d342f9fd4ad53a8",
+ "operators": [
+  "cross_detection",
+  "ring_paint"
+ ]
+}

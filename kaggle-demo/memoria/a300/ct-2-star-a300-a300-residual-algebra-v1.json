@@ -1,0 +1,33 @@
+{
+ "format": "kiafura-operational-family-v1",
+ "contract": {
+  "binding_source": "demonstrations",
+  "complete_programs": false,
+  "task_ids": false,
+  "verified_only": true
+ },
+ "graphs": [
+  "axis_bridge_to_markers",
+  "complete_box_and_sparse_frontiers",
+  "corner_oriented_block_pair",
+  "crop_enclosed_panel_and_connect",
+  "decorate_marker_rectangle",
+  "diagonal_scaffold_from_occluders",
+  "expand_cells_toward_frame",
+  "gravitate_with_trailing_bar",
+  "largest_empty_rectangle",
+  "nested_outbox_completion",
+  "orient_reflected_template",
+  "periodic_hole_completion",
+  "relocate_shape_matches",
+  "render_object_count",
+  "repair_occluded_reflection",
+  "repeat_anchor_shape",
+  "repeat_cross_sequences",
+  "repeat_mask_toward_marker",
+  "stamp_panel_templates",
+  "translate_all_objects",
+  "upscale_by_palette_cardinality"
+ ],
+ "memory_sha256": "0c1862d6e4dd416208f438397fcbc14d72971ac00ec0a884a92542b7ed01dece"
+}

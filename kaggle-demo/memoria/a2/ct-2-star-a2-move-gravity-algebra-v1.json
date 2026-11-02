@@ -1,0 +1,29 @@
+{
+ "contract": {
+  "binding_source": "demonstrations",
+  "complete_programs": false,
+  "task_ids": false,
+  "verified_only": true
+ },
+ "format": "kiafura-ct2-star-a2-move-gravity-algebra-v1",
+ "graphs": [
+  "align_edge",
+  "align_to_anchor",
+  "clone_toward_bar",
+  "connect_to_bar",
+  "constant_color_move",
+  "gravitate_contact",
+  "gravitate_step",
+  "marker_rigid_slide_dock",
+  "move_all",
+  "shear_right",
+  "slide_until"
+ ],
+ "memory_sha256": "bf8027daadaf15759ad7849beb6e80a5c59cdbc9ae444eb18869be76f7074398",
+ "operators": [
+  "components",
+  "color_groups",
+  "translation",
+  "paint"
+ ]
+}

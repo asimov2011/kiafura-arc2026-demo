@@ -1,0 +1,181 @@
+{
+  "binding_source": "demonstrations_only",
+  "families": [
+    {
+      "graphs": [
+        "cell_scale",
+        "count_bar_overflow",
+        "count_diagonal",
+        "diagonal_period",
+        "isometry",
+        "modal_canvas",
+        "panel_boolean",
+        "panel_overlay",
+        "panel_select",
+        "pointwise",
+        "rank_color_strip",
+        "reflected_tile",
+        "sample_scale"
+      ],
+      "name": "basic",
+      "operators": [
+        "coordinate_transform",
+        "pointwise_color_binding",
+        "panel_truth_table",
+        "count_render"
+      ]
+    },
+    {
+      "graphs": [
+        "bbox_delta",
+        "centered_color_overlay",
+        "component_recolor",
+        "enclosed_regions",
+        "foreground_quadrant",
+        "frame_from_palette",
+        "frontiers_recolor",
+        "hollow_objects",
+        "nonsquare_interiors",
+        "region_classify",
+        "scaled_mask_crop",
+        "selected_crop",
+        "symmetric_expanded_ring",
+        "unique_shape_recolor"
+      ],
+      "name": "region",
+      "operators": [
+        "connected_components",
+        "bounding_geometry",
+        "topological_selection",
+        "extraction"
+      ]
+    },
+    {
+      "graphs": [
+        "bbox_outward_diagonals",
+        "border_pair_connections",
+        "broken_frame_ray",
+        "color_axes",
+        "color_closure",
+        "component_cross",
+        "corner_labels",
+        "cross_shift_by_count",
+        "diagonal_canvas",
+        "directional_wedge",
+        "marker_centroid_ray",
+        "orthogonal_connection",
+        "paired_corner_rays",
+        "rare_column_tile"
+      ],
+      "name": "rays",
+      "operators": [
+        "pair_connection",
+        "ray_continuation",
+        "coordinate_field"
+      ]
+    },
+    {
+      "graphs": [
+        "color_contact",
+        "farthest_corner_move",
+        "height_rise",
+        "lower_and_stripe",
+        "mirror_across_bar",
+        "rotational_overlap_complete",
+        "singleton_dock",
+        "sorted_bars",
+        "stemmed_block_contact",
+        "symmetric_anchor_complete"
+      ],
+      "name": "move",
+      "operators": [
+        "translation",
+        "contact",
+        "relational_ranking",
+        "reflection_alignment"
+      ]
+    },
+    {
+      "graphs": [
+        "band_hole_extend",
+        "band_majority",
+        "corner_palette_mask",
+        "lattice_count_reduce",
+        "lattice_marker_relocate",
+        "lattice_max_fill",
+        "panel_kronecker",
+        "quadrant_reflect_compress",
+        "reduced_self_mask",
+        "self_mask_tile",
+        "side_band_recolor",
+        "sparse_half_frame"
+      ],
+      "name": "pattern",
+      "operators": [
+        "panel_lattice",
+        "mask_product",
+        "periodicity",
+        "band_reconstruction"
+      ]
+    },
+    {
+      "graphs": [
+        "corner_shape_recolor",
+        "corner_stamp",
+        "horizontal_period_complete",
+        "lattice_template_complete",
+        "local_template_with_axes",
+        "partial_shape_complete",
+        "row_palette_template",
+        "scaled_diagonal_echo",
+        "scaled_marker_template",
+        "spiral_canvas"
+      ],
+      "name": "template",
+      "operators": [
+        "input_template",
+        "alignment",
+        "scale_binding",
+        "shape_completion"
+      ]
+    },
+    {
+      "graphs": [
+        "bounded_corridor",
+        "contact_endpoint_frame",
+        "diagonal_color_fields",
+        "marker_thick_ray",
+        "paired_bar_echo",
+        "palette_scale_diagonals",
+        "seeded_maze_parity"
+      ],
+      "name": "field",
+      "operators": [
+        "marker_binding",
+        "bounded_propagation",
+        "parity",
+        "endpoint_rendering"
+      ]
+    },
+    {
+      "graphs": [
+        "blank_motif_stamp",
+        "cavity_pack",
+        "fragmented_rings",
+        "perimeter_slot_assembly"
+      ],
+      "name": "layout",
+      "operators": [
+        "nested_assembly",
+        "shape_slot_matching",
+        "cavity_placement",
+        "motif_topology"
+      ]
+    }
+  ],
+  "format": "a4-operational-memory-v1",
+  "full_programs": false,
+  "literal_grids": false,
+  "selection": "all-demo exact; one query-output region; fail closed",
+  "task_identifiers": false
+}

@@ -1,0 +1,183 @@
+{
+  "binding_source": "demonstrations_only",
+  "families": [
+    {
+      "graphs": [
+        "clean_downscale",
+        "column_sort",
+        "deduplicate_axes",
+        "half_reflection",
+        "oscillating_rows",
+        "palette_scale",
+        "parity_upscale",
+        "recolor",
+        "rigid",
+        "row_seed_expand",
+        "self_mask",
+        "tile_transforms"
+      ],
+      "name": "basic",
+      "operators": [
+        "coordinate_transform",
+        "color_mapping",
+        "scale",
+        "mask_product",
+        "axis_deduplication"
+      ]
+    },
+    {
+      "graphs": [
+        "colorful_quadrant",
+        "framed_repeat",
+        "marker_roll",
+        "missing_rotation",
+        "motif_counter",
+        "panel_logic",
+        "panel_rotation_sequence",
+        "quadrant_overlay",
+        "quadrant_summaries"
+      ],
+      "name": "panel",
+      "operators": [
+        "panel_boolean_logic",
+        "quadrant_selection",
+        "rotational_layout",
+        "marker_alignment"
+      ]
+    },
+    {
+      "graphs": [
+        "bounding_frame",
+        "clip_color_boxes",
+        "component_recolor",
+        "empty_bbox_frame",
+        "extreme_regions",
+        "isolated_erosion",
+        "ordered_regions",
+        "other_than_largest",
+        "paired_recolor",
+        "ranked_squares",
+        "select_crop",
+        "touching_flood"
+      ],
+      "name": "region",
+      "operators": [
+        "connected_components",
+        "topology",
+        "shape_features",
+        "selection",
+        "morphology"
+      ]
+    },
+    {
+      "graphs": [
+        "alternating_diagonal",
+        "component_cross_interior",
+        "diagonal_cross",
+        "divider_rays",
+        "elbow_chain",
+        "expanding_row",
+        "extend_oriented",
+        "hanging_frames",
+        "intersect_frontiers",
+        "marked_cross",
+        "mirror_intersection",
+        "missing_corner_triangle",
+        "neighbor_paint",
+        "outward_singleton_rays",
+        "stepped_frontiers"
+      ],
+      "name": "rays",
+      "operators": [
+        "neighborhood",
+        "frontier",
+        "ray",
+        "connection",
+        "reflection"
+      ]
+    },
+    {
+      "graphs": [
+        "axis_marker_move",
+        "center_constellation",
+        "obstacle_corner_step",
+        "point_reflection",
+        "point_toward_target",
+        "shift_foreground",
+        "singleton_attraction"
+      ],
+      "name": "move",
+      "operators": [
+        "translation",
+        "marker_navigation",
+        "attraction",
+        "point_reflection"
+      ]
+    },
+    {
+      "graphs": [
+        "bridge_pair",
+        "component_lattice",
+        "compressed_color_rank",
+        "histogram_columns",
+        "marker_column_labels",
+        "missing_height_snake",
+        "pack_quadrants",
+        "symbol_panels"
+      ],
+      "name": "layout",
+      "operators": [
+        "feature_classifier",
+        "count_render",
+        "object_lattice",
+        "packing"
+      ]
+    },
+    {
+      "graphs": [
+        "colored_container_fill",
+        "exemplar_copy",
+        "framed_shape_recolor",
+        "keyed_completion",
+        "keyed_scale_insert",
+        "keyed_socket_insert",
+        "reflected_patch",
+        "simple_panel_enlarge"
+      ],
+      "name": "template",
+      "operators": [
+        "input_exemplar",
+        "key_matching",
+        "dihedral_alignment",
+        "scale",
+        "completion"
+      ]
+    },
+    {
+      "graphs": [
+        "blank_corridor_interior",
+        "bracket_ejection",
+        "concentric_repair",
+        "corner_block_extension",
+        "opening_fan",
+        "reflected_beam",
+        "shifted_periodic_field",
+        "sparse_square_continuation",
+        "symmetry_repair"
+      ],
+      "name": "pattern",
+      "operators": [
+        "periodic_field",
+        "symmetry_repair",
+        "connected_rectangle_closure",
+        "erosion",
+        "spatial_propagation"
+      ]
+    }
+  ],
+  "format": "a5-operational-memory-v1",
+  "full_programs": false,
+  "literal_grids": false,
+  "selection": "all-demo exact; one query-output region; fail closed",
+  "task_identifiers": false
+}

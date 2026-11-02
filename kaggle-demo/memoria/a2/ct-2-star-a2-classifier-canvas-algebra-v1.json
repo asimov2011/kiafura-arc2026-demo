@@ -1,0 +1,21 @@
+{
+ "contract": {
+  "binding_source": "demonstrations",
+  "complete_programs": false,
+  "task_ids": false,
+  "verified_only": true
+ },
+ "format": "kiafura-ct2-star-a2-classifier-canvas-algebra-v1",
+ "graphs": [
+  "largest_area_canvas",
+  "shape_class_canvas",
+  "smallest_neighbor_canvas",
+  "symmetry_canvas"
+ ],
+ "memory_sha256": "46f1047b053e7c04c26adcc532662dfac1fda8c87d72a17328ac20c3f17d5be6",
+ "operators": [
+  "measure",
+  "classify",
+  "render_canvas"
+ ]
+}

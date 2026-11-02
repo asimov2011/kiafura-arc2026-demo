@@ -1,0 +1,183 @@
+{
+ "format": "kiafura-ct2-operational-memory-v1",
+ "budget": {
+  "work_per_task": 2000000
+ },
+ "compiler": {
+  "rule": "A300 source exact>=1 and false=0/100",
+  "source_experience_count": 100
+ },
+ "guardrails": {
+  "task_ids": 0,
+  "full_programs": 0,
+  "target_provenance": 0
+ },
+ "tools": [
+  {
+   "tool_id": "dihedral",
+   "input_type": "grid",
+   "output_type": "grid",
+   "parameter_names": [
+    "mode"
+   ],
+   "preconditions": [
+    "rectangular grid"
+   ],
+   "expected_effect": "apply one D4 isometry",
+   "invariants": [
+    "cell multiset"
+   ],
+   "cost": 1,
+   "source_support": [
+    "6150a2bd"
+   ]
+  },
+  {
+   "tool_id": "crop_bbox",
+   "input_type": "grid",
+   "output_type": "grid",
+   "parameter_names": [
+    "selector"
+   ],
+   "preconditions": [
+    "selected foreground exists"
+   ],
+   "expected_effect": "project selected material to its bounding box",
+   "invariants": [
+    "selected cells"
+   ],
+   "cost": 2,
+   "source_support": [
+    "1f85a75f",
+    "23b5c85d",
+    "c909285e"
+   ]
+  },
+  {
+   "tool_id": "grid_tile",
+   "input_type": "grid",
+   "output_type": "grid",
+   "parameter_names": [
+    "row_factor",
+    "column_factor",
+    "alternating_rows",
+    "alternating_columns"
+   ],
+   "preconditions": [
+    "positive integer factors"
+   ],
+   "expected_effect": "tile a grid with optional alternating reflections",
+   "invariants": [
+    "source cells"
+   ],
+   "cost": 3,
+   "source_support": [
+    "6d0aefbc",
+    "c9e6f938"
+   ]
+  },
+  {
+   "tool_id": "component_select",
+   "input_type": "grid",
+   "output_type": "grid",
+   "parameter_names": [
+    "connectivity",
+    "rank",
+    "crop"
+   ],
+   "preconditions": [
+    "foreground component exists"
+   ],
+   "expected_effect": "select a component by relational size",
+   "invariants": [
+    "selected component shape and colors"
+   ],
+   "cost": 4,
+   "source_support": [
+    "1f85a75f",
+    "23b5c85d"
+   ]
+  },
+  {
+   "tool_id": "connect_pairs",
+   "input_type": "grid",
+   "output_type": "grid",
+   "parameter_names": [
+    "line_color",
+    "diagonal"
+   ],
+   "preconditions": [
+    "two equal-color endpoints are aligned"
+   ],
+   "expected_effect": "connect aligned equal-color endpoint pairs",
+   "invariants": [
+    "endpoints",
+    "outer grid shape"
+   ],
+   "cost": 5,
+   "source_support": [
+    "ded97339"
+   ]
+  },
+  {
+   "tool_id": "panel_boolean",
+   "input_type": "grid",
+   "output_type": "grid",
+   "parameter_names": [
+    "mode",
+    "mark"
+   ],
+   "preconditions": [
+    "two equal panels separated by a full line"
+   ],
+   "expected_effect": "combine panel occupancy masks",
+   "invariants": [
+    "panel geometry"
+   ],
+   "cost": 4,
+   "source_support": [
+    "99b1bc43"
+   ]
+  },
+  {
+   "tool_id": "mirror_mosaic",
+   "input_type": "grid",
+   "output_type": "grid",
+   "parameter_names": [
+    "mode"
+   ],
+   "preconditions": [
+    "rectangular grid"
+   ],
+   "expected_effect": "compose reflected copies around a shared boundary",
+   "invariants": [
+    "source cells"
+   ],
+   "cost": 3,
+   "source_support": [
+    "6d0aefbc",
+    "c9e6f938"
+   ]
+  },
+  {
+   "tool_id": "self_kronecker",
+   "input_type": "grid",
+   "output_type": "grid",
+   "parameter_names": [
+    "invert"
+   ],
+   "preconditions": [
+    "binary occupancy is observable"
+   ],
+   "expected_effect": "render the occupancy Kronecker product",
+   "invariants": [
+    "palette roles"
+   ],
+   "cost": 5,
+   "source_support": [
+    "007bbfb7"
+   ]
+  }
+ ],
+ "memory_sha256": "11a0a78a0e1e0b109664ddc380b3459840e2b25500311e1d7bba1f1a7f7eedbc"
+}

@@ -1,0 +1,25 @@
+{
+ "contract": {
+  "binding_source": "demonstrations",
+  "complete_programs": false,
+  "task_ids": false,
+  "verified_only": true
+ },
+ "format": "kiafura-ct2-star-a2-frames-canvas-algebra-v1",
+ "graphs": [
+  "backdrop_fill_mostcommon",
+  "column_snake_canvas",
+  "corner_fold_canvas",
+  "frontier_count_canvas",
+  "marker_center_overlay",
+  "marker_frame",
+  "measured_property_canvas"
+ ],
+ "memory_sha256": "cb60262ce4d4e07530802735ec4d3e097e09286bf86ac922690280649878129d",
+ "operators": [
+  "count_frontiers",
+  "measure",
+  "render_canvas",
+  "frame"
+ ]
+}

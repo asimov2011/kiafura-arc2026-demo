@@ -1,0 +1,16 @@
+{
+ "format": "kiafura-ct6-causal-ssa-memory-v2",
+ "budget": {
+  "binding_candidates": 250000000
+ },
+ "anti_copy": {
+  "task_ids": 0,
+  "literal_grids": 0,
+  "complete_programs": 0
+ },
+ "graphs": [],
+ "provenance": {
+  "source_partition": "A300-only"
+ },
+ "memory_sha256": "234ac704db697005e5a6ec097456afcfd72cef907037298cb4b28222652fb2ef"
+}

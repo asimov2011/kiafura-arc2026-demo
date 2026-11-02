@@ -1,0 +1,33 @@
+{
+ "contract": {
+  "binding_source": "demonstrations",
+  "complete_programs": false,
+  "task_ids": false,
+  "verified_only": true
+ },
+ "format": "kiafura-ct2-star-a2-extract-subgrid-algebra-v1",
+ "graphs": [
+  "adjacent_bbox_crop",
+  "band_colors_strip",
+  "bbox_fill_bg",
+  "block_downscale_sample",
+  "center_column_keep",
+  "corner_quad_decode",
+  "count_desc_histogram",
+  "dedup_rows_cols",
+  "largest_recolor_subgrid",
+  "marker_vpad_crop",
+  "panel_hole_class_strip",
+  "row_pattern_infill",
+  "single_component_upscale",
+  "thin_ladder_bbox_crop",
+  "two_color_subgrid_replace"
+ ],
+ "memory_sha256": "7c2ae1928efbfdd491fb7a1d2b8e5f0641fb4c3df37ef13b8129c33e191e080b",
+ "operators": [
+  "select_component",
+  "crop_bbox",
+  "upscale",
+  "recolor"
+ ]
+}

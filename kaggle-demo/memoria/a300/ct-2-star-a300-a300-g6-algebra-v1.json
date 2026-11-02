@@ -1,0 +1,22 @@
+{
+ "format": "kiafura-operational-family-v1",
+ "contract": {
+  "binding_source": "demonstrations",
+  "complete_programs": false,
+  "task_ids": false,
+  "verified_only": true
+ },
+ "graphs": [
+  "center_align_to_frame",
+  "closed_component_recolor",
+  "extreme_run_recolor",
+  "isolated_cell_recolor",
+  "lpath_color_elbow",
+  "max_area_column_crop",
+  "minority_bbox_crop",
+  "rectangle_layer_recolor",
+  "run_rank_recolor",
+  "shift_recolor_object"
+ ],
+ "memory_sha256": "efa5b4dec3ac463c05be20a40303f77f90373cc71a471d8f03dbcd47fead77b9"
+}

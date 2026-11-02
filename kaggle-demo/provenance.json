@@ -1,0 +1,3320 @@
+{
+ "label": "DEMONSTRATION PACKAGING, NOT CERTIFIED EVIDENCE",
+ "purpose": "Kaggle paper-track minimal demonstration: five frozen operational memories + fail-closed emission gates + trace; every run number it produces is demonstration output, never certified evidence or a competition score.",
+ "source_of_truth": {
+  "repo": "asimov2011/kiafura-agosto-26",
+  "branch": "work/issue-44-cumulative-pass2",
+  "commit": "2fa158980e14cd04456e9f98ba0b6042c0627d60",
+  "note": "superset of work/issue-39-a100-a2-pass2 = 8f0a74bfe\u2026; every non-glue file here is a byte-for-byte copy from that commit; the 488-task residual is excluded by membership and was not packaged or run"
+ },
+ "member_memory_sha256": {
+  "A100": "c57ae56391e25f167243885112dc431e44b979469974df725344d799cb618380",
+  "A2": "957961e6306fae8604726915750c06c1ccca85a33d3af994c45672dbaa22b6c8",
+  "A300": "62e3bf0206a9aaa58ff826a43317a91a19e2734b4bcb180729a06c68662c8211",
+  "A4": "ed08cb09bf80b42a8398e3df6f07240982ec30cb371fe2d5e52838ae0ad12300",
+  "A5": "21e08a77eccc545f115fbc9af281142c3ed01c7ecb3755f7aba5333c2d86eaeb",
+  "method": "halfway_b1000.digest() over the packaged memories (same frozen identity function asserted by cumulative_pass2_v1 verification)"
+ },
+ "freeze_sha256": {
+  "A300": "239a13dbdb76598d3f330f122f691a7903b2d33ce5b32c1016a6665222563f4c",
+  "A4": "212075540ce99083ee5ec85f3b3dd32c1738886c44aaa74da8b39a708650a376",
+  "A5": "2a8ee73a697d091c91755d50abb6449ec940891d95e4d7238e4d974921e31c96"
+ },
+ "frozen_identifiers": {
+  "a100_a2_pass2_manifest_self_digest": "a496e134\u20268ebb (manifest c35c2bfc\u2026)",
+  "cumulative_pass2_manifest_self_digest": "29e98f95\u2026b19f",
+  "classes_policy_blob": "cumulative_pass2.py@804daafc\u2026",
+  "attempt_pairs_rule_blob": "a100_a2_pass2.py@01444a63\u2026",
+  "resolve_union_blob": "halfway_b1000.py@e48f8819\u2026"
+ },
+ "boundary": {
+  "task_set": "512 task IDs = 500 compiled sources + 12 historically resolved external exacts",
+  "target_blind": "test[].output is never read by the driver",
+  "contract": "two retained predictions per test input; null slot = named abstention",
+  "no_algorithm_modification": true,
+  "residual_488_firewall": "membership exclusion only; never run"
+ },
+ "files": {
+  "INVENTORY.md": {
+   "sha256": "a1a01af5f4ea24acf04835afbe530a309829b503e141c126da516655283e9cad",
+   "bytes": 7065,
+   "origin": "light glue (this demo)"
+  },
+  "README.md": {
+   "sha256": "fdd607d2ba3eb37ce04fc4d3acf091a813752917032a2033f90f46b9b8c63fee",
+   "bytes": 1392,
+   "origin": "light glue (this demo)"
+  },
+  "data/arc-agi-2-training/007bbfb7.json": {
+   "sha256": "874eaabcd015d8ca1fd5d1a9ba14b9e17f29d39ed583ae200f6adabc2ef40156",
+   "bytes": 1935,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/00d62c1b.json": {
+   "sha256": "568a2cf03b010b467c76f257061a25ad31b402af68aa049e8cfe4f1b669ae90a",
+   "bytes": 7291,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/017c7c7b.json": {
+   "sha256": "29f11661862ea0556201b2ab46f8f67e0c80ce2ea118e7c21183d4964bb282c2",
+   "bytes": 781,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/025d127b.json": {
+   "sha256": "84827b5cb526296e81464ba0959af19defcbe8e93bcb61c892e57332fe824c74",
+   "bytes": 2012,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/045e512c.json": {
+   "sha256": "e1ec386b08fb53a99e97ae456b9a7c12f6c373ae11c971fa66b7af70bd222d4d",
+   "bytes": 11041,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/0520fde7.json": {
+   "sha256": "171afa4e78f15daee103bac8ed0f2a13f8692e08502263004346a04ef0337ece",
+   "bytes": 529,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/05269061.json": {
+   "sha256": "152292218d3c7877df65c34682f76d24e21e89a976e115be670eaab08abefac6",
+   "bytes": 1409,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/05f2a901.json": {
+   "sha256": "19c2868d3240830ef385e195192a6f08edff75cf5d461cb155cf3253df4aec35",
+   "bytes": 2917,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/06df4c85.json": {
+   "sha256": "d6894f250c74cf8417d9f5338b9625f9883131339a266d4f657d9f5c2579088c",
+   "bytes": 13293,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/08ed6ac7.json": {
+   "sha256": "161353a1311a4e867c9881d69488432b5e07f4730b889654ac6121584e48934d",
+   "bytes": 1662,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/09629e4f.json": {
+   "sha256": "26cd8bd419aedfc290367f278d669aebd13aca158f417e77ddfd13e83cbdd45a",
+   "bytes": 3996,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/0962bcdd.json": {
+   "sha256": "74bdc5f53581e94ceb116ae89121c71a6792adb37cd0987e02bfa895475a2070",
+   "bytes": 2832,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/0a938d79.json": {
+   "sha256": "1fa096951b0798d4ca71c2dd73044906acf3fae5692d48e26f09a0028306ed8b",
+   "bytes": 7030,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/0b148d64.json": {
+   "sha256": "54bfa1bea9346013e09badfeef0ae8c3ca402138ee0968860da108d18d0c5553",
+   "bytes": 5173,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/0b17323b.json": {
+   "sha256": "37fa163af5327eccc4633d0cd9a99311102b852f5c2a5a8815a0dc93e970fe1f",
+   "bytes": 4326,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/0c786b71.json": {
+   "sha256": "beeb1e24f976e18889899569fec9cdb4fda4b9a4ca9b551c91cad653262a5de1",
+   "bytes": 913,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/0c9aba6e.json": {
+   "sha256": "4096113b436930a34a96531501b5b2e984a7ff6326efca2eea1ff6da746eb5b1",
+   "bytes": 1476,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/0ca9ddb6.json": {
+   "sha256": "d39640a8b59dcb067e000f61c995d01f85276e988a37bd108ef83b4ac0e087ea",
+   "bytes": 2209,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/0d3d703e.json": {
+   "sha256": "16bc1695ae651124ea07b7c1d08248a02500391ed1a2a6bd059be8ab6851e0c8",
+   "bytes": 476,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/0d87d2a6.json": {
+   "sha256": "1c1bdf4aa2547e01adde468bc65c3aa7c2a8b7e75d4e6526c75b490a4900443d",
+   "bytes": 8527,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/0e206a2e.json": {
+   "sha256": "f9f3e2748aa6c1f6e482cba401c0f57f6f5ee385e084f2a25542a235b2b1ad74",
+   "bytes": 7245,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/0e671a1a.json": {
+   "sha256": "9ccd7724a654ea37c54715c1017bfc2cae7e03da256c21507c4e4d9de3745842",
+   "bytes": 5476,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/10fcaaa3.json": {
+   "sha256": "a4be52b1226dfbc0425fed22680901a0b25aeab531318355e241680a87f1deaf",
+   "bytes": 1481,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/11852cab.json": {
+   "sha256": "45a6616789949aa6eacf580ab27cda590c14be1df6cb5045335e7e0117ad21c2",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/1190e5a7.json": {
+   "sha256": "c91b7adaa47c0be52b5acb16d5b9aeeab2c5a4fe2c28583c8e6e2f53fb7c00ba",
+   "bytes": 5157,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/11e1fe23.json": {
+   "sha256": "4b5c522bf06b4776947e7463d4969dbd466f3049a9089ae6e83945bd57397d0a",
+   "bytes": 2752,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/12eac192.json": {
+   "sha256": "fda9a8f6c562b4fdb53465e06222e988ac459062823e20974396d6df7f7e3152",
+   "bytes": 1720,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/137eaa0f.json": {
+   "sha256": "9b5cbb579b0652f58d7834549578520f72b932c40b343ae33645bf87105ae9db",
+   "bytes": 1793,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/140c817e.json": {
+   "sha256": "23b9398ab2023e90b2ee3b3bdad4e53b7b57c11c03f40c99847550c26185cc0c",
+   "bytes": 3711,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/1478ab18.json": {
+   "sha256": "4f628888477fc9c60fe6b36876ccaf78307c3af039a985b516113d6fdc6e0440",
+   "bytes": 1785,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/150deff5.json": {
+   "sha256": "a3467d804cf79e762d15e2cc94e6f7840e75f3964bea81be2f52bea2630c58e1",
+   "bytes": 2287,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/15663ba9.json": {
+   "sha256": "9a52293c676bb679fe8e48764f8a72d4ba532642f67c2f6e2e70dd54a754b618",
+   "bytes": 5215,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/17829a00.json": {
+   "sha256": "ea7bd673e3fc763d8848ffea6ec0b9692f8d2655e2e098b710566fbeef47f5ed",
+   "bytes": 4896,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/178fcbfb.json": {
+   "sha256": "39cc6fbc4e65456097482d3c2823702c02e350c9b010b1a3d86f7feba28fd62a",
+   "bytes": 2703,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/17cae0c1.json": {
+   "sha256": "2083e1fd707686775a9d5cd4a22a2483bef361b768c698b8c6209009ee32e620",
+   "bytes": 1016,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/18286ef8.json": {
+   "sha256": "4a0ffa6b0380ee2d6d98ab9b46298451bc40aa1635b7fb621ff9a1e57bed204c",
+   "bytes": 5101,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/195ba7dc.json": {
+   "sha256": "53b3f5bcef4a86f9116e77eb4c4703683d6a3f6a7d3db52d9cdeb59ce4b9f6ed",
+   "bytes": 1671,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/1990f7a8.json": {
+   "sha256": "e9ec956ec4d142a55eecca0c7131d0e4015f70fec1e7ce2c4537e486af44f0c9",
+   "bytes": 5152,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/19bb5feb.json": {
+   "sha256": "e0744419f3e21f45ffb2aadde18672eeaa207e0a014314759d49771a5787571f",
+   "bytes": 2906,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/1a07d186.json": {
+   "sha256": "0ad1a3e4b81ac395a44566439d422dbff0caf9b37fa48fd31910beae76cac0b2",
+   "bytes": 8105,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/1a6449f1.json": {
+   "sha256": "d9f4d74e8cdad03fafd1622ddb3e461cbd1dd58b27b14f8ec73548df3039adf6",
+   "bytes": 6682,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/1b2d62fb.json": {
+   "sha256": "94b5f85cc6afdbf3685330bf2aff74bfbfc685fece876e60ce3426bdcfb5107d",
+   "bytes": 1191,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/1b60fb0c.json": {
+   "sha256": "8882103ea569f7f71e9086086f7056f0fef57e1943f40793de1dbdb6fb13beba",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/1be83260.json": {
+   "sha256": "a98bed48db520b3ecf8576753f6b03625d8bbf156be2500383f2d3bb0267d693",
+   "bytes": 9470,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/1bfc4729.json": {
+   "sha256": "2b8d71504e55aa8d12f0375aa0374c9f15029cb1a6810983c90c054fbc970fd0",
+   "bytes": 2016,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/1c02dbbe.json": {
+   "sha256": "1e3ca7a5fe390bc6da2ec25edc107d059fd023286f3168bb7b1e24dec46663c2",
+   "bytes": 5761,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/1c56ad9f.json": {
+   "sha256": "2757dd01410c3e65ab72b64ce5189fd18e04cbd4d815a117dbc8f06a2053ac19",
+   "bytes": 6840,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/1c786137.json": {
+   "sha256": "b410428734d70f92f56ee8c06c7f432f52cb4cba249dd29c28bf22873d274406",
+   "bytes": 4767,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/1caeab9d.json": {
+   "sha256": "0e189ea5c3dd979a3e2ae0ac127d2cf3104aa9ac7384010f6817422c01f4e532",
+   "bytes": 2041,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/1cf80156.json": {
+   "sha256": "20b50390cdb9bec24b8ca3c780578a37aa9bbea0bc408fb9a3f1b093ae693bf5",
+   "bytes": 2073,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/1d0a4b61.json": {
+   "sha256": "f8d07c595771ad807002654061d8227cec91b9069ab4dd0a6cfa363d5055f797",
+   "bytes": 15521,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/1d61978c.json": {
+   "sha256": "a5176bcf42dbe8eabbc6951a71d1ebc71a369242d5a836352513ce22da0a3bf3",
+   "bytes": 4896,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/1e0a9b12.json": {
+   "sha256": "6a71dbedc8403bd28fa76bd8b472597a8ecaab3af31151a2a3b72baeadd5e617",
+   "bytes": 813,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/1e32b0e9.json": {
+   "sha256": "76ef9e371249637412b948720c7e38f72f851a0fc2c07b13a964fbd5e6f76142",
+   "bytes": 7329,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/1e81d6f9.json": {
+   "sha256": "3d9b89aabd52f15fcef2ab89c0bacb53839c570637e65eb6ba0e4c82771f01ff",
+   "bytes": 5761,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/1f0c79e5.json": {
+   "sha256": "d8ca4aec87c725d0b2a7b0d9158272039b168bb33df05bb251147d6664829fff",
+   "bytes": 2756,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/1f642eb9.json": {
+   "sha256": "83bbb88ffea603395e1c4fade8f6a66011320a48adb46d8a0651311d955c5d49",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/1f85a75f.json": {
+   "sha256": "122972151cf661daff1dafbcd501b6b5cb3e77efedf2db3709788ec1e4fb7ba0",
+   "bytes": 8520,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/1f876c06.json": {
+   "sha256": "b53a1a25685895400323e813a373f0a66fc9512f7dbbb326d52a93695fca8143",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/1fad071e.json": {
+   "sha256": "9107a8a82223d87413108fb62ab9a727ac28ae5aed1941e86e140f8cbd4eb18d",
+   "bytes": 1233,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/2013d3e2.json": {
+   "sha256": "cbacaf76e768374f6fe1f8e9a1210562618c59179aabdd5b1acbd8f4bdcc5378",
+   "bytes": 1155,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/2072aba6.json": {
+   "sha256": "3c476f8bdd3c6e9e6b60069e32539430c1a04e1e3a08346cef028c2b84ae6b4c",
+   "bytes": 733,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/212895b5.json": {
+   "sha256": "5c5a23c805ab877348be44b970c2bbb0903d280cedf54a20fa5c33c216aefc23",
+   "bytes": 9379,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/21f83797.json": {
+   "sha256": "2bfa5ab178733051f77b0bdd1d637e3d2a44c4ed9c03c95c07e4187568cddc36",
+   "bytes": 3294,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/2204b7a8.json": {
+   "sha256": "4940dce042eafbe2fd649c811d56f3fffdc697a58d2a7c4549608dd4a81d3313",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/22168020.json": {
+   "sha256": "d067b4f83f84120300310199e3a95c65258edcc53d8b0f425288d7ddb71a962e",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/22233c11.json": {
+   "sha256": "a542a1f31fe6b40ef7eee99872237a7b73682d7cbc98098904668927d1ac08ab",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/2281f1f4.json": {
+   "sha256": "a126499345aac6f8d408e858eec59ac6544999a20272bbef83206888300c8c7f",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/228f6490.json": {
+   "sha256": "6fe3a7f0ce85ef9466807905139d63e511f77ff81d56f2c26fa002670972a300",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/22eb0ac0.json": {
+   "sha256": "cf37cc34e7b0aa123c2806eca77a7d9916b50afea4e6e2db71d5149fe1f1af0d",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/230f2e48.json": {
+   "sha256": "3c07eee7c46401059bfa7199aa40de16d8eaddfe9b8b74a656a9e2bccc39c081",
+   "bytes": 3689,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/234bbc79.json": {
+   "sha256": "07187737cd7e110b96e77524b553f5df6bed0e6f2990f6cc8bd14c9100f01d22",
+   "bytes": 1052,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/23581191.json": {
+   "sha256": "1c431cff90b1dc179d943e48532052853f3de74c6ff6c9a3b7629280785d0904",
+   "bytes": 1662,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/239be575.json": {
+   "sha256": "8e39d976e276d95a8da35ff72b72e3f10badcef9c7d2c249b7bd5e6bde62e068",
+   "bytes": 1315,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/23b5c85d.json": {
+   "sha256": "8f0c980825ddf3330e1c856c96003bb4508eeb897a644caa8e4fd87ff475c730",
+   "bytes": 4836,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/25094a63.json": {
+   "sha256": "2c4d046a1e624873982d9bc885b976ad6fc94a980ee6da198e639c72f14f3d97",
+   "bytes": 16656,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/253bf280.json": {
+   "sha256": "8d4fbc1cfcf38e538a729ba8247a91ef9632530c12956c92005c9c7ee9b8b185",
+   "bytes": 5090,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/25d487eb.json": {
+   "sha256": "892dcb975fb19feff40f58f2020cc5c1f76d4851a9b51840c61d4e5068477b8d",
+   "bytes": 4233,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/25d8a9c8.json": {
+   "sha256": "5546728278c97c13553eb7b3aabd884e97761ce4260866f7812f2f26d1c5b631",
+   "bytes": 476,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/25ff71a9.json": {
+   "sha256": "8e7f08f07f2ac0a1c7658854d75ab1bba6cc7d0dfeaa72003afe2fa88cb9eb34",
+   "bytes": 567,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/264363fd.json": {
+   "sha256": "065a1061b504b62f2efef76c0405bc1745db4bd5fa5e86f47ceb8435b9f6ba7d",
+   "bytes": 22201,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/272f95fa.json": {
+   "sha256": "7bc8a7e6c33108bb350883fd2aef0c5f97d38bb76b04dba85cd89d8a7541bfd9",
+   "bytes": 4874,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/27a28665.json": {
+   "sha256": "f3211bd9c69e281ce6d3680b316effffe6d4415226aafabbb2e67973b2c51a5d",
+   "bytes": 651,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/27a77e38.json": {
+   "sha256": "fb6f986224f36d569aa499eebc16ec905ba47430c520905b6df81dbe96288dcc",
+   "bytes": 1201,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/27f8ce4f.json": {
+   "sha256": "06df7fd182c59a99845bca76cc76d03fd8285f915a990b47bdc57dce0402a4d3",
+   "bytes": 1616,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/28bf18c6.json": {
+   "sha256": "416319436941c9e86ac11943f98da923836fbcc533f53995457e8e3d1c247274",
+   "bytes": 1193,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/28e73c20.json": {
+   "sha256": "ce0e07dfcf910adc8ec75bab509131ff75297600a5948b98e90d668d92ee45d4",
+   "bytes": 5959,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/29623171.json": {
+   "sha256": "41f21a8294b4f8f8d09f8fcf5edf25026ef25fa4136511d27aebbc1d17570b5c",
+   "bytes": 3201,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/29c11459.json": {
+   "sha256": "2002cb96d56c1b2bf7cb685a394395bc30fb42ba86aa033ece0c12be2776a7ac",
+   "bytes": 1146,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/2bcee788.json": {
+   "sha256": "eeb30e80f2ea8f84ad0c12ec1c488c1f5fa401e3ba02754592c132a4e8d0ad20",
+   "bytes": 3346,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/2bee17df.json": {
+   "sha256": "103b532c4b3c9e714594c97e4d57ebb13710cdabb074def0dc79fb556b25770e",
+   "bytes": 3817,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/2c608aff.json": {
+   "sha256": "9904d98d111b097b5e8df40a69156a50c8133c2c9559648ef4c3050786bfc3fd",
+   "bytes": 6692,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/2dc579da.json": {
+   "sha256": "ef6229e320e928b384142fadefadaf9b41385acc571b642adf730b78a6934233",
+   "bytes": 1539,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/2dd70a9a.json": {
+   "sha256": "102c263f9a591abe3debd2fd9818b8f39db5288db27a66e0e2cb23f3d8ea2ba9",
+   "bytes": 5717,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/2dee498d.json": {
+   "sha256": "38e27a5c17bf593547182b8914cf044052b158ebe4c5e802d14fb6af11458388",
+   "bytes": 825,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/3194b014.json": {
+   "sha256": "7ce0d5b3b9d05fb51203a798cff9db24cd7c5838558e37d166ca89a7edfbb38a",
+   "bytes": 5213,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/31aa019c.json": {
+   "sha256": "a50f78ddc82a92cd6123efb06493f2bfe2e2d935ee7db43cfacccf3a4b72db19",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/31d5ba1a.json": {
+   "sha256": "ecb308ce307eb55c65eacc17228aa43b6a0b6a9297f33c8eb1ef2ea53edcfe35",
+   "bytes": 1267,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/321b1fc6.json": {
+   "sha256": "18e4c877b0b5af3d5291a03edaf8f0e3fef39384343b0d965d1981623faf1e56",
+   "bytes": 2016,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/32597951.json": {
+   "sha256": "6c7eae16cefe6fd8397d2c512b5cb8825dcce46fb6ea1f8639fb8cc9778dbac5",
+   "bytes": 7329,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/32e9702f.json": {
+   "sha256": "6b35fddb882be42c3a4b89af5fcb6710aeff4fa020b0e58469d17d986b77557f",
+   "bytes": 1565,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/3345333e.json": {
+   "sha256": "19624f86fd81e7c564478eb0875e21f8fe8639d996c7c5c7b0fdd05495f71a95",
+   "bytes": 4896,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/3428a4f5.json": {
+   "sha256": "a4e80f534d56234a4f8ee958b7eda6aea07c3dba679a5382b47612dd8b98e852",
+   "bytes": 2109,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/342ae2ed.json": {
+   "sha256": "6cf7f886f602a98823f260ba6e24423291f7d0c64552df0c7be7341b301db1ff",
+   "bytes": 6521,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/342dd610.json": {
+   "sha256": "2fa3360c5e65cfc820debb3b74dc5bcd812a55e8cb1c9fa690388a6f37c5b09d",
+   "bytes": 4306,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/34b99a2b.json": {
+   "sha256": "d39c3cbe00dc127d49df70e7d4b27dcb0e0dc74221688f475521220c2939bc54",
+   "bytes": 1221,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/3618c87e.json": {
+   "sha256": "5d004b5f77c89dd2c8bda3e684a0e3a69329318e6bfcf5ca69872acdebce1850",
+   "bytes": 801,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/363442ee.json": {
+   "sha256": "6d188e02a757f1d9c9b73248b83ff6c7e79d49ab1848a733ca91ae3037eb710e",
+   "bytes": 3073,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/36d67576.json": {
+   "sha256": "b8f4baa91efb038cb649fa77506467779258e0b3ed1cea09d76fdac6d50b4091",
+   "bytes": 4635,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/36fdfd69.json": {
+   "sha256": "d4b905047a2d6567ed9ab22c4f7100833c0525d2646d8dcff08667d401ae50ae",
+   "bytes": 6749,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/3906de3d.json": {
+   "sha256": "b4c20d433380e00840a75c6976ad0d0fabd80e052ab77b47422d64b1cae5f6dc",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/39a8645d.json": {
+   "sha256": "b307c4d2a9674e91c804a4696e674589df4d51b3df96907cbace5f87764b9f07",
+   "bytes": 2717,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/39e1d7f9.json": {
+   "sha256": "04aa40754bc11d38453ef46777483210bf179da2f25ff139307776fe9838e325",
+   "bytes": 17799,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/3aa6fb7a.json": {
+   "sha256": "8105c8ad8a494f6f2a298afbc17550852abed83c9232824efbe8e145ef26b75a",
+   "bytes": 1062,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/3ac3eb23.json": {
+   "sha256": "6412cc40fe97ed70e80521acbbfc678f06d370a995886a9f29f506efc6be9db2",
+   "bytes": 1212,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/3af2c5a8.json": {
+   "sha256": "28cbe38d3cdf58f3965d29e5baa9eb875372ff8fea0ef2a3a1fcf675d4c3ebc6",
+   "bytes": 913,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/3bd67248.json": {
+   "sha256": "e1b0cf3d3f23482d102d69026d20f2205f4588d0f4c38dba5a2a4a0006524f5e",
+   "bytes": 2559,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/3bdb4ada.json": {
+   "sha256": "bacf51349acceeaec4aa1a69f3941e5a15578aa88af1f274044c8268b0a45548",
+   "bytes": 3924,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/3befdf3e.json": {
+   "sha256": "093b8c0cd145120cd6c8fcec1091bfde2b59796c716e2e3995d63acc7a26c1ac",
+   "bytes": 2953,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/3c9b0459.json": {
+   "sha256": "e4d14b94f439bb7984119c82bc5587067b9b75e7a61cf534fb842111ed1bf968",
+   "bytes": 476,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/3de23699.json": {
+   "sha256": "0bd6619e3815bf36b9eeb42339da98640c8c84aa0475bd5865bbd52a3834ba8b",
+   "bytes": 3417,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/3e980e27.json": {
+   "sha256": "a80982b5c7e38b0f52c309c58f3e340d1c25eb1e1a7f43e00fc557845ca325b9",
+   "bytes": 5476,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/3eda0437.json": {
+   "sha256": "9e30e7ead6729a670944ae531ea169e23b994f61e74ef92ca570389c1ef48461",
+   "bytes": 2530,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/3f7978a0.json": {
+   "sha256": "42739c2affbdda038a15b7f5b44e36a71bb2604956e9daa96faaedd0269b8c12",
+   "bytes": 2164,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/4093f84a.json": {
+   "sha256": "004e4d9de00f334c1d830fa7358da84c4d7bdf5e1ce0ad25ae3fa631a370dc61",
+   "bytes": 5049,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/412b6263.json": {
+   "sha256": "c7a5c17d9e941348bed2c26ba1aa9a9f2f9fef43404c16dda7850a16016c87fa",
+   "bytes": 2632,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/41e4d17e.json": {
+   "sha256": "4e661383e2cb1e4c35ff3044f3debbeb62c1bcf56ac9af85b88d48d2464de661",
+   "bytes": 4326,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/4258a5f9.json": {
+   "sha256": "5e28562d1ce4449b3a656904588d929085f9bac2c05e903a781a076719173071",
+   "bytes": 1662,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/4290ef0e.json": {
+   "sha256": "59c48b30e90c48f2f6a93fc373dfdf5031a9e3869f3c55f52b4aed22787520cd",
+   "bytes": 5039,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/42a50994.json": {
+   "sha256": "f8b286278e4b139c3f047323dfa729ab79b7db9e04f28d05132a43721b21378b",
+   "bytes": 6390,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/4347f46a.json": {
+   "sha256": "35ad237954d64bd54ba7530d9839263fe1a236ac7bfc351faea53cf4da0a8cf7",
+   "bytes": 5131,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/444801d8.json": {
+   "sha256": "9acf1cca3c3f87022d693bb060f5132a258290ea189dfe66b5c290e9aeb1bc9b",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/445eab21.json": {
+   "sha256": "5987546f2386db4d589364c7b84ffb08ec4069b5a6e6c5b50630037ab4590cc1",
+   "bytes": 1465,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/447fd412.json": {
+   "sha256": "609b9286e116984480d64ffdc7f427fce969d274efa34fa01dbdc4f41f191e7b",
+   "bytes": 5523,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/44d8ac46.json": {
+   "sha256": "a5052f16c36367e2c3bef70655a5fbbf804ba41e4c13fb756e7180d1286c33ce",
+   "bytes": 4706,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/44f52bb0.json": {
+   "sha256": "090aa5554d607b2c57633bbd2eac6a6fa56fd35c971215b61afb23124bfcdcbc",
+   "bytes": 525,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/4522001f.json": {
+   "sha256": "ab5491ca04d0563eb282ba306881161eb9f4e3ddf926d0e053fd3bb480e76164",
+   "bytes": 978,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/4612dd53.json": {
+   "sha256": "91510b9a34bc0c96ea19b3ec35483e92c69a31b908908ef6a9e99ef9474a6d89",
+   "bytes": 3893,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/46442a0e.json": {
+   "sha256": "3e51d1d9690fb3a0cbb33f1235cb7494a0f23a1234a73ce8a2c7db7076e45483",
+   "bytes": 652,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/469497ad.json": {
+   "sha256": "70a1a5b04a88dadf6587c003f7b4e42cc9ff1dacbc49b2c92660d1add29b64ed",
+   "bytes": 4651,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/46f33fce.json": {
+   "sha256": "962206e7fa5bc635f0228029c6b39aa1d7de2cc06d9e7c0d7e23b05181583132",
+   "bytes": 6361,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/47c1f68c.json": {
+   "sha256": "f147110d51cd6a9d386dd1cfe2278225f6abdd89e7b661ab7cdec597b30be324",
+   "bytes": 2565,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/484b58aa.json": {
+   "sha256": "cd9fd451fb1d3af0143cbb2078b176896a78383cce59f9dfe5a92ae1d5cda513",
+   "bytes": 20769,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/4852f2fa.json": {
+   "sha256": "db252e3a2b34a2625d65aebd2280d72a44dc592fe2dfc72d43b215c15978f6a2",
+   "bytes": 2578,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/48d8fb45.json": {
+   "sha256": "9037e6d6ccb55a5b5fd5b9db82c26a78c4b7c91a823c3bc4f42003f48c7b94c8",
+   "bytes": 1533,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/48f8583b.json": {
+   "sha256": "1a1fe9973b401fca8a08e15a0dd4c283cd59ae76168b4967eb5da169bb45e885",
+   "bytes": 2254,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/4938f0c2.json": {
+   "sha256": "8b45a5cd1d90a87ddadedc823462e2746ff1c4f7dc8c2f033e5e36821f5382f5",
+   "bytes": 7081,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/496994bd.json": {
+   "sha256": "ecc40bb943911e33cdfc1e668a5bb49b22ad55a662aa37d68ba57e884897dc25",
+   "bytes": 1056,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/49d1d64f.json": {
+   "sha256": "dfa99527e7dffadd4325471e5479d223f0f8dc2fc0048b48b99319d83eac1709",
+   "bytes": 495,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/4be741c5.json": {
+   "sha256": "5d7c72ce0e5d7c89649dbf62867398a9f8504138ef744b61f830e61ba48f74d0",
+   "bytes": 2023,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/4c4377d9.json": {
+   "sha256": "3b489fae334276cede2451ef1157c8f0e8acb8268b08df9ac291f9bb263e0d2f",
+   "bytes": 776,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/4c5c2cf0.json": {
+   "sha256": "20628850a2e3cb7b094cadc2f790eafc916d9f225c0e2c4292748d9877834e44",
+   "bytes": 4907,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/506d28a5.json": {
+   "sha256": "49c65c2c79767423997a1ded90ef489b14f251d3d61a626167fce112aca46e41",
+   "bytes": 1251,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/50846271.json": {
+   "sha256": "379d4e0d6b1ce151d170d88e0fafb7f08700d962f2805e02bd7eead5adb76151",
+   "bytes": 10890,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/508bd3b6.json": {
+   "sha256": "7a4489d12dc9e328caaf69769365ed5738f334e5374f9b2704f804e1c81b0bda",
+   "bytes": 3769,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/50a16a69.json": {
+   "sha256": "c61bd0258d3305510a753dd62b9f2974d6c6009b782445ab3c4ff54b7c88e55d",
+   "bytes": 3779,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/50cb2852.json": {
+   "sha256": "5b88fa42e7a1cb341f6f794cad9057b6e8dbef7792e0095ac9d446ec924fc244",
+   "bytes": 4315,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/5117e062.json": {
+   "sha256": "9837be558fec2dc216666385e10744ed2c124511cec7f58c41b1b999c6729132",
+   "bytes": 2385,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/5168d44c.json": {
+   "sha256": "8ed01fbca374ccbebccfa795774c031b634d113d2f122894098f327762abd8b5",
+   "bytes": 2357,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/539a4f51.json": {
+   "sha256": "bfc1dce874db91e70973c84939b7f0c1c6d01cdf696e1e7fd451248855a0d20e",
+   "bytes": 1741,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/53b68214.json": {
+   "sha256": "9b5c4c4536a9ed07371ff545ab88ca1d4edc4c90b976d56803c5c14faf3f6e2b",
+   "bytes": 2770,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/543a7ed5.json": {
+   "sha256": "e321a8777f61dad5de2b7e4954e14551e6f2307203cf44f250f7fb1c740a6059",
+   "bytes": 4326,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/54d82841.json": {
+   "sha256": "41a6875ef1b2b19690c9aa42fc129b5be14cc7783bf1ac51be7a29026d37f242",
+   "bytes": 1427,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/54d9e175.json": {
+   "sha256": "6330ef1fac7071e36bda9390270483013516077b09d872b8d03b815dab466c57",
+   "bytes": 1756,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/5521c0d9.json": {
+   "sha256": "681080c59bafeb38075725338b08f6082d2c92295c81108022e8ab51cf638ed9",
+   "bytes": 5761,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/5582e5ca.json": {
+   "sha256": "11f3b4b0de9ccd8e5488af732f1b8ea8a25246516becf5c9bf0cc303b6509af9",
+   "bytes": 385,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/5614dbcf.json": {
+   "sha256": "0751d867504f022964f0d4ef909ae9e68c928f499841f6a3e8b7143791fca53e",
+   "bytes": 978,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/56dc2b01.json": {
+   "sha256": "e20fdcdf7e9b626b8d9ab9a8b8c5667d7fa3742a7c282d59bd687e40c701e85b",
+   "bytes": 2125,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/56ff96f3.json": {
+   "sha256": "787d552e3e0def7b34988024068ae2136b43fa62b32c1d3264428e8c01ba8766",
+   "bytes": 2678,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/5751f35e.json": {
+   "sha256": "653f0a8f9fbd27c1965e8124634945606bd4e22c3a6b6eda50ffa94b57c6e454",
+   "bytes": 2288,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/57aa92db.json": {
+   "sha256": "46816c234da9cb705333e03ad2be7c9b11b61fde471ca6713ebbfc5c7b769c7c",
+   "bytes": 10234,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/58e15b12.json": {
+   "sha256": "ecf7ea5538b2c1ee0160e02ccf8cbb982766c9fc91759d811045952e941c50c7",
+   "bytes": 10831,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/59341089.json": {
+   "sha256": "0911d2979644e5186a9d4320bc1e9a8e063828aac533c173ee9dfaf395275fad",
+   "bytes": 881,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/5ad4f10b.json": {
+   "sha256": "bbb2a8fda968159374ae157185048cc16a49bdec0ecfdca70742a08b4cffbb4e",
+   "bytes": 6759,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/5af49b42.json": {
+   "sha256": "6df4f0ee3dc474cc4c063dc3809bd37c6010f1a78f14adfcd6e0c6469433e38c",
+   "bytes": 5369,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/5b6cbef5.json": {
+   "sha256": "d6079695da26370fef1a2de80883050a572efbb411d34cf9614288542b6b05a7",
+   "bytes": 5307,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/5bd6f4ac.json": {
+   "sha256": "d3bd8895989b95204e42a6f1bf6a111edd2aa15229f03dafbfbe160abf0365b0",
+   "bytes": 1616,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/5c0a986e.json": {
+   "sha256": "572f356a7cb192597d1d09f663ac35636dd22bba2c6f81ab21b1cb87dc94883f",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/5c2c9af4.json": {
+   "sha256": "ad8d1d17491232ed0a9b52a9599ff0a9d2b26647f932047e5b793232e4c16bba",
+   "bytes": 14735,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/5d2a5c43.json": {
+   "sha256": "8b6231f35d030bcc746f60623fbab349d44f2a7e73937b44dad2aa938285f825",
+   "bytes": 2002,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/5daaa586.json": {
+   "sha256": "7b63e7c1032c23411c266eebd1476c97342bb82c37b9a33dab04275241460e8b",
+   "bytes": 4819,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/5e6bbc0b.json": {
+   "sha256": "4766f0d7bf7c5f21d5367936a1bd1ae51adaa7037fc29e62d25b2e1249ad9551",
+   "bytes": 1112,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/60b61512.json": {
+   "sha256": "c533dd29113b515a6557cc26254cb516678d2ed33349256df37caf7facf2ec89",
+   "bytes": 1662,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/60c09cac.json": {
+   "sha256": "369cc499afb90f9906d19fd84da50838ae647cb9aeba38b050ef163f496ff1f2",
+   "bytes": 918,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/6150a2bd.json": {
+   "sha256": "173321aaad548482da0aa3e012df8914e7f8ef5d4996dba4475ef96c4d5a5779",
+   "bytes": 294,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/623ea044.json": {
+   "sha256": "578ab7e47a2d67489f1103715615f719ef81e9faf773be85586803d6da44cbdd",
+   "bytes": 5065,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/62c24649.json": {
+   "sha256": "041c409b82db6ee54d5ac6821f369cbf19d01c0cb4fe1450862054156abef52c",
+   "bytes": 733,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/6350f1f4.json": {
+   "sha256": "ca4c51c86201abfeccafaccf93817b1f288bb32477ff84e59b677cf0e257b439",
+   "bytes": 4268,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/63613498.json": {
+   "sha256": "33c0c539be299327a57ee489fda78c51c564dc36e24387d8a6a7549434188ad7",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/642248e4.json": {
+   "sha256": "3bafcad5246d6c69d8aa1f8618168ab9586d3b4825c387cfa0cc324123b8c4ce",
+   "bytes": 4561,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/6430c8c4.json": {
+   "sha256": "4b89512ee0d9c1e78ccbeb9ed6ceea6b4f784ba013d772b68d551e505f310858",
+   "bytes": 1056,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/6455b5f5.json": {
+   "sha256": "88263281cacd7ef13bc4751143ffdd3e04f636ef5fe3f05132267c67540ec7f2",
+   "bytes": 6424,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/662c240a.json": {
+   "sha256": "36134e809bc3fbdd5f7919fc79fbc1d0c77bef4e0eb904f3fa59861bd42133b4",
+   "bytes": 806,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/66ac4c3b.json": {
+   "sha256": "cb20652a8579d00f7aacc15d0f869e4535b79dc0b7f2414bbee6334699b05f1f",
+   "bytes": 9072,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/66f2d22f.json": {
+   "sha256": "a4e5fcb4d6330887d53901a515ed9a40dfe410d38b827d272c635d520a55ffd3",
+   "bytes": 1486,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/67385a82.json": {
+   "sha256": "0838992c4dcb5435ea810c8daf78046b76aa1a397b04f3cd14ce2f1d2bb25e62",
+   "bytes": 854,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/673ef223.json": {
+   "sha256": "a031e9872bc17f211b9035a9da6d697e46024c2466e1b6d82342cea637c239e5",
+   "bytes": 5265,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/6773b310.json": {
+   "sha256": "ac2bae4f0ba836c371d963544d2a41d69e8e0ce0296fdf4af59b7a3236986024",
+   "bytes": 2236,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/67a3c6ac.json": {
+   "sha256": "698adeb36ce064143ce67141790aecefd04df11c99773d4b75ed69a76ea52bff",
+   "bytes": 861,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/67a423a3.json": {
+   "sha256": "24588c7ce596a3d86633f510ffefcdfe31ed7736c983d41d5e144940d447e7a1",
+   "bytes": 1801,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/67e8384a.json": {
+   "sha256": "624db8ab9f25c36ab832cdf0e624f1368fff2eb4dac84bf57dc1b8a05fee52d4",
+   "bytes": 911,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/681b3aeb.json": {
+   "sha256": "d258295d56b86770a350ac8ac25f9381a21ba6b2c25da3e5636515c4a02ebe66",
+   "bytes": 1533,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/6855a6e4.json": {
+   "sha256": "1e20143f13bd2e11cb6b5ac40c4fabe3de8b0568587647cac3a114331bd3c577",
+   "bytes": 5761,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/68b16354.json": {
+   "sha256": "b222494ad94e02f82194fd4d5177b72c2bfc1ae78d9a44f3c896a099ccc036b5",
+   "bytes": 1105,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/68b67ca3.json": {
+   "sha256": "767e0baf6a71a7f288ab5a08f13a4ecc65ac5a43144586dec0c3ccd2eff5edb4",
+   "bytes": 733,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/692cd3b6.json": {
+   "sha256": "1d69630158c8e01dc356146b02b535a800c3ebc2126fdf3d50f4d1d62ee1ac5d",
+   "bytes": 5761,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/694f12f3.json": {
+   "sha256": "38b2969462fa5935d952e871247bd94c33fc66085b0d85408b4a858d3b48b369",
+   "bytes": 2016,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/6a1e5592.json": {
+   "sha256": "99d0b22658e10df80f38ee944df56a74ce2d5b8f3e4c233ce608d682950ee65c",
+   "bytes": 2916,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/6aa20dc0.json": {
+   "sha256": "266d60a7d8343a561a61a1881498828d7a47d0d71c20a1defc0ab237c3142484",
+   "bytes": 10929,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/6b9890af.json": {
+   "sha256": "12c6ac6c32cf562d472357bf4a80069256846ecea615a7921ef92e44100904af",
+   "bytes": 7351,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/6c434453.json": {
+   "sha256": "3888dc7d9b1a70eeae762f1e4c141dcaf2dff3eb25d4e6958741b771d960fd3a",
+   "bytes": 2016,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/6ca952ad.json": {
+   "sha256": "5d2ae83ffb5699c242508a6bda66be67b3769e235b76b7da8ba16f0c8ca3978a",
+   "bytes": 4685,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/6cdd2623.json": {
+   "sha256": "f13477a289fbc0a98e70ca9036fcbe7382ee3777e54310c5e77e77a74219698f",
+   "bytes": 6707,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/6cf79266.json": {
+   "sha256": "e74e5a2d8fe5e6edbcd23720d6f45bbf73cf6490b321e0e586d391c6517136ac",
+   "bytes": 10041,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/6d0160f0.json": {
+   "sha256": "b776adf4bf43c1f10014bb511757b5107ae72ae07f6dc8a2051ef523366852e3",
+   "bytes": 3996,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/6d0aefbc.json": {
+   "sha256": "9f6ab8d2acd06394adc5fb5954299359a6cab90ed7930556ad0820a4ba44f376",
+   "bytes": 611,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/6d1d5c90.json": {
+   "sha256": "9f43f4fd2de36014a452ec1aa8240780fcfe2f714192e004289f291bd4c8c6b0",
+   "bytes": 1153,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/6d58a25d.json": {
+   "sha256": "e930a96816bd269b6e80f14519de6d1a00a1dd3a41d496d81e5c28f7d753476c",
+   "bytes": 10041,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/6d75e8bb.json": {
+   "sha256": "1a7b309319483e34a12da41f4e5da6358b56073bf21311997dd5403e141cf320",
+   "bytes": 2479,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/6e02f1e3.json": {
+   "sha256": "f523185b39faed2790c835f4652a67bee52f9f33926856a99b6bb88772df3398",
+   "bytes": 567,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/6e19193c.json": {
+   "sha256": "6095e061ac6b801a18ed5a13558b37442a61f64e724f1ba7a216cdc2f784861a",
+   "bytes": 2016,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/6e82a1ae.json": {
+   "sha256": "40d0d62c80ce144ba61805b24ce36a36a912a1a80b1a988b9ae1e53469267ee4",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/6ecd11f4.json": {
+   "sha256": "5eb941a048278d50fb6be8e518c97470564bd6f4bb1a03b1cbd81a7764f3197a",
+   "bytes": 7183,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/6f8cd79b.json": {
+   "sha256": "6741956831d9e12b168d9f8c97faa3b0a42f795f6a3ecea4977815fb25a795b3",
+   "bytes": 920,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/6fa7a44f.json": {
+   "sha256": "b97f79c888c726337d3a2194036f411d12e8652d5bf12159ec9081d547cf058b",
+   "bytes": 641,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/72322fa7.json": {
+   "sha256": "05729439b11d32078d85fecb901be054f4574823c67dea4bd2748f1293189620",
+   "bytes": 6771,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/72ca375d.json": {
+   "sha256": "4e3200080e1a34d5e161e9b2faf0032a15f100b579f2ddc930c2d9ba9416316b",
+   "bytes": 1515,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/73182012.json": {
+   "sha256": "188cd42dfcf6a7a6e6ff7899a712cae47973e174ed344340f662dc5293404ecb",
+   "bytes": 2169,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/7447852a.json": {
+   "sha256": "3f981b9f963a2e382913f677278ebd1e74404c800491eeff80d74e6f456c8761",
+   "bytes": 1393,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/7468f01a.json": {
+   "sha256": "ee2e34a8600b03836135438ca747e05c0361364d37eb91bd1290532c2a57b39a",
+   "bytes": 3338,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/746b3537.json": {
+   "sha256": "2fa42394d0d48c4c9534aac1ce000ab97ff804f9d69a34d16126f6a17a757686",
+   "bytes": 612,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/74dd1130.json": {
+   "sha256": "a68b5a64ae300ac95125e51eaa4f0a649fb7de979776d6f73cf468314db4b70e",
+   "bytes": 476,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/75b8110e.json": {
+   "sha256": "8bb4b5c95fc3f3344c41541e5334fa6d66f0f0674be95fcbaed8fd1dad0bf507",
+   "bytes": 1755,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/760b3cac.json": {
+   "sha256": "5ffdf80da2db1dd95c2a4d6d107486cb94736edaf9a9aa2fcadbb1a0ea939fc6",
+   "bytes": 1513,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/776ffc46.json": {
+   "sha256": "6d70d51c30586d239fdfc7b6691777fa04b0be0c9ad10bf9f1f57bb2be51cf9f",
+   "bytes": 12546,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/77fdfe62.json": {
+   "sha256": "12ba28bcada8557f46ec8da804caef6f6a9544d496f112ba9a7354999ba4d4ec",
+   "bytes": 1225,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/780d0b14.json": {
+   "sha256": "1e1f50bc718dc812524ee92052ce56e30790235cf16f6b0a77bbe0eb854a0651",
+   "bytes": 5877,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/7837ac64.json": {
+   "sha256": "39281dd3acf57d91d42ad4618d7a3842197be93648ff6ee28c768cdff60a965d",
+   "bytes": 12536,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/794b24be.json": {
+   "sha256": "188706571067b87b834ea0f9166d8ad4de6f476134f3ee4365af94e77a57d9ce",
+   "bytes": 1113,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/7953d61e.json": {
+   "sha256": "514549f74a148203e4fcff207c55db0e5ce609e0c713738eb560becc54a0f950",
+   "bytes": 1755,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/7b6016b9.json": {
+   "sha256": "b3105276f815c3615084de78242f5ebaeee6f7e7cd3b8373e6fdc49cf09307ed",
+   "bytes": 13283,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/7b7f7511.json": {
+   "sha256": "28480a33bbe9ff487d845a62a7c21f3d5bc2d1de493a5f91e0c19b57b1aa1d60",
+   "bytes": 578,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/7c008303.json": {
+   "sha256": "8e1864d520dbb4a7dfc0b510aa982db240f6c2af3d4f8ca53d954047eb68f6ba",
+   "bytes": 1645,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/7d18a6fb.json": {
+   "sha256": "48450ee0c102678c853500dcf7c1e65e334888c695f60215fbb449cee0049c90",
+   "bytes": 4165,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/7ddcd7ec.json": {
+   "sha256": "ead70c10cfbeb2e1f0205d6407eca49511d228dec928378ab9023b21c76a749c",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/7df24a62.json": {
+   "sha256": "32e85884593185ee77841d2f01688351b7e681b88e5ec742e26fa2eaaa27f620",
+   "bytes": 16476,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/7e0986d6.json": {
+   "sha256": "ced0c2b19c8f09bbc8aa5588cdf35e354137f62e37568e75cf6541c2ccda6afd",
+   "bytes": 3812,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/7f4411dc.json": {
+   "sha256": "04032f0eef4ad6bf0b24a71eddc5ad33e9aca45e79f2793458015e0ff90d0960",
+   "bytes": 3951,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/7fe24cdd.json": {
+   "sha256": "083ce379eab8afc421f0b682670372171945ebdc19483ee5c3f2a28ef0f46ae7",
+   "bytes": 733,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/80af3007.json": {
+   "sha256": "d174b6cb2e4416fb62d29893ec61310ec46c263db3029a97cdc6ff1465061003",
+   "bytes": 4856,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/810b9b61.json": {
+   "sha256": "8154ce5f7ba083014e0fd7f9a7f186dc35316af34c7b4d35529ab52721e83253",
+   "bytes": 4375,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/82819916.json": {
+   "sha256": "b2258d126cc231e56c72481e0e70697ea97f6fb3f2c40129c58526142449e62e",
+   "bytes": 3018,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/83302e8f.json": {
+   "sha256": "48a8da3af2454a6615b218dfc76c875029e2d270ee29efecd721c9952dc58f54",
+   "bytes": 15559,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/833dafe3.json": {
+   "sha256": "f715ec4cca0744355ed8d76059a63e62aaacae392c2ae468afa22c2da2c557cf",
+   "bytes": 1521,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/834ec97d.json": {
+   "sha256": "fd1cd655abd4c51d7b7e4ae09e3ea81a2e3be496d5da93b920cbcf367c4e0248",
+   "bytes": 1791,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/8403a5d5.json": {
+   "sha256": "a29ce4552a348047121476dc0ff7d9f2410c33ac3ea972a59b9ed46b7530e78b",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/846bdb03.json": {
+   "sha256": "3afd53f252ab456a7ba963943281edbb26248cd833894ca40bf486b92bbe73ee",
+   "bytes": 3485,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/84db8fc4.json": {
+   "sha256": "1efa2ef2a689eccc4b56169cbd4a11931dfad3304028c68da899cf37dd707931",
+   "bytes": 3346,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/855e0971.json": {
+   "sha256": "6a0dca5667038e200be66a84f9e402cb39b0f270b58e1da68e169ff7f5d0c1d2",
+   "bytes": 7200,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/85c4e7cd.json": {
+   "sha256": "2c8aee9a22246cf7e76880a918f5a3826e28aeb8410285a9be7859cb97cfe2e8",
+   "bytes": 3586,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/868de0fa.json": {
+   "sha256": "2bf6bd28f6726b69f589300a0df07a6dff0ee45035cced4d70f31797bbc7d0da",
+   "bytes": 8591,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/8731374e.json": {
+   "sha256": "18a392447b97d2fa7e823311c8614984d406b2c8f236118fc35d7f65c411dd9a",
+   "bytes": 5946,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/88a10436.json": {
+   "sha256": "151e9ba31ca65dbda3973b7b70b8d26f5a6cd495f06eb44a6e8e6217d23d15cd",
+   "bytes": 2231,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/88a62173.json": {
+   "sha256": "d3b65b1d794ad05bcc31790f76687ceb7ae7527430ccc122cadd1a4c9f040e49",
+   "bytes": 525,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/890034e9.json": {
+   "sha256": "170e070ce8652fb847fb10aa14e20f85cd6342aee6b58b247c9484f24d4f5f54",
+   "bytes": 11041,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/8a004b2b.json": {
+   "sha256": "67adaf6cb2b915cd917634946e22bfa278d5a2723d703ee1f9365034e6293a89",
+   "bytes": 5660,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/8be77c9e.json": {
+   "sha256": "6c0b04646e9829a07ad6b633d196b22eeea30e7f9c6441522a6dfd8087249a52",
+   "bytes": 517,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/8d5021e8.json": {
+   "sha256": "f551eb84b968e8fb8051b5ae134156744ac0287a3f35e84391086643194c33be",
+   "bytes": 721,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/8d510a79.json": {
+   "sha256": "fc749cd06729a53efc587e4bd0ec21f7dc1540ab2e739e215c878249751fd1ae",
+   "bytes": 2016,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/8dab14c2.json": {
+   "sha256": "15c3d122ce85481cd22187f8b7564a2078b7dfc6385886f18d5ca84782438852",
+   "bytes": 12315,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/8e1813be.json": {
+   "sha256": "d49e8fa5c87f28183cef433b5559bae1e55458df213e5385252b715c71dee341",
+   "bytes": 3298,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/8e5a5113.json": {
+   "sha256": "155fe34371e8f46696c7f9c59275dd1fea105670e9d55a2e14444b4da5d6fb4c",
+   "bytes": 961,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/8eb1be9a.json": {
+   "sha256": "50f8e718510c6c89e4995f5426a985561fa9e45f79e7c7913ee4b884853c14c3",
+   "bytes": 3774,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/8efcae92.json": {
+   "sha256": "765089ddc0fd6707ba4c1ba45eb0723fa6dca95115f0b1f451f398a4c4bc64d6",
+   "bytes": 5995,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/8f2ea7aa.json": {
+   "sha256": "8d6b100dd13d1c484922dca927a9fc714c95927956b667b05e039a26b9e62974",
+   "bytes": 2209,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/90347967.json": {
+   "sha256": "096cba72c0d51a855697c93834dedf4adce0b58df86bb2448005985af43b2cba",
+   "bytes": 1637,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/90c28cc7.json": {
+   "sha256": "9703850e137304e7af4037888480e3fc73c85e13f894e93476814fe054b79b89",
+   "bytes": 5687,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/90f3ed37.json": {
+   "sha256": "42cbf605006d0dcaee4ef4819397a632410101ade7b58e152c4e89ca72755916",
+   "bytes": 3961,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/913fb3ed.json": {
+   "sha256": "502a1a666a71e24b3da8dc07a79d8838c74d5af6ddcd36e83a5d885d23bd3414",
+   "bytes": 4738,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/91413438.json": {
+   "sha256": "c0f08061986cb615e0e37d2bc48ee99a4540f60fa9a3ee04eb1527784f221177",
+   "bytes": 4106,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/91714a58.json": {
+   "sha256": "aa3c3e74f1bc737ff856d3f78631f03efc42ed2b75b5470f51e2d821ecf8982c",
+   "bytes": 6521,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/9172f3a0.json": {
+   "sha256": "e8d03d24410226d4edd2daa5f484eb2a155054aff2ab3ae3a24d35f9af3cc12d",
+   "bytes": 978,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/917bccba.json": {
+   "sha256": "3fec5646ed2f1207f4a06763f5d9f581696fce14b721da12a7430615d436e0f7",
+   "bytes": 3769,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/928ad970.json": {
+   "sha256": "aebcb28a1cd0ea90b66bc360b49ce3d75e785fffcefd5f2a142968852bd97c04",
+   "bytes": 5065,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/9344f635.json": {
+   "sha256": "69419be4fd2977bdeaac62f81d46310d6b2553c3a2ed82d14492e6f78a84681b",
+   "bytes": 2021,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/93b581b8.json": {
+   "sha256": "48f39d9cb695b7009c26ec6b96e12de5cd75e32ecd0dfc63859d7b82b9d86be4",
+   "bytes": 1081,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/941d9a10.json": {
+   "sha256": "94fdcb0db0c34f04d4bcf933c22e155191797bfd083080665c5d980cdcb70274",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/94f9d214.json": {
+   "sha256": "7ae8c5b4084957a141e53741873dea93c37a90e944b8a19aeea5f26810f37ab2",
+   "bytes": 986,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/952a094c.json": {
+   "sha256": "47e96f7ca51d010e7b6c263efd799ca24294b418662f2f595df09528a2522c6f",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/9565186b.json": {
+   "sha256": "b95ab9b2a856750946cd48c9c47cfdb4d0420f04ddb2b92129e747685a04f878",
+   "bytes": 476,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/95990924.json": {
+   "sha256": "c9a55f4988e25bd028f7fca3a33b0f2266cf079d28aafebf29bc206c42521060",
+   "bytes": 4221,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/963e52fc.json": {
+   "sha256": "0879c0ff1af27d7629511fa2d9ad83abe16467fbb86380a4798062c726357ec4",
+   "bytes": 1551,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/9720b24f.json": {
+   "sha256": "0d1d60238bffc3d908f64005f6049110f6dad4687e1bbad4bfd6d385a725378c",
+   "bytes": 4150,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/97999447.json": {
+   "sha256": "4b48e7157e0a7e9782c303b54f01303c85d7e2fe64871b7f5d200106721a738e",
+   "bytes": 2233,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/97a05b5b.json": {
+   "sha256": "dd0a2a3bc31ac40376284bc712755a34034370796b7462b3f0f0ac9403b7b7d8",
+   "bytes": 4944,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/98cf29f8.json": {
+   "sha256": "47074f78bff01fbec521f78d9bbc66157604eedacc17655aa99eeb3b755228fb",
+   "bytes": 6115,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/995c5fa3.json": {
+   "sha256": "c12222368e636d6fd3ff2b1f351bb38c93d0947bdab61836e824f66f2930c6de",
+   "bytes": 1191,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/996ec1f3.json": {
+   "sha256": "17ae74b9c83f421e1a90a6dd4d3ac42765bb8b61e1048d489e402b21c81ec24d",
+   "bytes": 4737,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/99b1bc43.json": {
+   "sha256": "1910e468cdb979595dc890ecefb27d57c62bc838fc601e827514f5c96e5cbb70",
+   "bytes": 1056,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/99fa7670.json": {
+   "sha256": "4a0b01eb0f299829d8187dfb68a0aedf8ec361f00010634cd06acb6f18708ce8",
+   "bytes": 1294,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/9a4bb226.json": {
+   "sha256": "49019c23c718ddc54ec18f46edfa3377f04f5606f8c29f60b1afebc5459bcd9d",
+   "bytes": 3073,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/9aec4887.json": {
+   "sha256": "56913142982b96368a5231d8efe1e936c129080c83135900d1e5c0a816069c24",
+   "bytes": 3562,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/9af7a82c.json": {
+   "sha256": "1fede279e6aaf682ba10551b5c89f6760678fc59a4e7ca7b556037dad8d5ea8a",
+   "bytes": 742,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/9b30e358.json": {
+   "sha256": "491af081fa9936c8a004117d093a22fddb580a709e503ea44aeac10ab7046b0b",
+   "bytes": 1236,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/9bebae7a.json": {
+   "sha256": "c50f3e00833e95705b1d084676e4f2e9fbcab50efec582ad812a9321153535c2",
+   "bytes": 4405,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/9d9215db.json": {
+   "sha256": "a230a6924910549d2d8ba0db77b30dd02ab45887752adf76e6c43388f7ba21a7",
+   "bytes": 9089,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/9dfd6313.json": {
+   "sha256": "a68b807fff1f30dae0f70db1418d294a25bab42b40f53bbfd79be6e5d3de2c44",
+   "bytes": 709,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/9edfc990.json": {
+   "sha256": "0b96d144d9a1bf735f7d463d7500fb4343b131635b9df258fe8a581669c61306",
+   "bytes": 5797,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/9f236235.json": {
+   "sha256": "08b7bc4c7e5ebf61bc587394a4e37b576002110736b55fa7b04a551a38b810b6",
+   "bytes": 4582,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/9f5f939b.json": {
+   "sha256": "ab5e8fb1c48a628aa7206639b2549a6f408b67588a8f68776661917222724a5a",
+   "bytes": 6217,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/a1570a43.json": {
+   "sha256": "345588f2d1d937cb9df7ae78fab0425467326077f5131007084a3579da3508cc",
+   "bytes": 2554,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/a2fd1cf0.json": {
+   "sha256": "c55044a8a57311c2092a0507d383fab064c0c4d6d333bfe82d2f2891ec8d84f4",
+   "bytes": 4643,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/a3325580.json": {
+   "sha256": "7a748be70fab2616953810b1df41d0da60b0788596feb87ff8e08f1cc825226b",
+   "bytes": 2704,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/a3f84088.json": {
+   "sha256": "f247bf46b7bd01918d64540da08bbc9351d3d5dcf7121877096ff81b8735f632",
+   "bytes": 10814,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/a416b8f3.json": {
+   "sha256": "27f60c381be86d3f95428415b50526acd3cdfdffb201d0f1774cadc5cafb9470",
+   "bytes": 698,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/a48eeaf7.json": {
+   "sha256": "67b04efbce470b7f9d4a6c7c623ededbe38e03a910651c238f2965f731dc61f8",
+   "bytes": 2016,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/a5313dff.json": {
+   "sha256": "46d6bc4bc237686bcaa9872022f1f4a6311540d03bedc0fc44af42026dfc7161",
+   "bytes": 2387,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/a5f85a15.json": {
+   "sha256": "40c53ead2fedcf6fb3470a9b2c5dbcf064023a782678ea982346cc5e6f773cf3",
+   "bytes": 1755,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/a61ba2ce.json": {
+   "sha256": "d0ee7b2337f6e57e87a5c4ad239445dedd2324f2dcb6e9eb19ce35744dcfa745",
+   "bytes": 1863,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/a61f2674.json": {
+   "sha256": "1b82e2847a7f2dcefee4e2b7e7b7c7fa126dc0b5ae25c629ca4531074fb4bc5e",
+   "bytes": 1662,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/a64e4611.json": {
+   "sha256": "8061c5abb368e7e10c34f80ef273f15af1a79881395438fdddf8782d05235141",
+   "bytes": 22201,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/a65b410d.json": {
+   "sha256": "fbd4780003a912c2036df8c1846bd25d7e4af88c00aa17a6e77c8bba448c407c",
+   "bytes": 1835,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/a68b268e.json": {
+   "sha256": "f205abc5b0bb5f972b784e1cbe725661a05191a17a7c52bf9c975110983e1558",
+   "bytes": 2415,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/a6953f00.json": {
+   "sha256": "5bb5e89552d9e26ba211f1f4a5c850866ce1bc8c607daa16ef8f39733b524502",
+   "bytes": 567,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/a699fb00.json": {
+   "sha256": "0af0c39090e4f2b4dfcbdb5770f4864ad12053f2d7330c8814c76f876ee8b01a",
+   "bytes": 2211,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/a740d043.json": {
+   "sha256": "0394803ee94fc9059d62ce749e4786631771992ee245ee5f55f2ee5c4dbfb7e5",
+   "bytes": 752,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/a78176bb.json": {
+   "sha256": "134648d50db5891c4a2fd67c5f00196fa5d3ec1aefbcb503bee2229770a54077",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/a79310a0.json": {
+   "sha256": "0638be83431a8dc1eb41baa1e73e87eb9ee9015287d848e32ea2fde63dc7bbd5",
+   "bytes": 697,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/a85d4709.json": {
+   "sha256": "fb2d42f9fde45bf132f66156c0f19428b894e71171ee10eee087b3048638f8e3",
+   "bytes": 476,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/a87f7484.json": {
+   "sha256": "81dbf44568e7f7231ce30bb4a13e39ab9a7c5c626f3a354a898d71dc106050a1",
+   "bytes": 962,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/a8c38be5.json": {
+   "sha256": "9780a9523fcd79e12993eca96cf9518c98208372dabf181942f04ecc8a0f74b5",
+   "bytes": 2951,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/a8d7556c.json": {
+   "sha256": "964ba47da6fe53413dad04349bf20d1e2645014966ffe052867341b6ff74dca4",
+   "bytes": 8185,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/a934301b.json": {
+   "sha256": "5a7bb3906e5101c60aebf62d9c07660cbb12e5f77781a00431703436c85291c5",
+   "bytes": 4795,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/a9f96cdd.json": {
+   "sha256": "a12c950559975bd53d4c4c202f8a1a0a41789f785f52432ae4fac00fe750a247",
+   "bytes": 656,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/aabf363d.json": {
+   "sha256": "00cd1713e050fec40955bfca311f4e4432051bcd4436c9e47f698c08dd52ec9e",
+   "bytes": 1062,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/aaecdb9a.json": {
+   "sha256": "b5988513339d549c2202a3c0babc80168e76f0db594f6fbd75d9194a3184eaff",
+   "bytes": 1673,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/aba27056.json": {
+   "sha256": "6c480c1ba090d2d1816d5f4fd149ada77d0f7f9189f1f6c140511dba9d9b1e45",
+   "bytes": 1845,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/ac0a08a4.json": {
+   "sha256": "5e68feb78f2f5405be84063528e4beab2b66b8b8cbdac211e305d75e8ac8703d",
+   "bytes": 1795,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/ac0c2ac3.json": {
+   "sha256": "d00214f759b659ccb22485cd28794187b49aa6308fa34ab89afe7f77839e06d9",
+   "bytes": 2801,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/ad7e01d0.json": {
+   "sha256": "d0b70e2ede683a8be6861f0538442e2a3d57a51e36589fc02edfd6b6434cc1c7",
+   "bytes": 4456,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/ae3edfdc.json": {
+   "sha256": "f956a90292e0d39f809f369b85bb0b381bf2c7a3635a003f49e219e2374cd26e",
+   "bytes": 5761,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/ae4f1146.json": {
+   "sha256": "a28cd119700b9b32790a2c39807e5d9d0ae1a50790308846352f236fd10f429f",
+   "bytes": 1616,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/aedd82e4.json": {
+   "sha256": "9ca95229db91b68577c948335790e2206deda7aa6fe0b95c717c229b2ddd8ee3",
+   "bytes": 670,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/af902bf9.json": {
+   "sha256": "770cee904b70253c06f77461090570c1ac315ec0e9c693bd0a0435277e0db9a1",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/b0c4d837.json": {
+   "sha256": "687056098eec9d00de78e6da3d7b60ac5fbf0a3b4647c0c683ce2e2854f756a2",
+   "bytes": 1852,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/b190f7f5.json": {
+   "sha256": "e122165c034d63345365d253654c6bde94251194056d0bc63b006ffead49bb23",
+   "bytes": 2579,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/b1948b0a.json": {
+   "sha256": "abe1d138774a1161ea8f785a3d63db04a409973c7242a5dbaa887b66d0f3c670",
+   "bytes": 605,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/b1986d4b.json": {
+   "sha256": "585d52f249f6f5cea22bc49a4832538f4fe958e81b6a1298a7b1416afa7b9ea2",
+   "bytes": 10752,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/b230c067.json": {
+   "sha256": "20a8738f843bdaac77b94a15ebd716e7259ddc10ecb9d7ba0c9871b75a18ae91",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/b27ca6d3.json": {
+   "sha256": "29ac1beedfe71648716f95b6114e33dbe3bde028b092f1ea00ce40e8b9985792",
+   "bytes": 4976,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/b2862040.json": {
+   "sha256": "fbc78f36768ff6d5bff4a4b987c5a9e87240b47a5bcccc7f5ef74d549587bd7a",
+   "bytes": 5420,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/b527c5c6.json": {
+   "sha256": "940f8504000900b2a7569495e2ac8b3d41c64946ec4149d3f6aa6c9b2ca24b75",
+   "bytes": 10706,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/b548a754.json": {
+   "sha256": "4cac9638146560018ce565c6d55102d7d3d253a20d218356212a530dd0a551e5",
+   "bytes": 3715,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/b60334d2.json": {
+   "sha256": "2350348179ac5ab18182e43a53acb89c9db1c6daff9b25d4b8fc64f2130d8b83",
+   "bytes": 1662,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/b6afb2da.json": {
+   "sha256": "56d784fd60c8f0f2175b5f1785c19ba89240923c36c22a718e247f40a04c582e",
+   "bytes": 2016,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/b7249182.json": {
+   "sha256": "28ff48d57a671dbc96739721fd6a9264a2768eaf9da3cf0a6e81502e4a7763b9",
+   "bytes": 4059,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/b775ac94.json": {
+   "sha256": "5f1d077b488b45a1253b5682bbb5a73245f7df84c92876a4466784f85b47a127",
+   "bytes": 12905,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/b782dc8a.json": {
+   "sha256": "df502a501afc8f83f5651a0e8908adb74defac413342abf194d85a7165368981",
+   "bytes": 4278,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/b7955b3c.json": {
+   "sha256": "1b00cbd57878a18d9e864fc61313ef86235db8002bece4a2d45b36b52a9b8a92",
+   "bytes": 9114,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/b8825c91.json": {
+   "sha256": "ccf892a7ba8797ab4c69b241d80dd389cde0b9c7b8c0667a8b3a273873c4d49d",
+   "bytes": 8146,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/b8cdaf2b.json": {
+   "sha256": "2e54eef9a397e8dc8ec65521b5a94c234820b86e70be0596eaad27f8fdcb1ee0",
+   "bytes": 1396,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/b91ae062.json": {
+   "sha256": "dfb1b3e1b6d275cb1830c1d42320358a1ddc45a925504904ff07fa0dac8a2a53",
+   "bytes": 2043,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/b94a9452.json": {
+   "sha256": "bffbc527197fbe6a058243a04879d91d4253fcaeebb2afa735c46d4b03cb4b0e",
+   "bytes": 2393,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/b9b7f026.json": {
+   "sha256": "3c444785c4577df3f08d560f096728284cbd3b3b679ef46e1daee8eb5bce5bf7",
+   "bytes": 3057,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/ba1aa698.json": {
+   "sha256": "27a7ce8e36b9bb144853bb9fbf53672faf1fc6af1461c96aa7153ffd2291fd29",
+   "bytes": 5513,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/ba26e723.json": {
+   "sha256": "bc8863b83048366e315eb6ee5e0435b06b21acad67ab94a299874bd8754aefee",
+   "bytes": 1611,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/ba97ae07.json": {
+   "sha256": "605240d9b9d2d68f94b91c58d40cc5133b71a0837db5ba1b1720cf80ee5ad2a4",
+   "bytes": 2746,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/bb43febb.json": {
+   "sha256": "edab49e2ac00e03e78bf6cd751d6f10023e244360d953860d7a0a784e9e87f4f",
+   "bytes": 2016,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/bbc9ae5d.json": {
+   "sha256": "c0d96293ee670a5f1f50ab51063ba23537d09089c179f588a2fcc0b3cedb778b",
+   "bytes": 999,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/bc1d5164.json": {
+   "sha256": "1f263c62c3ea4c979bf72bb82ec6405a3017a84a2dc57e11c295935cafca3487",
+   "bytes": 1059,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/bc4146bd.json": {
+   "sha256": "160ff808c23cb155fce9f581de07a2a66f36939dd987ca698fceeae610dc291e",
+   "bytes": 1666,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/bd4472b8.json": {
+   "sha256": "654b5b5bcf7106456aa60c4732c113ba19d826db18e2ac544f28a63633222e39",
+   "bytes": 1081,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/bda2d7a6.json": {
+   "sha256": "813b78a29cdcd7b800b07a506f0fb067c51edd8ce7ec8141c76d7b708eeb80ff",
+   "bytes": 1698,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/bdad9b1f.json": {
+   "sha256": "0efeb836fee4ecbc2d166d6214f61ec9c40311e75597697ec21510425c87e790",
+   "bytes": 816,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/be03b35f.json": {
+   "sha256": "f3831d09a836f2dc775a0e9b23977ce8ba4619ac1813d7a00ba360b6780647f4",
+   "bytes": 525,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/be94b721.json": {
+   "sha256": "b06c7f895f7ecf6fa428da9eebf5e37419fd693199d289196afa8750c5c73612",
+   "bytes": 1456,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/beb8660c.json": {
+   "sha256": "4a92d4b450eeaae8a7fa68f910959a6f3832132cee51d838a1049cbbca25c4a6",
+   "bytes": 1415,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/bf89d739.json": {
+   "sha256": "1b3a5534bc7182a86f06703a8ece6a9deb1453f3521050fe4ea4ac31eec8489c",
+   "bytes": 6616,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/c0f76784.json": {
+   "sha256": "1b204b87b7a2e9ba19f2041e8b27fbc6b555752bbe08fa21a998910d47275f61",
+   "bytes": 3769,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/c1d99e64.json": {
+   "sha256": "edee6cac939913e4207c3fa1c862a424a1430debcde367bafc8a3ae3ca5e41a6",
+   "bytes": 8349,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/c3202e5a.json": {
+   "sha256": "e0bd4a1cdbfaf253ee69e3f5191a0573f6c4529d8cc3bd4add13afa2a2661606",
+   "bytes": 7889,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/c3e719e8.json": {
+   "sha256": "a013dcd531c016bc97db528b02831d1aa261f8a472570b2f80615e37c05995e3",
+   "bytes": 1297,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/c444b776.json": {
+   "sha256": "5ba6afe1272700940c183d9c7044b8fa39bf31c5d8c677b65a7a4630c1efed49",
+   "bytes": 6822,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/c48954c1.json": {
+   "sha256": "064360fd8ea33d9aaf120e357cc4f598df1961d6f372f7f2f20224c4c721c031",
+   "bytes": 1297,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/c59eb873.json": {
+   "sha256": "487d24bfaeb43cd8e108571c9fee840ff18188888c62b9fcf9415477b61741c6",
+   "bytes": 1015,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/c6141b15.json": {
+   "sha256": "3f256f9c7f64ad11a136116cfdea89afd3b7282f547013a8c20aed49d7894d95",
+   "bytes": 5691,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/c7d4e6ad.json": {
+   "sha256": "15e75878814e0afed22df0cba041b1edbf2d5c7ccc7bbcce77834a3448d0dff0",
+   "bytes": 2016,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/c8cbb738.json": {
+   "sha256": "5166e8786b679e42b47dbf69d09e4e5f7a947caf75b3955a9193db4b886794e7",
+   "bytes": 2755,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/c8f0f002.json": {
+   "sha256": "da9b0d719edc30be59960f84df9f2ede9c09dc0a5e6851c2c646e3e374db4780",
+   "bytes": 529,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/c909285e.json": {
+   "sha256": "366f8e54c11069a4c70519387e1f15df2a61ced0e3bcb4c04134e95f8881b71e",
+   "bytes": 8764,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/c9e6f938.json": {
+   "sha256": "43b96b6c46b8ca3f0a2f0b4d7cfe7375eb9c271f1d53cab9d9f639de6fe54e15",
+   "bytes": 493,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/c9f8e694.json": {
+   "sha256": "2321d7d58f53df68767b7513c2bf94dc07d739ba400504d6b136130decf0eeba",
+   "bytes": 2832,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/caa06a1f.json": {
+   "sha256": "fefad2bde2d0801f7f1563b8478bfb32e61177edfb5ab7f5aaf62f042850d5af",
+   "bytes": 3563,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/cad67732.json": {
+   "sha256": "b5d5ca81fc5e294b42635b4325146920fb16a3f9816170b1791fee365f278bf3",
+   "bytes": 3670,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/cbded52d.json": {
+   "sha256": "c933ff8a4f071bf163d80be16dbd2ebc2942aa3f6a49651c8bb78bba2f94958c",
+   "bytes": 1785,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/cce03e0d.json": {
+   "sha256": "91e983a9e8815c899dc9fa5ab827a5b7037df0007bcb4166d277da21577f1590",
+   "bytes": 1297,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/cd3c21df.json": {
+   "sha256": "3d0df13629e6bd08f175b1fa868c394936cab6d3503042920d767c90eb8301e7",
+   "bytes": 2110,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/cdecee7f.json": {
+   "sha256": "3494d8b185d41c34575cd618027b9717e7423e2bb523722a5f41d75e61e2178e",
+   "bytes": 1533,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/ce039d91.json": {
+   "sha256": "2f2cea2e36f3b0ecbc1df0f8a55b3ea80b1ce13bb7f3c59684d845e8d02321bf",
+   "bytes": 3346,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/ce22a75a.json": {
+   "sha256": "82fd27a7c4571ff06430fe3d2747982dc2ae658b633b54be581a6c32fbed51ab",
+   "bytes": 1662,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/ce4f8723.json": {
+   "sha256": "f70a5893f74d5aa7a24a8e4ce608e89da5c1de25d11827dcbf2f34c5445db3ef",
+   "bytes": 1056,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/ce602527.json": {
+   "sha256": "6f924485ec7c1add870c49f962c46f28b38e0e11de1c0aa1d177d7dcbabf5efd",
+   "bytes": 5155,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/ce8d95cc.json": {
+   "sha256": "728025ba05aacc3b678ecd7a75d605bf8d9477c2bcd2b667e031c32406233c41",
+   "bytes": 2753,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/ce9e57f2.json": {
+   "sha256": "bc9b5c2dc696d7453573a1bb71542b4b6604449bc0e63d3ec2888ee661f44fff",
+   "bytes": 2151,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/cf98881b.json": {
+   "sha256": "a84be6d175baa9d7f5e9ff259160061309005ddc60faecbedf74e5ce39ad3fef",
+   "bytes": 1563,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/cfb2ce5a.json": {
+   "sha256": "9abc048d9b70ea9cf9ce4a17edac19ba40b16eb1f937773142e91c1bbfe05fec",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d037b0a7.json": {
+   "sha256": "9e39a4acdb3e3bff7dd54bed5f4ab77973f4027d48beb62a9c740d8a7a0b0aee",
+   "bytes": 385,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d06dbe63.json": {
+   "sha256": "8438e3c5f6633a64437f289822bb9a2b8b8ded6b500a1ebb920d869ff45146b1",
+   "bytes": 3294,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d07ae81c.json": {
+   "sha256": "50f308f03c7291edb01deae0df9d33f7bafb4ef040fe11b8e62c4a6a64ba6a9c",
+   "bytes": 6037,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d0f5fe59.json": {
+   "sha256": "5614a7aa480e2b46a6a1d8d5c654b585a38d3f24d6a6d6554109011f5514d02b",
+   "bytes": 2153,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d10ecb37.json": {
+   "sha256": "af66f5834dbd56d35b4e7cf259bc88c41816b15a17bb2970c23e997602fc1896",
+   "bytes": 857,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d13f3404.json": {
+   "sha256": "2947a11084d3a199ac99c235a1a44110ca0cc5c61d9dca6619945172f20e2fbb",
+   "bytes": 733,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d19f7514.json": {
+   "sha256": "58166c8d1762ba69124f3859563655fd653b15cf4d4f0d0ef020f8298d728020",
+   "bytes": 1406,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d22278a0.json": {
+   "sha256": "6f08c27e0a549815434c98cf2e5f638c99adfa415bf4c58e53c496526a200a44",
+   "bytes": 4888,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d23f8c26.json": {
+   "sha256": "7bd00bf394a541b41c60a2f351f939ceb8137d57c0424ef7898e9070f03e2ad8",
+   "bytes": 849,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d2abd087.json": {
+   "sha256": "cf4603b29f0a10e98ede5a30fe0959c1dfa4b0b4720d9d5e1cb6a1a24f300727",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d364b489.json": {
+   "sha256": "f7e41d804f18f9e37abc905dd155815ef202481e9214fc9adb038d7e04062549",
+   "bytes": 2016,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d406998b.json": {
+   "sha256": "f12b70c59f9990ab76afcd5d0034b4e5c06ea31bbad010125dbe12ba2f2bbbdc",
+   "bytes": 1394,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d43fd935.json": {
+   "sha256": "ee63b47441a363d34fe030f0b3fe69c6bd24471af22fa48ce167d0be7b9e363c",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d4469b4b.json": {
+   "sha256": "cb7c33c018781cafc127c7413dd0eea74c54c2489640f0c4d465e86b432b2f52",
+   "bytes": 1308,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d4a91cb9.json": {
+   "sha256": "589ef695f51d7523d5e65168ba8f44ca5019e5c248de99cf7abc972d2f8a5be5",
+   "bytes": 3265,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d4b1c2b1.json": {
+   "sha256": "46b0f9fec811ac831b916e44ef8269e45e2b054d59354a4a8f8a1a299716d753",
+   "bytes": 2333,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d4c90558.json": {
+   "sha256": "a8d35c37540a0fd6bc25f4230772aa74b9d7640914c8a68ac6bc189d69682af4",
+   "bytes": 6155,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d4f3cd78.json": {
+   "sha256": "5ceb91c6aedba75759bb37a5315b5d27cca23faece58d436cc0dd49031faeb22",
+   "bytes": 2016,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d511f180.json": {
+   "sha256": "46123a918f106aa7d6322d3e9cce9ba40f1f9c4da0265b3d3c4c64a2522ff7e0",
+   "bytes": 535,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d56f2372.json": {
+   "sha256": "96ee9d052014cf93e30fd4a4bd3d9444eb493596e976b7bf9d3167987e9ecd9d",
+   "bytes": 5371,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d5d6de2d.json": {
+   "sha256": "c597e41497033bf4a7c2b67925264ac268c90d7efbb737783a7d3ca88b66249b",
+   "bytes": 7326,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d631b094.json": {
+   "sha256": "4014c0cc8786d867c13ac599a69f2b1b57b625496f9d28b4166f79e5a423a545",
+   "bytes": 366,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d6542281.json": {
+   "sha256": "65fc5a738a5132cb9af768ec3ec772337573ee83577bb43394d6ba3017f22ebd",
+   "bytes": 11338,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d687bc17.json": {
+   "sha256": "b08ed5510be44228321e638a06a524edb5690ad834e05520c1fb4f6970b38304",
+   "bytes": 4437,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d6ad076f.json": {
+   "sha256": "a7036f44624968182361a47695eb69268d24e5c5fd147f9fcf5549f16657148a",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d749d46f.json": {
+   "sha256": "fd7d98ac4693cdf14e7b3200f021aa2ea1d5c99c4a232c6d77411db32474842a",
+   "bytes": 3177,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d753a70b.json": {
+   "sha256": "9cb0102dccf85c139ea51c0f751575ecd0ea61fb6c87d0658a07129b9970c894",
+   "bytes": 6521,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d89b689b.json": {
+   "sha256": "8547f878293d43d05d857b41ce840ed8e16e9a63b408e4c71ad35b91719e69de",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d8c310e9.json": {
+   "sha256": "254c41d565317ed35613753309240fc3178989422df3e97bd8c1be2f28c067e0",
+   "bytes": 2001,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d90796e8.json": {
+   "sha256": "a9931606f6043299fc08bbe33c2fb91344fa45539c45175bf6c1373136ed524d",
+   "bytes": 1195,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d9f24cd1.json": {
+   "sha256": "ed67038579ae2a9adedd158f5efb276fa918098798450ef5e77db6fb764fc949",
+   "bytes": 2016,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/d9fac9be.json": {
+   "sha256": "05c69703311b910499e336b9c45f19ebd2d85394d6e4598b3400bf8e18cdad17",
+   "bytes": 1712,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/dae9d2b5.json": {
+   "sha256": "bdd6e434eaad9366eb98f2d8c19f697af8ceb4bbb3368b3af0ab993ec48ff259",
+   "bytes": 847,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/db3e9e38.json": {
+   "sha256": "b4c01a6e6638ffdf7baf048bee57cb54f0cd2b007da6e5ae23b1a2005789d61a",
+   "bytes": 1212,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/db93a21d.json": {
+   "sha256": "a379a7cb8526cb852a1f2215abb02ab3bc7533bdd6940e477fc3c4d75545d581",
+   "bytes": 12676,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/dbc1a6ce.json": {
+   "sha256": "279d26fe3c34dbeb8a8d3101167387cbb987ef28a76ba52b7717c5e2c1ccd70b",
+   "bytes": 5272,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/dc1df850.json": {
+   "sha256": "95bb536d3e9478c53c2b83efca5ee81135d69097d2a2b58090fc8e448e7262a5",
+   "bytes": 1483,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/dc433765.json": {
+   "sha256": "eb5adcc01d924dcf8be052c9cd3aef20331e79624ebf6c11a664bb4db3a1842e",
+   "bytes": 3226,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/dd2401ed.json": {
+   "sha256": "3e7e1bdac9d6e3a1ada1ef8e17e8a9cbee945892acaaebc72e09097c5a3b1edb",
+   "bytes": 3436,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/ddf7fa4f.json": {
+   "sha256": "f470e928a73b1365b6e295d04e97ed1214434d559ef4f43415378c7f8176c7e8",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/de1cd16c.json": {
+   "sha256": "99c453d001621b8f772509c37b976e36d8bb1442bd215f317fbe3d75c5bb5935",
+   "bytes": 4474,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/ded97339.json": {
+   "sha256": "fd14b4ee37bb1539c26a79abed743626b37f5935794ce82cbd0b3332c207906e",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/e048c9ed.json": {
+   "sha256": "66334717654db550c3a67d9cd90c49b0ee812e4ec655430ceb22a6655dd155f6",
+   "bytes": 2434,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/e0fb7511.json": {
+   "sha256": "2447d9c8c618602497c587ead121b55eb72808183d78a30a73a3f6c172d23345",
+   "bytes": 4385,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/e133d23d.json": {
+   "sha256": "9d8ff735e2729f4d6f44ffcdd5da00cad337ac5d41a4cf8b561dc9f361a36685",
+   "bytes": 783,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/e179c5f4.json": {
+   "sha256": "5ecc62b8cafa77fb7a6729e6f16401bc4a32ec3bd56e88c253eaa241e416e501",
+   "bytes": 1121,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/e1baa8a4.json": {
+   "sha256": "16411bc668a55e51401716d4fc48424413443a8b21f97a670ce14df9ba325f9d",
+   "bytes": 3527,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/e21d9049.json": {
+   "sha256": "bc21411ad44200a105325702c8697c1cec7979648153e6a5eaa1c57f961e9156",
+   "bytes": 4736,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/e26a3af2.json": {
+   "sha256": "c5eb90f312b972aee81e2753165000bc4f4f021767f1cf9800eca383797fd172",
+   "bytes": 5373,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/e345f17b.json": {
+   "sha256": "48742d3233c889645a22822000afc9f5eb9e36bf90a9b4ca0d5b21c9ed24a857",
+   "bytes": 1131,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/e3497940.json": {
+   "sha256": "543e40fc267f992d47604aa216fff70c6c098dbbe077ccc26f8ea4f59afc8341",
+   "bytes": 1841,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/e41c6fd3.json": {
+   "sha256": "ab0a08cd13e84902b75adcdd33e34530462783345ed5a797f2f0cf8e7c5540ca",
+   "bytes": 10615,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/e48d4e1a.json": {
+   "sha256": "8abfd868186260438c0d82ee104c52d83953d638f794fac89af2e1fb5d0b3689",
+   "bytes": 3346,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/e4941b18.json": {
+   "sha256": "5bfd2ab0a59024a214480a99adcccb06af0df989693e5406e0322219091590ab",
+   "bytes": 3977,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/e5062a87.json": {
+   "sha256": "68e0707e899488a7a763161e5f05b8893dd2214e3b315a5a5023ff04aa89aeeb",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/e509e548.json": {
+   "sha256": "13ec319905e50404fe4263719ebcaf7fabbd80ab6da39ce7ff2dfbe6093f92ec",
+   "bytes": 5755,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/e50d258f.json": {
+   "sha256": "5145e58e803403bd4a797408dc1895582c0722533878eff47b73a13968a2e1a2",
+   "bytes": 1654,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/e633a9e5.json": {
+   "sha256": "331abef63971688c9f6c4987d73612ea44de9050febb492fd3c78c0494a06857",
+   "bytes": 593,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/e6721834.json": {
+   "sha256": "1f1b8851ff943901d817e763aabbc94d21269f9c5fa91b9a6ad343e7d657c181",
+   "bytes": 5668,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/e681b708.json": {
+   "sha256": "0bee1f08d93c13f195c349216838f3892738c1faacab6e9eb788747bd3ae9d53",
+   "bytes": 14091,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/e73095fd.json": {
+   "sha256": "dc8ef90e63a2b6d630e5e878788e916d2a5f339bc46a3c69cdd40208305af548",
+   "bytes": 6219,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/e7639916.json": {
+   "sha256": "0e32d1c08174fac76e1e70b9f8fa755b078c36a7f0d14ed3c4d27a3fe89bf2e4",
+   "bytes": 4019,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/e76a88a6.json": {
+   "sha256": "a5cd8a40c6069cb2fadb8e1f24ece575256d9cbbb50c7e01c3dbc947883b9d05",
+   "bytes": 2016,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/e8593010.json": {
+   "sha256": "45c0dfd98afa2c4a30cf6024050487126247bc7bd4d6ecc6f7bec57df8ee5123",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/e88171ec.json": {
+   "sha256": "3cfcc30c08268f7ca52c83f23a0c1de674ffd8df147312fd334ab51445345127",
+   "bytes": 8103,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/e8dc4411.json": {
+   "sha256": "e476c34212c004854e353f2c38fa91719bff1abafadf03710c53ef2769a6c2ae",
+   "bytes": 5399,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/e9614598.json": {
+   "sha256": "7b2977b42a500d5deb50a537e8ae94c2736de2ef9cac1cbf53744703a106a20a",
+   "bytes": 2713,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/e98196ab.json": {
+   "sha256": "73bdf368185692c15fe3602d036024cd1c1c957954fb37f34416fc7ac5aaf337",
+   "bytes": 2361,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/e99362f0.json": {
+   "sha256": "c2d1834d702afa29928fa5fc88cd87aec9dda4c29bf706d7721cc3707b76d004",
+   "bytes": 2919,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/e9afcf9a.json": {
+   "sha256": "c1ca1a1c246c676873e883584e7d9bdaec0fcf98b1709c62a80e3472045bc7f1",
+   "bytes": 336,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/ea32f347.json": {
+   "sha256": "e06f8f453eafe2de7d94031a9683af72925176c29837367761ecce7235bb9432",
+   "bytes": 3346,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/ea786f4a.json": {
+   "sha256": "7d2e8436407496fe2fd458c1611a7324b3a9a9d5d09fb85e44705fb0fcf9eb8b",
+   "bytes": 1449,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/ea9794b1.json": {
+   "sha256": "f0516964ac3a4cabb5d1e8474b3cd46c8165684d4693beb90f6c5e3f5c25ebda",
+   "bytes": 3031,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/eb281b96.json": {
+   "sha256": "ac90b3c7c850c24ae2ee590f0915b4cf5c632275edd132f5ce20f86ac7db57ca",
+   "bytes": 2799,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/eb5a1d5d.json": {
+   "sha256": "96a1772a93e9cecf1050532b031ad3605390cc5c907cb4b919d4e095eee2f54d",
+   "bytes": 7850,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/ec883f72.json": {
+   "sha256": "5924aea74538384eaae161898b71fad53c1ce6431be833e0861aed60761d8e7f",
+   "bytes": 3148,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/ecdecbb3.json": {
+   "sha256": "05aa82a17086f03a633bb49a4e9ee31684f594cebbd0760b2805ccd03b334c2a",
+   "bytes": 5941,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/ed36ccf7.json": {
+   "sha256": "a627e1ff54b78b3b271fd5a0da21d8b6d578d35b88a7b0cd0e04bf95759b67ee",
+   "bytes": 476,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/ed98d772.json": {
+   "sha256": "bb9bf6e87211dd05687afa8a880fad1652c3752ff7cee4cf8aa8c01086abdba1",
+   "bytes": 1089,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/ef135b50.json": {
+   "sha256": "1139529be75bd3b95c65e9acda09b06f4af3d2c8007c485a36e637ea0f8feafe",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/f15e1fac.json": {
+   "sha256": "6cc2f1ba1eb9efa51c2d52d362adf855b8561a6a3391613da06967b5112901bd",
+   "bytes": 4493,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/f1cefba8.json": {
+   "sha256": "72a4a6034f9cfcce61953b3d76bd0e960743dd9daa617e497e0641bdfd5b2547",
+   "bytes": 7189,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/f25fbde4.json": {
+   "sha256": "9efa103c1e8d3e1e32779c620f8a3435bd6af95fd2858024c254cdf0aaf3cbeb",
+   "bytes": 1793,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/f25ffba3.json": {
+   "sha256": "98bd5da81220ac72cf0a2d8ae093ed602066e14cb28ffce6db3110d91382067c",
+   "bytes": 936,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/f2829549.json": {
+   "sha256": "2ab1d51052dec43901ceb68db375b2fd3f897c1a87278fe255e587a23b58ce8e",
+   "bytes": 987,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/f35d900a.json": {
+   "sha256": "794176c0bbcdcafa8b2bf72adaee4ad31dcb9fbdd5f2da230c46fbbcdf1d76fd",
+   "bytes": 8178,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/f3cdc58f.json": {
+   "sha256": "8b85bb9a30ccf611153b827a218a0ce6ae7fb64783f4203950e4a14b15884f2f",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/f3e62deb.json": {
+   "sha256": "e137ebfeec980f2e6fa59c39d85c40f784ecb76291dbdb9d666f47320aa3a9ba",
+   "bytes": 5341,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/f45f5ca7.json": {
+   "sha256": "2114dfb2c640e6e3c5da2b7254542175f86d421d6b1999bd30f34f52417ea621",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/f5b8619d.json": {
+   "sha256": "3368d676b689bd29110310a305b7cc24e1f8388dc43c5aca254d96b7541d43bc",
+   "bytes": 1186,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/f76d97a5.json": {
+   "sha256": "1ef5a9f04d9bc4944e7d613b0ec95629e1292e2e11964bd7cb6bffde064d31d7",
+   "bytes": 697,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/f823c43c.json": {
+   "sha256": "1f1422d6aeff5bbb4621895dcea099d53471cad50dda271876d239799b620f7a",
+   "bytes": 4378,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/f83cb3f6.json": {
+   "sha256": "0e31dd8012c8b617ad20326539f83107ef6cde71bf4e3b3e489739746f591787",
+   "bytes": 4165,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/f8a8fe49.json": {
+   "sha256": "0d7854b070bee8e1631fb9920c7ee38274d8c67bfd917df0462458f1c725647e",
+   "bytes": 5761,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/f8b3ba0a.json": {
+   "sha256": "7464398fd3d268de8eeff6848fac6a7c1fb5f5ed7703450e98a8777fc1faee33",
+   "bytes": 2968,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/f8be4b64.json": {
+   "sha256": "d84d11878fe8888ca705f0778bdec0530ddd8ebb53df8841e598c18418f51907",
+   "bytes": 11630,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/f8c80d96.json": {
+   "sha256": "e1dd8782fdc21266eef3226f360428bda6c51d35acfa9b757dc3743335b3e382",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/f8ff0b80.json": {
+   "sha256": "b1bdbe7ae29d8f461321667d4c64a836c5e8fd1762815f6e83233bf78849458b",
+   "bytes": 2005,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/f9012d9b.json": {
+   "sha256": "e95f4639d34e60c2a2c282319e8e82b0c9387cdaa8b52da4bd07ba13ec396d78",
+   "bytes": 654,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/fafffa47.json": {
+   "sha256": "19e63470e5e9f8c2c9e0b16435d7b735e574dc14d2690c5458649356ed304acc",
+   "bytes": 765,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/fc754716.json": {
+   "sha256": "b1e1c7b4a69160aa2e54a3f1b501185cf6071ef0d81bb2eb7df260ecbb742b5c",
+   "bytes": 1136,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/fcb5c309.json": {
+   "sha256": "b81aff938226c1adcf7448c221d2ea57d7f6069bc8c16985c5db8cf40b202995",
+   "bytes": 3623,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/fcc82909.json": {
+   "sha256": "5c1504b43de9696ef5934bd4be2f5694a65be3996010385c06736723a8a2f080",
+   "bytes": 2681,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/feca6190.json": {
+   "sha256": "7a4b844df9fa63adfb8420c99d37bec4ed867085fc7ece7e00a9a578889db5c1",
+   "bytes": 3413,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/ff28f65a.json": {
+   "sha256": "e8a3dff2ed879a6e8b57b88312d747675e8fef7dacee4eccf6d43843e73676cd",
+   "bytes": 2068,
+   "origin": "frozen lineage copy"
+  },
+  "data/arc-agi-2-training/ff805c23.json": {
+   "sha256": "7efbedb08bfb476c7ba41ce13d8ae476ac0fbfd479f7c2c9a32ca9e299042b2d",
+   "bytes": 7565,
+   "origin": "frozen lineage copy"
+  },
+  "demo_tasks.txt": {
+   "sha256": "60798b21c5bda2842f0875eb30cbe82bc8c314fd625247f8ace1fb59833c03ef",
+   "bytes": 4608,
+   "origin": "frozen lineage copy"
+  },
+  "driver.py": {
+   "sha256": "d9856680156990594d489b2f3a2befe092d098eed369200c93e8ecc8a637391f",
+   "bytes": 9214,
+   "origin": "light glue (this demo)"
+  },
+  "experiments/a2_baseline.py": {
+   "sha256": "c4a625d2bbd5d012f6ff4889dd4b402ef7a3dc36c222c379783aac4aa2ba6e7d",
+   "bytes": 4623,
+   "origin": "frozen lineage copy"
+  },
+  "experiments/a2_union_eval.py": {
+   "sha256": "a2dd6767204a4c99d712af6290bacb1b35558e3d7ad9a5fbeb25f8ad82097b93",
+   "bytes": 4007,
+   "origin": "frozen lineage copy"
+  },
+  "experiments/a300_common.py": {
+   "sha256": "5f4a7b53b01ad4cff1e0ba9bd3c150660ad0bf7f733f76e5d79815b413d14850",
+   "bytes": 1034,
+   "origin": "frozen lineage copy"
+  },
+  "experiments/a4_freeze.py": {
+   "sha256": "0a698663f6856207a711edb6d77810e7af682181e1c4523475282b6dfa230100",
+   "bytes": 2361,
+   "origin": "frozen lineage copy"
+  },
+  "experiments/a4_source_inspect.py": {
+   "sha256": "3a561dfad22491e80082cb517ecd4b967265a0a1494183e90a71390b2d8ba801",
+   "bytes": 2466,
+   "origin": "frozen lineage copy"
+  },
+  "experiments/a5_freeze.py": {
+   "sha256": "74043f8c98239266fafeca7ed47c74e18457de5c6bb4968c50feb5e6ff497250",
+   "bytes": 2539,
+   "origin": "frozen lineage copy"
+  },
+  "experiments/a5_source_inspect.py": {
+   "sha256": "0d8ba40f28ec5826fd86a93bd382eee39adf2a596d9e706cd454a4e1baadba70",
+   "bytes": 4586,
+   "origin": "frozen lineage copy"
+  },
+  "experiments/halfway_b1000.py": {
+   "sha256": "e48f8819ebeaa54246a89b28f0e8030e00b15d4b25325838f8cf1248e9558126",
+   "bytes": 8126,
+   "origin": "frozen lineage copy"
+  },
+  "make_provenance.py": {
+   "sha256": "d92dc058dc84d3ee139bfb79b4fde800b46b415da740c34952403786cebd3aca",
+   "bytes": 4394,
+   "origin": "light glue (this demo)"
+  },
+  "memoria/a2/ct-2-a2-causal-ssa-memory-v1.json": {
+   "sha256": "9e0d2ce15cabf5e1f3626fb470fd9e1bcb1456fc895717d12a7b65d92754d108",
+   "bytes": 811,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/a2/ct-2-a2-operational-memory-v1.json": {
+   "sha256": "d4ddfb62f5a7f5587b6bbfad3c020e057143cd34dc9fddd8477fed4ac0326cec",
+   "bytes": 4577,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/a2/ct-2-star-a2-classifier-canvas-algebra-v1.json": {
+   "sha256": "d76e0509267784a08f1586a4ebc93973cdf6733cfc4c0f7d46d400939d4f7377",
+   "bytes": 465,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/a2/ct-2-star-a2-color-permutation-algebra-v1.json": {
+   "sha256": "3877359a99ff8d1ed2e26caabae98e43f16c288724792ff8dfe62b0e5e650acb",
+   "bytes": 453,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/a2/ct-2-star-a2-connections-algebra-v1.json": {
+   "sha256": "0a4a9bc7d48a6d09d5fe474c2e3fa95849ad5cb16dd6cb09c8e4aeb0b5d473dc",
+   "bytes": 373,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/a2/ct-2-star-a2-extract-subgrid-algebra-v1.json": {
+   "sha256": "f76eb81de77493d51e7d79d4c92703cc4a3e2f9350f43c03d9b49baabafeb1ba",
+   "bytes": 759,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/a2/ct-2-star-a2-frames-canvas-algebra-v1.json": {
+   "sha256": "6b04867418cac65a623f2cbb7074944bf537598f2460b5e4cf4a0c31559604c4",
+   "bytes": 560,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/a2/ct-2-star-a2-half-panel-algebra-v1.json": {
+   "sha256": "5e296f29417e3303780aa6b2ffbc31bd95b53a6fc0566adb2c37fa5df7912e93",
+   "bytes": 462,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/a2/ct-2-star-a2-move-gravity-algebra-v1.json": {
+   "sha256": "3b87bd9f3d41da03f1052ca356fef28282458e88f302e275a79557a97190c35f",
+   "bytes": 600,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/a2/ct-2-star-a2-paint-recolor-algebra-v1.json": {
+   "sha256": "3571e854011218a90356f958a8259d556b8338745de42ff075b18412fa6d5ec0",
+   "bytes": 1138,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/a2/ct-2-star-a2-rays-neighbors-algebra-v1.json": {
+   "sha256": "51ac511d1a8b3a17a3a1c44f7ede71c3925117250b8d2b294a0e5ac2be1d61bc",
+   "bytes": 560,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/a2/ct-2-star-a2-scale-period-algebra-v1.json": {
+   "sha256": "7e49e5f1bb5196c91da9df3e9e22cf5c61a3f0033a6230fd084ee32d89ade8d6",
+   "bytes": 509,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/a300/ct-2-a300-causal-ssa-memory-v1.json": {
+   "sha256": "f6d11fd9bdb1d45e822af1d5d4c812c8095d8fa4f92e37528b3a5373d5d5ee24",
+   "bytes": 341,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/a300/ct-2-a300-operational-memory-v1.json": {
+   "sha256": "86e5c35a51eeb5316e9613d111eab0319244fafbbbeb7af0259d9dd64810c72d",
+   "bytes": 3533,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/a300/ct-2-star-a300-a300-g1-algebra-v1.json": {
+   "sha256": "09e08e142b170a183bbbdb7350fc1b098ef8cd564d9cd3e2facf481c54aea6fc",
+   "bytes": 540,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/a300/ct-2-star-a300-a300-g2-algebra-v1.json": {
+   "sha256": "770b0a7b78852dc110cd82bce808e338d2d1f864e86fbab760a0c2d6f9691900",
+   "bytes": 695,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/a300/ct-2-star-a300-a300-g4-algebra-v1.json": {
+   "sha256": "a181daf1346197c389ade535c80a98eaefbbe1dea105d59a8f0ae0beeb6d04ec",
+   "bytes": 509,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/a300/ct-2-star-a300-a300-g5-algebra-v1.json": {
+   "sha256": "561f373e0a429cdb2836c9b4cba82eb1c8b073c5bba4bc9136c97d4d63650a66",
+   "bytes": 577,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/a300/ct-2-star-a300-a300-g6-algebra-v1.json": {
+   "sha256": "0804c27f6d1d96bc7b8098d0965ef1359badd1954b64283d04ffb2e88c058faa",
+   "bytes": 540,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/a300/ct-2-star-a300-a300-g7-algebra-v1.json": {
+   "sha256": "f83d340770e63fe05e56639c58423639b5707505904947ce11bfab96f2f52656",
+   "bytes": 489,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/a300/ct-2-star-a300-a300-g8-algebra-v1.json": {
+   "sha256": "c70096c05f6192e0555bdb66e0fb90c7c9ccab6b0cc6b3e9dbc86e85eddd181a",
+   "bytes": 334,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/a300/ct-2-star-a300-a300-residual-algebra-v1.json": {
+   "sha256": "4ab1de83e3055433f019e201a656fc89d6a67ebfffe502109bbf789171305f6c",
+   "bytes": 929,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/a300/manifest.json": {
+   "sha256": "208a8d8277e37f8dc47815962d8d3412f90e9509b1a6b4f8d2ed2d507f0ca881",
+   "bytes": 3794,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/a4/a4_freeze.json": {
+   "sha256": "3c49548fe61696ac24111c19f42a857af55305a70f31e20c545388c42de47c08",
+   "bytes": 2869,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/a4/a4_operational_memory.json": {
+   "sha256": "439e3a550b98a60baf5fdec634f290e4b4ff5d0ccfd7249b650e922d82b0fbf6",
+   "bytes": 4266,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/a5/a5_freeze.json": {
+   "sha256": "f8abbaac10beeeaaf15ad83a634fe770ea69556680b668443623c7792ac40538",
+   "bytes": 3298,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/a5/a5_operational_memory.json": {
+   "sha256": "733828c567bf3b0b47acb2fca51606e4bea8cf21a7740da15a31d6e804a08afe",
+   "bytes": 4162,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/ct-2-operational-memory-v1.json": {
+   "sha256": "051b8f3c21ed6f7ca8d137393e861c3c18931567ee56cb08f32f5a247cb79873",
+   "bytes": 11275,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/ct-2-star-advanced-spatial-algebra-v1.json": {
+   "sha256": "07d27b244c50722e92bcb9df410efd34167c484bcabd7d387a6826c23a4a3ab3",
+   "bytes": 541,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/ct-2-star-analogue-repair-algebra-v1.json": {
+   "sha256": "b2d71b9ce34ae47897b53a9481d0462b460f9c9f2cbbfaddb2ca9b0b5213d50b",
+   "bytes": 494,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/ct-2-star-component-relation-algebra-v1.json": {
+   "sha256": "f1a7fde8d6b08ed07a7edc7659b4485728726e4c508c7dfbe3efb8587f4b04f0",
+   "bytes": 544,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/ct-2-star-conditioned-singleton-algebra-v1.json": {
+   "sha256": "d5e8450da0c6d4c116b08a6717239eb9a18055e9288e64f362e5e6a9c400b691",
+   "bytes": 581,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/ct-2-star-connection-topology-algebra-v1.json": {
+   "sha256": "1fd4b47bd6b1690c06a52dc3d1bc3b94c55df97d9d6b0583565b2141785a0a4f",
+   "bytes": 598,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/ct-2-star-count-render-algebra-v1.json": {
+   "sha256": "61f44c97f62f22db3dee191226d689c8710f959126a62816c8f2ee3ab53f3444",
+   "bytes": 607,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/ct-2-star-frame-completion-algebra-v1.json": {
+   "sha256": "506b2fa9c30200fd16629a754e3e2e8efada2c3266ef924bb2cb869905fe2d23",
+   "bytes": 571,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/ct-2-star-geometric-pattern-algebra-v1.json": {
+   "sha256": "027a1976b54938fa70b907613740c93d7257fe27f92bd64e65259911a42b5639",
+   "bytes": 554,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/ct-2-star-hierarchical-panel-algebra-v1.json": {
+   "sha256": "c4d3897d350251d2304e6412ea52f086b0547dd30562bb76fb79f702f28759e2",
+   "bytes": 564,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/ct-2-star-local-pattern-algebra-v1.json": {
+   "sha256": "49f5ee93724140f96682625c0930e3358227a9871afc05d2fe25eba1cff26bb2",
+   "bytes": 642,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/ct-2-star-object-structure-algebra-v1.json": {
+   "sha256": "d394a2a62501f3f5495e7a5e881a0c2db80dbe724c0599f62eb105cf1c7fe49b",
+   "bytes": 564,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/ct-2-star-panel-composition-algebra-v1.json": {
+   "sha256": "f56347553954f0ddc5261d0b726c6076ee469d6c0759d2f3f56ae0a80644cd43",
+   "bytes": 564,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/ct-2-star-pattern-recolor-algebra-v1.json": {
+   "sha256": "b2216ab3346653af825f2947c279de9bbf2f8865ad88462b403210fc583a0c02",
+   "bytes": 612,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/ct-2-star-ray-pattern-algebra-v1.json": {
+   "sha256": "17307e080a22ab38df125ba733d7a343881930a2bd384995684f3ffb52162ea8",
+   "bytes": 533,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/ct-2-star-region-topology-algebra-v1.json": {
+   "sha256": "24b144d5792536a110146b3568a79d0c6d415d0a46d1222b5a2303f6c529b999",
+   "bytes": 583,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/ct-2-star-relational-repair-algebra-v1.json": {
+   "sha256": "a4055fdefd15848f028392dc6aad6ec23a2fa562457d2a7c2ab7bd1912dec167",
+   "bytes": 569,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/ct-2-star-selection-extraction-algebra-v1.json": {
+   "sha256": "50f54db9d1549f9ad81239fc4fc1335fdceff00311ede7b41cec9312668daf26",
+   "bytes": 663,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/ct-2-star-spatial-transform-algebra-v1.json": {
+   "sha256": "969467b8501f12d53a0e35a668abd82f75914f2d3de73260719e30ccb2e78c26",
+   "bytes": 525,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/ct-2-star-structural-induction-algebra-v1.json": {
+   "sha256": "45ee9e17066a004210669b338adb7d04284514df4f6e63a7955f9f311e4d8ce3",
+   "bytes": 571,
+   "origin": "frozen lineage copy"
+  },
+  "memoria/ct6-causal-ssa-memory-v2.json": {
+   "sha256": "33caaf44a60d64f62d50fea0c4d965e7514d07c5408420af31afa0ffdf32f0d6",
+   "bytes": 25826,
+   "origin": "frozen lineage copy"
+  },
+  "outputs-run.log": {
+   "sha256": "240337dd405a5c863773b75b9155d57a0155b57eb421a32425198491e708fffe",
+   "bytes": 1578,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/__init__.py": {
+   "sha256": "cd2c6d6c48df15c1e06c6a7e6f160cdb92f324faa76fb14a6e91bc4d068ffabe",
+   "bytes": 203,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/arc_perception.py": {
+   "sha256": "4405fc62019c9e780d0ff25fcd46d7a9abdbd2da9713f1573f118c95e3b0feef",
+   "bytes": 9962,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/compiler/__init__.py": {
+   "sha256": "4b4d4443133b68053ac965551f2e7541f7657f918756cb0129191c1665320eb6",
+   "bytes": 81,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/compiler/binding_enumerator.py": {
+   "sha256": "04dfa83b3d4ff6fdc741af63a13aa98ba3d44c4381d899d8682b2b6f37332253",
+   "bytes": 12353,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/compiler/dag_normalizer.py": {
+   "sha256": "6029d5c3ae45eae117ba3d3895236514029abd8aa26ecd8f02a1edd96eb6439e",
+   "bytes": 14025,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/compiler/hodel_audit.py": {
+   "sha256": "fd6677225e5f47204db3f80856f6729d33e5adb6ac31e0c6e9f98123a7633bc2",
+   "bytes": 7881,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/compiler/hodel_compiler.py": {
+   "sha256": "11c69ba82a5823b8f1b500fba81ff2eb2282c988e8a2fac6676c849ec8eb40c7",
+   "bytes": 10691,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/compiler/hodel_parser.py": {
+   "sha256": "4da5c933b2603bfd4f7f2f7768bf822bfdc7bca7d3a3292d7166def277cfaa7f",
+   "bytes": 15310,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/compiler/hodel_primitives.py": {
+   "sha256": "0846e53a9c3bf44675ec23799caef3f46729e9ce3bbcdbc7ea0eaa123c5b7c02",
+   "bytes": 40079,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/compiler/hodel_runtime.py": {
+   "sha256": "a078b03d6620496d5a444c733cb6a4acd7daf863d6fc9e9b3023e499a312c04a",
+   "bytes": 16259,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/compiler/structural_anti_unifier.py": {
+   "sha256": "e82ae2e2694d598ce3ad77b61c486f49a515c412cf9da286529694936168d46c",
+   "bytes": 63822,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/compiler/structural_miner.py": {
+   "sha256": "582eaf85cf6743a2b5a22786f0f665c15d78ff4ebec0c4faab37b76c5001ad9f",
+   "bytes": 19463,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/protocol_validation/__init__.py": {
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/protocol_validation/cohorts.py": {
+   "sha256": "4d51fc913679dc07d7691b148651c3102da4d9fd063c37c17b82e1f69e740514",
+   "bytes": 6188,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/protocol_validation/pipeline.py": {
+   "sha256": "b439b578a1a1344d5cfe5b08980b6d0bdd6e8f6b8f6871416d7c8db591ad4f2c",
+   "bytes": 12937,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/__init__.py": {
+   "sha256": "74b58c872adbd183aedfc306f7fa945bbd1940dd30b62a785acff79eebdae325",
+   "bytes": 71,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a1_g1_algebra.py": {
+   "sha256": "fa9bc21f5cfd7d19e4b8c626d7cbc1c61b18f65ec3ec430bfc7aa0b423440501",
+   "bytes": 30636,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a1_g2_algebra.py": {
+   "sha256": "5b1cbb8e74d11da2bbc46022d9dd560c02ae0db52fe7d90c9955633c61544b78",
+   "bytes": 31569,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a1_g4_algebra.py": {
+   "sha256": "db7667f2724545ae74a61b9e0708eb1f687e59fc9010f2dbe6222d1cfea1cc84",
+   "bytes": 19816,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a1_g5_algebra.py": {
+   "sha256": "e70331c320d62a8be1511adfb15c602dbea2bdc2096a6641cb152c1e5941f1e7",
+   "bytes": 29894,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a1_g6_algebra.py": {
+   "sha256": "dd720133adf3b2696edff44233c3d7c8786a45ac36feef7b971702e640b714b7",
+   "bytes": 43531,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a1_g7_algebra.py": {
+   "sha256": "eb55cf2c3341e7392355a3f2f3d1715f022b5b7611755217e5a55c23edc4fc8c",
+   "bytes": 22821,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a1_g8_algebra.py": {
+   "sha256": "823bd9c8b7d0d7ff91022ecdd96ba91f64b3c54842c9048c129b7e57e36a8fe0",
+   "bytes": 27598,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a2_classifier_canvas_algebra.py": {
+   "sha256": "42c95813258d251d6b034e8385720c8054fc66edbcc1cb351c02bbc15132af23",
+   "bytes": 13968,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a2_color_permutation_algebra.py": {
+   "sha256": "c9f6556589f399edce29ae2c84ed49ee862a880c0ec98bd4f475473f10ab9ffd",
+   "bytes": 7739,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a2_connections_algebra.py": {
+   "sha256": "810dc448b24b25c5d3ae59384e36e7cac354764e8a4f74563aff02d24462e85b",
+   "bytes": 3715,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a2_extract_subgrid_algebra.py": {
+   "sha256": "b590989a5b3241d0950147c6d3644a97e402ddc5992e63912ede8bb9facd3c5c",
+   "bytes": 26053,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a2_frames_canvas_algebra.py": {
+   "sha256": "949b7a2f6c39698c300688dceb3a8bffa2347a508176057ffd0a6a090dc48736",
+   "bytes": 15605,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a2_half_panel_algebra.py": {
+   "sha256": "3d01d4a9136e1eae8b7be281dcc80a717ff8dce162bc3b60193df2bf862e38a4",
+   "bytes": 9516,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a2_move_gravity_algebra.py": {
+   "sha256": "575d284ca801c975c6d78b8fd27a4e4ad8fe61df347fef9001c5269e451f4ec1",
+   "bytes": 39502,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a2_paint_recolor_algebra.py": {
+   "sha256": "10aa867384828bca891a8920be2dce45d5f745de7daa804cef0d8223fc89db04",
+   "bytes": 82624,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a2_rays_neighbors_algebra.py": {
+   "sha256": "72f26a8468053ce12b25c4bf7eed824505a1bab9acb54570bd954652b5951815",
+   "bytes": 17844,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a2_scale_period_algebra.py": {
+   "sha256": "7fa6936fdeb5b98d8b7648647cf30da7a66eabcf797507892e5ead2626d83cb5",
+   "bytes": 14102,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a300_residual_algebra.py": {
+   "sha256": "f51e5a1eb9fa824d87536b7dff2e4facadfa011b13bf8c58b8baf806a5551836",
+   "bytes": 36616,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a4_basic_algebra.py": {
+   "sha256": "d440d58035a3366b0fed56a5aed2cfbe572ada7f698df0c0626df3bedb8eb818",
+   "bytes": 5781,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a4_core.py": {
+   "sha256": "4d86854c55d26d0f5cced238ccb4c23428e9a05d79fc794564996e711a034150",
+   "bytes": 5627,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a4_field_algebra.py": {
+   "sha256": "104303b79ae845b06bacc6151b56d7e4fb7c4f0b52ae9664a0dd3214b5fb54cb",
+   "bytes": 5464,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a4_layout_algebra.py": {
+   "sha256": "a2949159845209f6b02afc6711ce461ba47eab48ca1de9d7f99f92b1379de7e3",
+   "bytes": 5855,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a4_move_algebra.py": {
+   "sha256": "a2a3b918fc52ed0821b6cb35a6dcdf767b69dc26aab309e1841f5ae3abb05a22",
+   "bytes": 6955,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a4_pattern_algebra.py": {
+   "sha256": "b1333c3c04b8eeb8e71b18ec2169116d2e760e86ef903cdba17c6c2fee93a717",
+   "bytes": 6884,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a4_rays_algebra.py": {
+   "sha256": "cb35e770c67bc96ed0f2361d459658d32c5b4c746b12e1f93539f740d0e12a66",
+   "bytes": 6017,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a4_region_algebra.py": {
+   "sha256": "d76fef2641af178c0e956cc47427654d122c144e40968e7e7a24a28a27a514dc",
+   "bytes": 6807,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a4_runtime.py": {
+   "sha256": "87e8cbaaf27860bca99c12d33c5628c03737fdabeb62d7ae2b7eaf483e87c300",
+   "bytes": 1819,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a4_template_algebra.py": {
+   "sha256": "8072938c1e1dd3821c5f746fe0f6ed2a4de9fb3340285690e885ec5825493ba7",
+   "bytes": 8188,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a5_basic_algebra.py": {
+   "sha256": "2fe9f819cf4aaebad98e39e2a028c581936fda2ba004babb3dd1cd3657b2b1cb",
+   "bytes": 3793,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a5_core.py": {
+   "sha256": "7729d216b19ef07477ca21d71779b7ffac82df455a72273c854471a4117fc22c",
+   "bytes": 4318,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a5_layout_algebra.py": {
+   "sha256": "cfdc78c167ff3c3be57e05e92075847e378c39f2bc33acc0d910fbc4b10c5fd5",
+   "bytes": 5927,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a5_move_algebra.py": {
+   "sha256": "289e8e1c68efe3efe8c84d24750bd15ab149c67664faf9c16a53a30b3a9632df",
+   "bytes": 3823,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a5_panel_algebra.py": {
+   "sha256": "64fda8913c65a2ad1c3934759416fdc910cee0cccf124fe8f99eff5008af40be",
+   "bytes": 4639,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a5_pattern_algebra.py": {
+   "sha256": "4caccefab7c8f302e73d060560b554d0c9542858c63d56392fe452f2b5f2b110",
+   "bytes": 8314,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a5_rays_algebra.py": {
+   "sha256": "0c6fc6020af1502fcc01add4c8e06eaf74776ef4e77b3161eada001a23ed8d03",
+   "bytes": 7240,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a5_region_algebra.py": {
+   "sha256": "58cfdb764860b0be10db43009e4de02a5ce618b513bfbb9f6fe45c9ec1b747f0",
+   "bytes": 7579,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a5_runtime.py": {
+   "sha256": "f7c7a15d1b68ec9e60b9b7379e3ab6e60c9cf8621d556b7bd53380704ab7fbbc",
+   "bytes": 1594,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/a5_template_algebra.py": {
+   "sha256": "a68f3a1729b49cd83a208f5ec139837af54d98c16099c2645946d4165d7dffe6",
+   "bytes": 6018,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/advanced_spatial_algebra.py": {
+   "sha256": "aa4a77d35ebd667d83640a047ab7f013ea9ae277018d560fe12d4e8cbac9003a",
+   "bytes": 10757,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/causal_residual.py": {
+   "sha256": "4d8b6b575a4bfb5caa7ccc96994f476e7bd5860a2c19f3dda6a6f521d368dcdb",
+   "bytes": 5707,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/component_relation_algebra.py": {
+   "sha256": "1ec065bb27e77dd460e1bd7ccd0c588293ba9bcb24b6579944da77e5d497635a",
+   "bytes": 9471,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/conditioned_singleton_algebra.py": {
+   "sha256": "8e5f2a691f6cf616073482fb596fef3b3cc3b885e8e98e32224853bc9b30c3dc",
+   "bytes": 13631,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/connection_topology_algebra.py": {
+   "sha256": "1e32b9b98c291166483242ef565c6a2321494317fbc430284bc5092f61a7268f",
+   "bytes": 12107,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/count_render_algebra.py": {
+   "sha256": "06ff31171e21630ce0a1c19d84229bc0d5be2fd20d1d68c373d8ca411fd478c7",
+   "bytes": 9716,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/ct2_operational.py": {
+   "sha256": "cc6972db14682f6d87efef6f4f93c88808fc55cfd53039153c1510f82e8af7a1",
+   "bytes": 40015,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/ct6_causal_ssa.py": {
+   "sha256": "4d69d58c354ea40f54d8a04b55a0e7b572b681bfc2b8f0000ea9a6bdd50e1088",
+   "bytes": 36383,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/dsd_runtime.py": {
+   "sha256": "b12c64a0141bbe8539390ee40414a036e13b728bb32c1b96c99d83659bb46d50",
+   "bytes": 5482,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/frame_completion_algebra.py": {
+   "sha256": "cf648a33a22ad71b3562f453beaf60735ece7faf06ade9b6d3029d7c1514a4c0",
+   "bytes": 10554,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/geometric_pattern_algebra.py": {
+   "sha256": "75009b9507b1d0bc4316a8e2bd5e8eb3688ee626df45640fdfe5e79061811a74",
+   "bytes": 5792,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/hierarchical_panel_algebra.py": {
+   "sha256": "7525dd67a6dca0eea31855e7090741dc3672b40e722922310e602063824d6769",
+   "bytes": 10240,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/inverse_witnesses.py": {
+   "sha256": "7f1391023684ac9993a6f08f00bceb500d84b051d89f65f46eb15cec64516c6b",
+   "bytes": 26752,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/local_pattern_algebra.py": {
+   "sha256": "738c7c064932f76c61f7f94e8d2f90640a3e53fb28b03879bab961881219166c",
+   "bytes": 9523,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/object_structure_algebra.py": {
+   "sha256": "369e1be63c1fc39926b499c9da1f525d1b2ec73d80c251ccc465bae0b44ac916",
+   "bytes": 11950,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/operational_dsd.py": {
+   "sha256": "dbdd31e2a3c73de1ca2863557bd336b6a1bca8cdb0488fcdd53945f57ede653a",
+   "bytes": 15651,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/operational_union.py": {
+   "sha256": "73c0af44859260185ad2204029003ee9b8df16bdf4701b9b93328f2edc9a84ac",
+   "bytes": 4787,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/panel_composition_algebra.py": {
+   "sha256": "08ea4bde61c523e64941896609c5d6e171948e67c33353a5b5fd1ad099fec0be",
+   "bytes": 6933,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/panel_composition_witness.py": {
+   "sha256": "d29d29b58d53101f878507ca67b5b1f15dab3cf49ed6152d7895dfa95809ace1",
+   "bytes": 6638,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/pattern_recolor_algebra.py": {
+   "sha256": "90db93e63c3f1d7d9cc4f3248a6fadc50c887d084457b2415c0124bb2249a0d3",
+   "bytes": 6405,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/ray_pattern_algebra.py": {
+   "sha256": "4b221b520ff88171bbc9d7ca8eb54e2e434ddea2180bd762e30a4e766f67b890",
+   "bytes": 10444,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/region_topology_algebra.py": {
+   "sha256": "c91e72907a19a54eeafce18995131f3e4e0cc7dec73bdca0d6b6377cf359f889",
+   "bytes": 8396,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/relational_repair_algebra.py": {
+   "sha256": "73e7793a106c5f890a812facf6332cfac2623c096db1e7bca5df2bf664f6b38e",
+   "bytes": 15898,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/selection_extraction_algebra.py": {
+   "sha256": "767f36a5abbbf3c829d16027c96c568a245f8a71952b63828d2666d606e30d86",
+   "bytes": 10582,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/semantic_factors.py": {
+   "sha256": "2fa82422b22fc0ec4a5b583e830f4dff041666c075a52195f8863aa231220a2c",
+   "bytes": 5516,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/spatial_transform_algebra.py": {
+   "sha256": "5979c2f6d33f1a26b1b937d559dec6fd08fb23f9b9b88283d5ad12bc8f757cdb",
+   "bytes": 9118,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/reasoning/structural_induction_algebra.py": {
+   "sha256": "017b6999a506e8b52e8e6a3a2f751bb9789f2a77ec2b6fb87554f93cac5f43b6",
+   "bytes": 11113,
+   "origin": "frozen lineage copy"
+  },
+  "src/kiafura_official/resource_policy.py": {
+   "sha256": "f4e5352b8e3fc3c5f65bde09d745e58fcb11838df16669571e174362c2cbf721",
+   "bytes": 3195,
+   "origin": "frozen lineage copy"
+  }
+ },
+ "file_count": 656
+}

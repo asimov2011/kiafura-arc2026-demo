@@ -1,0 +1,43 @@
+{
+  "files": {
+    "data/mastery/arc2-mastery-v4-pool417.jsonl": "5069ccc8c23893edf06106e3493bbf5dbc022248e790e89896d10796fd751bd2",
+    "data/mastery/pool34.py": "3cad95edb2abbd6da7fce666f08a86eddfaf2709cdc5dc75c0259ddca490e240",
+    "experiments/a5_anti_copy.json": "31ce044bccf320d3eaac20f379d9a40a095fc7bdaa9afd5691c052e926222623",
+    "experiments/a5_baseline.py": "35d8a25f6ec1d7473f14ace68d13fbcb5f964b414f0cdeb41bd26cbfaefd7d2e",
+    "experiments/a5_baseline_result.json": "b36486aa7d7dc4cf6a86a4cda15f51ff81ea8396a2e7368c370e5a7fe4e77888",
+    "experiments/a5_eval.py": "cd5b0b244aa66338d072e09e75fbf5d1d81f07dcdce9bce34d6487e9f9ffe038",
+    "experiments/a5_freeze.py": "74043f8c98239266fafeca7ed47c74e18457de5c6bb4968c50feb5e6ff497250",
+    "experiments/a5_memory.py": "216b32f073df5bde1667f3d9d59d11dcae561512efc538703cbff36275a6452e",
+    "experiments/a5_replay_result.json": "edd01b1dd647d784949585d320ac9118542f47b17e1b20e85387a60aed55f200",
+    "experiments/a5_source_inspect.py": "0d8ba40f28ec5826fd86a93bd382eee39adf2a596d9e706cd454a4e1baadba70",
+    "experiments/a5_source_inventory.json": "96df4fdcb52e9ed557447ce3fdcebfcbb8db61bd52090cd33d6f89e68c0ffd78",
+    "experiments/a5_transfer.py": "cf64914b5a4df561a9e820e1434f6e711bf33cd1e427115d6f6709bb1d58d792",
+    "experiments/a5_union_result.json": "efe255e054389d3efb13825bece7b4c54dcdcbd1a01a21ad9e8eb4a470fda764",
+    "experiments/a5_verify.py": "ee847adc9961648fe16789a2047c7aba55d7456f6ceb5d8607f42f6da498d52b",
+    "memoria/a5/a5_operational_memory.json": "733828c567bf3b0b47acb2fca51606e4bea8cf21a7740da15a31d6e804a08afe",
+    "splits/ct-2-independent-a5-v1.json": "0df38633d0c150821f2371256a01215d194bd574b05e76e71536206ec8f9e792",
+    "src/kiafura_official/reasoning/a5_basic_algebra.py": "2fe9f819cf4aaebad98e39e2a028c581936fda2ba004babb3dd1cd3657b2b1cb",
+    "src/kiafura_official/reasoning/a5_core.py": "7729d216b19ef07477ca21d71779b7ffac82df455a72273c854471a4117fc22c",
+    "src/kiafura_official/reasoning/a5_layout_algebra.py": "cfdc78c167ff3c3be57e05e92075847e378c39f2bc33acc0d910fbc4b10c5fd5",
+    "src/kiafura_official/reasoning/a5_move_algebra.py": "289e8e1c68efe3efe8c84d24750bd15ab149c67664faf9c16a53a30b3a9632df",
+    "src/kiafura_official/reasoning/a5_panel_algebra.py": "64fda8913c65a2ad1c3934759416fdc910cee0cccf124fe8f99eff5008af40be",
+    "src/kiafura_official/reasoning/a5_pattern_algebra.py": "4caccefab7c8f302e73d060560b554d0c9542858c63d56392fe452f2b5f2b110",
+    "src/kiafura_official/reasoning/a5_rays_algebra.py": "0c6fc6020af1502fcc01add4c8e06eaf74776ef4e77b3161eada001a23ed8d03",
+    "src/kiafura_official/reasoning/a5_region_algebra.py": "58cfdb764860b0be10db43009e4de02a5ce618b513bfbb9f6fe45c9ec1b747f0",
+    "src/kiafura_official/reasoning/a5_runtime.py": "f7c7a15d1b68ec9e60b9b7379e3ab6e60c9cf8621d556b7bd53380704ab7fbbc",
+    "src/kiafura_official/reasoning/a5_template_algebra.py": "a68f3a1729b49cd83a208f5ec139837af54d98c16099c2645946d4165d7dffe6"
+  },
+  "format": "a5-freeze-v1",
+  "freeze_sha256": "2a8ee73a697d091c91755d50abb6449ec940891d95e4d7238e4d974921e31c96",
+  "source_counts": {
+    "abstain": 0,
+    "exact": 100,
+    "false": 0
+  },
+  "transfer_contract": {
+    "denominator": 900,
+    "runtime_changes_after_freeze": false,
+    "timeout_seconds": 120,
+    "workers": 4
+  }
+}

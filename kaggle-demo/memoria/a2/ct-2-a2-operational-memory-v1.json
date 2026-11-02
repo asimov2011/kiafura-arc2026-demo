@@ -1,0 +1,197 @@
+{
+ "budget": {
+  "work_definition": "one visible grid cell processed by one candidate transformation",
+  "work_per_task": 2000000
+ },
+ "compiler": {
+  "rule": "promote tool schemas exact on at least one A2 experience with zero false candidates on all A2",
+  "source_experience_count": 100
+ },
+ "format": "kiafura-ct2-operational-memory-v1",
+ "guardrails": {
+  "full_programs": 0,
+  "source_callable_names": 0,
+  "target_b_provenance": 0,
+  "task_ids": 0
+ },
+ "memory_sha256": "a65bd007064dcd3590e24fe2a0ac808b78d5e32ca9eabbbf8d8684c5e2a93438",
+ "tools": [
+  {
+   "a2_false_emissions": 0,
+   "cost": 1,
+   "epistemic_state": "source_valid_a2_candidate",
+   "expected_effect": "apply one D4 isometry",
+   "input_type": "grid",
+   "invariants": [
+    "cell multiset"
+   ],
+   "output_type": "grid",
+   "parameter_names": [
+    "mode"
+   ],
+   "preconditions": [
+    "rectangular grid"
+   ],
+   "source_support": 2,
+   "tool_id": "dihedral"
+  },
+  {
+   "a2_false_emissions": 0,
+   "cost": 2,
+   "epistemic_state": "source_valid_a2_candidate",
+   "expected_effect": "project selected material to its bounding box",
+   "input_type": "grid",
+   "invariants": [
+    "selected cells"
+   ],
+   "output_type": "grid",
+   "parameter_names": [
+    "selector"
+   ],
+   "preconditions": [
+    "selected foreground exists"
+   ],
+   "source_support": 1,
+   "tool_id": "crop_bbox"
+  },
+  {
+   "a2_false_emissions": 0,
+   "cost": 2,
+   "epistemic_state": "source_valid_a2_candidate",
+   "expected_effect": "replace cells by rectangular blocks",
+   "input_type": "grid",
+   "invariants": [
+    "cell adjacency modulo scale"
+   ],
+   "output_type": "grid",
+   "parameter_names": [
+    "row_factor",
+    "column_factor"
+   ],
+   "preconditions": [
+    "positive integer factors"
+   ],
+   "source_support": 1,
+   "tool_id": "cell_scale"
+  },
+  {
+   "a2_false_emissions": 0,
+   "cost": 3,
+   "epistemic_state": "source_valid_a2_candidate",
+   "expected_effect": "tile a grid with optional alternating reflections",
+   "input_type": "grid",
+   "invariants": [
+    "source cells"
+   ],
+   "output_type": "grid",
+   "parameter_names": [
+    "row_factor",
+    "column_factor",
+    "alternating_rows",
+    "alternating_columns"
+   ],
+   "preconditions": [
+    "positive integer factors"
+   ],
+   "source_support": 2,
+   "tool_id": "grid_tile"
+  },
+  {
+   "a2_false_emissions": 0,
+   "cost": 4,
+   "epistemic_state": "source_valid_a2_candidate",
+   "expected_effect": "select a component by relational size",
+   "input_type": "grid",
+   "invariants": [
+    "selected component shape and colors"
+   ],
+   "output_type": "grid",
+   "parameter_names": [
+    "connectivity",
+    "rank",
+    "crop"
+   ],
+   "preconditions": [
+    "foreground component exists"
+   ],
+   "source_support": 1,
+   "tool_id": "component_select"
+  },
+  {
+   "a2_false_emissions": 0,
+   "cost": 4,
+   "epistemic_state": "source_valid_a2_candidate",
+   "expected_effect": "color background regions not connected to the border",
+   "input_type": "grid",
+   "invariants": [
+    "non-background cells"
+   ],
+   "output_type": "grid",
+   "parameter_names": [
+    "color"
+   ],
+   "preconditions": [
+    "background topology is observable"
+   ],
+   "source_support": 1,
+   "tool_id": "fill_holes"
+  },
+  {
+   "a2_false_emissions": 0,
+   "cost": 3,
+   "epistemic_state": "source_valid_a2_candidate",
+   "expected_effect": "reduce regular blocks by a deterministic statistic",
+   "input_type": "grid",
+   "invariants": [
+    "block partition"
+   ],
+   "output_type": "grid",
+   "parameter_names": [
+    "row_factor",
+    "column_factor",
+    "mode"
+   ],
+   "preconditions": [
+    "input dimensions divide output dimensions"
+   ],
+   "source_support": 1,
+   "tool_id": "block_reduce"
+  },
+  {
+   "a2_false_emissions": 0,
+   "cost": 3,
+   "epistemic_state": "source_valid_a2_candidate",
+   "expected_effect": "compose reflected copies around a shared boundary",
+   "input_type": "grid",
+   "invariants": [
+    "source cells"
+   ],
+   "output_type": "grid",
+   "parameter_names": [
+    "mode"
+   ],
+   "preconditions": [
+    "rectangular grid"
+   ],
+   "source_support": 3,
+   "tool_id": "mirror_mosaic"
+  },
+  {
+   "a2_false_emissions": 0,
+   "cost": 4,
+   "epistemic_state": "source_valid_a2_candidate",
+   "expected_effect": "extract the interior state of the largest frame",
+   "input_type": "grid",
+   "invariants": [
+    "interior cells"
+   ],
+   "output_type": "grid",
+   "parameter_names": [],
+   "preconditions": [
+    "complete monochrome rectangular frame exists"
+   ],
+   "source_support": 1,
+   "tool_id": "frame_interior"
+  }
+ ]
+}

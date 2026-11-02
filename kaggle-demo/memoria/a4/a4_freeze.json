@@ -1,0 +1,39 @@
+{
+  "files": {
+    "experiments/a4_anti_copy.json": "9bde35252b3dee7f9ab16b7632f59d811023e9ba68e838958804707e7a982422",
+    "experiments/a4_eval.py": "59f688bc5516e125720beb73c3a0cfd801d0038bf02b4ec5480242020d7373ef",
+    "experiments/a4_freeze.py": "0a698663f6856207a711edb6d77810e7af682181e1c4523475282b6dfa230100",
+    "experiments/a4_memory.py": "b2c52de72d92d3adae388a225926fe0a8f3baa7e6f42bae7c7ebddf928c77b87",
+    "experiments/a4_replay_result.json": "511c58f0ccdc6de38786c2c3bf7330e13980b5f750f2a588df2804436c3081e2",
+    "experiments/a4_source_inspect.py": "3a561dfad22491e80082cb517ecd4b967265a0a1494183e90a71390b2d8ba801",
+    "experiments/a4_source_inventory.json": "b46db1609121a3f217b919ae0af64d4f0f8b53d99589325aff5275a1d29403c8",
+    "experiments/a4_transfer.py": "8f15c0beae14a114ff0a9fdd454a40525b0c5eaef027a467e356867f1057e265",
+    "experiments/a4_union_result.json": "505b8660b51df2595d8ed965c4f312f72fb2ae8f16531e9d28abbf8281be2a7f",
+    "experiments/a4_verify.py": "3f80c553f9d9712ef1bb781beebd86eadf1e32f1d48047950900992bfc37aa9f",
+    "memoria/a4/a4_operational_memory.json": "439e3a550b98a60baf5fdec634f290e4b4ff5d0ccfd7249b650e922d82b0fbf6",
+    "splits/ct-2-independent-a4-v1.json": "41143b0c8c352d5a9b782dec47b0e686cc770583079e45b1977115e3d4463f0f",
+    "src/kiafura_official/reasoning/a4_basic_algebra.py": "d440d58035a3366b0fed56a5aed2cfbe572ada7f698df0c0626df3bedb8eb818",
+    "src/kiafura_official/reasoning/a4_core.py": "4d86854c55d26d0f5cced238ccb4c23428e9a05d79fc794564996e711a034150",
+    "src/kiafura_official/reasoning/a4_field_algebra.py": "104303b79ae845b06bacc6151b56d7e4fb7c4f0b52ae9664a0dd3214b5fb54cb",
+    "src/kiafura_official/reasoning/a4_layout_algebra.py": "a2949159845209f6b02afc6711ce461ba47eab48ca1de9d7f99f92b1379de7e3",
+    "src/kiafura_official/reasoning/a4_move_algebra.py": "a2a3b918fc52ed0821b6cb35a6dcdf767b69dc26aab309e1841f5ae3abb05a22",
+    "src/kiafura_official/reasoning/a4_pattern_algebra.py": "b1333c3c04b8eeb8e71b18ec2169116d2e760e86ef903cdba17c6c2fee93a717",
+    "src/kiafura_official/reasoning/a4_rays_algebra.py": "cb35e770c67bc96ed0f2361d459658d32c5b4c746b12e1f93539f740d0e12a66",
+    "src/kiafura_official/reasoning/a4_region_algebra.py": "d76fef2641af178c0e956cc47427654d122c144e40968e7e7a24a28a27a514dc",
+    "src/kiafura_official/reasoning/a4_runtime.py": "87e8cbaaf27860bca99c12d33c5628c03737fdabeb62d7ae2b7eaf483e87c300",
+    "src/kiafura_official/reasoning/a4_template_algebra.py": "8072938c1e1dd3821c5f746fe0f6ed2a4de9fb3340285690e885ec5825493ba7"
+  },
+  "format": "a4-freeze-v1",
+  "freeze_sha256": "212075540ce99083ee5ec85f3b3dd32c1738886c44aaa74da8b39a708650a376",
+  "source_counts": {
+    "abstain": 0,
+    "exact": 100,
+    "false": 0
+  },
+  "transfer_contract": {
+    "denominator": 900,
+    "runtime_changes_after_freeze": false,
+    "timeout_seconds": 120,
+    "workers": 4
+  }
+}

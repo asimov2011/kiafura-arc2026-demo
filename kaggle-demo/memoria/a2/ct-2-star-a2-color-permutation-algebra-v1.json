@@ -1,0 +1,20 @@
+{
+ "contract": {
+  "binding_source": "demonstrations",
+  "complete_programs": false,
+  "task_ids": false,
+  "verified_only": true
+ },
+ "format": "kiafura-ct2-star-a2-color-permutation-algebra-v1",
+ "graphs": [
+  "color_map",
+  "switch_pair",
+  "least_color_swap",
+  "palette_extremes_replace",
+  "ring_shift_two"
+ ],
+ "memory_sha256": "3287b6a6dcfdb4ed1ee5f02c515bf269924c70d322d6421c6f21c97f4219312a",
+ "operators": [
+  "pointwise_color_function"
+ ]
+}
