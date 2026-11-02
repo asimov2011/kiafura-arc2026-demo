@@ -39,6 +39,14 @@ python3 kaggle-submit/make_submission.py \
   no tuning to labels.
 - Every number this pipeline produces is demonstration output, not certified evidence.
 
+## Development and provenance
+
+This package was **developed with AI assistance** under the direction of Carmelo Fiorilla (2026),
+who takes responsibility for the work. The frozen core (`src/`, `experiments/`, `memoria/`) is
+lineage code of the Kiafura program, copied byte-for-byte at the pinned commit; it retains its
+original internal comments, including references to internal program documents that are not part
+of this release. The driver and submission glue are light packaging code only.
+
 ## License
 
 CC0 1.0 Universal (public domain dedication) — see `LICENSE`. This release covers the demonstration
