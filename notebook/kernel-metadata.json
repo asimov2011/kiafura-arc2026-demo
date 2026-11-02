@@ -1,13 +1,16 @@
 {
   "id": "carmelofiorilla/kiafura-arc2026-demo-entry",
-  "title": "Kiafura ARC-AGI-2 demonstration entry (paper-track linkage)",
+  "title": "Kiafura ARC-AGI-2 demonstration entry",
   "code_file": "kiafura-arc2026-demo.ipynb",
   "language": "python",
   "kernel_type": "notebook",
-  "is_private": false,
-  "enable_gpu": false,
-  "enable_internet": false,
+  "is_private": "false",
+  "enable_gpu": "false",
+  "enable_tpu": "false",
+  "enable_internet": "false",
+  "machine_shape": "",
   "dataset_sources": ["carmelofiorilla/kiafura-arc2026-demo"],
   "competition_sources": ["arc-prize-2026-arc-agi-2"],
-  "kernel_sources": []
+  "kernel_sources": [],
+  "model_sources": []
 }
